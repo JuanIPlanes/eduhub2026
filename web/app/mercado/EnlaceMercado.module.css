@@ -1,0 +1,18 @@
+/* Usa los mismos nombres de tokens que app/(app)/app.module.css y app/mercado/mercado.module.css,
+   con valores de respaldo por si se ubica fuera de esos contenedores. */
+.enlace {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center;
+  padding: 14px 16px; border-radius: var(--r, 14px);
+  border: 1px dashed var(--line-2, #c9cfdb); background: var(--surface, #ffffff); color: var(--ink, #0f1522) !important;
+  text-decoration: none; min-height: 44px;
+}
+.enlace:hover { background: var(--surface-2, #eef0f5); }
+.enlace:focus-visible { outline: 2px solid var(--focus, #2f45c8); outline-offset: 2px; }
+.chip {
+  font-size: 10.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  background: var(--warn-soft, #fbefd6); color: var(--warn, #8a5a00); padding: 3px 7px; border-radius: 4px; align-self: start; margin-top: 2px;
+}
+.texto { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.texto strong { font-family: var(--f-d, inherit); font-weight: 650; font-size: 15px; }
+.texto span { color: var(--muted, #586174); font-size: 13px; line-height: 1.4; }
+.flecha { color: var(--accent-text, #2a3db3); font-size: 18px; }

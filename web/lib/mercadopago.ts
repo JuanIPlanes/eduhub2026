@@ -137,14 +137,36 @@ export function traerPagos(token: string, hoy = new Date(), op: OpcionesMP = {})
   return p;
 }
 
+// Saldo real de la cuenta: GET /users/{id}/mercadopago_account/balance. Con tokens normales devuelve 403 (o 404): en ese
+// caso null y el llamador sigue con un saldo ESTIMADO (nunca confirmado). Timeout corto, sin reintento, nunca lanza.
+const TIMEOUT_SALDO_MS = 2500;
+const cacheSaldo = new Map<string, { t: number; v: number | null }>();
+export async function saldoMP(token: string, userId: number, op: OpcionesMP = {}): Promise<number | null> {
+  const k = createHash('sha256').update(token).digest('hex');
+  const ahora = (op.ahora ?? Date.now)();
+  const c = cacheSaldo.get(k);
+  if (!op.sinCache && c && ahora - c.t < TTL_CACHE_MS) return c.v;
+  let v: number | null = null;
+  try {
+    const res = await (op.fetch ?? fetch)(`${API}/users/${userId}/mercadopago_account/balance`, { headers: { Authorization: `Bearer ${token}` }, cache: 'no-store', signal: AbortSignal.timeout(TIMEOUT_SALDO_MS) });
+    if (res.ok) {
+      const d = await res.json() as { available_balance?: unknown };
+      if (typeof d.available_balance === 'number' && Number.isFinite(d.available_balance)) v = d.available_balance;
+    }
+  } catch { /* 403/404/red/timeout: saldo no disponible */ }
+  if (!op.sinCache) { cacheSaldo.set(k, { t: ahora, v }); if (cacheSaldo.size > 50) for (const [kk, x] of cacheSaldo) if (ahora - x.t >= TTL_CACHE_MS) cacheSaldo.delete(kk); }
+  return v;
+}
+export const limpiarCacheSaldoMP = () => cacheSaldo.clear();
+
 export type OrigenMP = 'api' | 'simulacion';
 
 // Con token (del usuario o MP_ACCESS_TOKEN) usa SOLO la API real: nunca mezcla historia simulada. Sin token, la
 // simulación. MP_MODO=simulacion fuerza la simulación aunque haya token (desarrollo).
-export async function movimientosMP(token: string | undefined, simulada: () => Promise<Resultado>, op: OpcionesMP = {}): Promise<{ movs: Movimiento[]; origen: OrigenMP }> {
+export async function movimientosMP(token: string | undefined, simulada: () => Promise<Resultado>, op: OpcionesMP = {}): Promise<{ movs: Movimiento[]; origen: OrigenMP; userId?: number }> {
   if (token && process.env.MP_MODO !== 'simulacion') {
     const v = await traerPagos(token, new Date(), op);
-    return { movs: mapearPagos(v.pagos, v.userId), origen: 'api' };
+    return { movs: mapearPagos(v.pagos, v.userId), origen: 'api', userId: v.userId };
   }
   const s = await simulada();
   return { movs: mapearPagos(s.pagos, s.userId), origen: 'simulacion' };

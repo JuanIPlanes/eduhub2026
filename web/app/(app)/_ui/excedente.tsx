@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import { useId, useState } from 'react';
 import { SelloListo, sellar } from './comun';
+import { FaltaSaldo, VistaPreviaResearcher } from './v2';
 import { useDatos, type Vista } from './datos';
 import { difDias, fCorta, fNum, pct, pesos, plural, type Excedente, type Sello } from './formato';
 import s from '../app.module.css';
@@ -60,11 +61,12 @@ export function Generando({ v }: { v: Vista }) {
     <section className={`${s.card} ${s.protagonista}`} aria-labelledby="t-genera">
       <div className={s.cardHead}>
         <div>
-          <h2 className={s.h2} id="t-genera">Mientras tanto, tu plata podría estar generando</h2>
-          <p className={s.sub}>El <b>excedente</b> es la plata que te sobra después de cubrir todos tus pagos y una reserva. Esa parte podría rendir algo hasta que la necesites.</p>
+          <h2 className={s.h2} id="t-genera">Que la plata que te sobra no duerma en la cuenta</h2>
+          <p className={s.sub}>El <b>excedente</b> es lo que te sobra después de cubrir todos tus pagos y tu piso de seguridad. Esa parte podría rendir algo hasta que la necesites.</p>
         </div>
       </div>
-      {ex === undefined ? (calculando ? <div className={s.hueso} style={{ height: 120 }} role="status" aria-label="Calculando el excedente" />
+      {!v.confiable ? <FaltaSaldo que="Para saber cuánto te sobra necesitamos tu saldo real." />
+        : ex === undefined ? (calculando ? <div className={s.hueso} style={{ height: 120 }} role="status" aria-label="Calculando el excedente" />
         : <p className={s.sub}>Este servidor todavía no calcula el excedente.</p>)
         : ex === null ? <p className={s.sub}>No hay excedente para este cálculo.</p>
           : ex.hay ? (
@@ -86,7 +88,7 @@ export function Generando({ v }: { v: Vista }) {
               <p>{ex.motivo ?? 'Tu caja proyectada no deja un margen seguro por encima de la reserva.'}{v.pronostico.hueco ? ' Primero conviene cubrir el hueco.' : ''}</p>
             </div>
           )}
-      {v.avisos.length > 0 && (
+      {v.confiable && v.avisos.length > 0 && (
         <p className={s.sub}>Para calcularlo mejor: {v.avisos[0]} <button type="button" className={s.link} onClick={() => abrirCarga()}>Cargar</button></p>
       )}
       <div className={s.btnRow}>
@@ -98,7 +100,7 @@ export function Generando({ v }: { v: Vista }) {
 }
 
 /** Pedido de contacto con un agente habilitado: consentimiento explícito y carpeta sellada. */
-export function Contacto({ v, ex }: { v: Vista; ex: Excedente }) {
+export function Contacto({ v, ex, bloqueo }: { v: Vista; ex: Excedente; bloqueo?: string | null }) {
   const { agregarSello } = useDatos();
   const id = useId();
   const [abierto, setAbierto] = useState(false);
@@ -112,7 +114,10 @@ export function Contacto({ v, ex }: { v: Vista; ex: Excedente }) {
     setEnv(true); setErr(null);
     try {
       const titulo = `Contacto por excedente de ${pesos(ex.monto)}${ex.ventana ? ` por ${ex.ventana.dias} días` : ''}`;
-      const x = await sellar(v, 'alyc-demo', { id: 'excedente', titulo }, CONSENT, { excedente: { monto: ex.monto, colchon: ex.colchon, ventana: ex.ventana } });
+      const x = await sellar(v, 'alyc-demo', { id: 'excedente', titulo }, CONSENT, {
+        excedente: { monto: ex.monto, colchon: ex.colchon, ventana: ex.ventana },
+        ...(v.paraResearcher && { paraResearcher: v.paraResearcher }),
+      });
       setSello(x); agregarSello(x);
     } catch (e) {
       const m = e instanceof Error ? e.message : '';
@@ -121,15 +126,17 @@ export function Contacto({ v, ex }: { v: Vista; ex: Excedente }) {
   }
 
   if (sello) return <SelloListo sello={sello} />;
+  const motivo = bloqueo ?? (!v.confiable ? 'Disponible cuando confirmes tu saldo: sin él, el excedente puede no existir.' : null);
   return (
     <div className={s.contacto}>
-      {!abierto ? (
+      {!abierto || motivo ? (
         <>
-          <button type="button" className={`${s.btn} ${s.btnPri}`} onClick={() => setAbierto(true)}>Quiero que me contacte un agente habilitado</button>
-          <p className={s.sub}>Un agente habilitado por la CNV te explica las alternativas y sus condiciones. No compartimos nada sin tu permiso.</p>
+          <button type="button" className={`${s.btn} ${s.btnPri}`} onClick={() => setAbierto(true)} disabled={!!motivo} aria-describedby={motivo ? `${id}m` : undefined}>Quiero que me contacte un agente habilitado</button>
+          <p className={s.sub} id={`${id}m`}>{motivo ?? 'Un agente habilitado por la CNV te explica las alternativas y sus condiciones. No compartimos nada sin tu permiso.'}</p>
         </>
       ) : (
         <>
+          <VistaPreviaResearcher datos={v.paraResearcher} />
           <label className={s.consent} htmlFor={`${id}c`}>
             <input id={`${id}c`} type="checkbox" checked={ok} onChange={e => setOk(e.target.checked)} />
             <span>{CONSENT}{v.ficticia ? ' (Demo: el destino es un agente de prueba.)' : ''}</span>

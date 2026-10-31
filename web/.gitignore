@@ -5,3 +5,5 @@ data/registro_local.json
 data/carpetas/
 data/avisos.json
 !.env.example
+
+.mp-cuentas-prueba.json

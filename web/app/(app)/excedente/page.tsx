@@ -6,14 +6,18 @@ import { ConDatos, Faltantes } from '../_ui/comun';
 import { Contacto, LEGAL, Rendimiento, SinGastos, Ventana } from '../_ui/excedente';
 import { fCorta, pct, pesos, plural, type Excedente } from '../_ui/formato';
 import { useDatos, type Vista } from '../_ui/datos';
+import { FaltaSaldo } from '../_ui/v2';
+import EnlaceMercado from '@/app/mercado/EnlaceMercado';
 import s from '../app.module.css';
+
+const VACIO_EX: Excedente = { hay: false, saldoActual: 0, colchon: 0, monto: 0, ventana: null, minimoProyectado: 0, rendimiento: null, clases: [], aviso: '' };
 
 export default function PaginaExcedente() {
   return (
     <div className={s.pagina}>
       <div className={s.cabPagina}>
-        <h1>Excedente</h1>
-        <p>El <b>excedente</b> es la plata que te sobra después de cubrir todos tus pagos proyectados y una reserva para imprevistos. Acá ves cuánto es, por cuántos días, y qué tipos de colocación entran en ese plazo.</p>
+        <h1>Que la plata que te sobra no duerma</h1>
+        <p>El <b>excedente</b> es lo que te sobra después de cubrir todos tus pagos de las próximas semanas y tu piso de seguridad. Acá ves cuánto es, por cuántos días, y qué tipos de colocación entran en ese plazo.</p>
       </div>
       <ConDatos>{v => <Contenido v={v} />}</ConDatos>
       <p className={s.legal} role="note">{LEGAL}</p>
@@ -25,6 +29,18 @@ function Contenido({ v }: { v: Vista }) {
   const ex = v.excedente;
   const { calculando } = useDatos();
   if (ex === undefined && calculando) return <div className={s.hueso} style={{ height: 220 }} role="status" aria-label="Calculando el excedente" />;
+  if (!v.confiable) {
+    return (
+      <>
+        <section className={s.card} aria-labelledby="t-falta">
+          <h2 className={s.sr} id="t-falta">Falta confirmar tu saldo</h2>
+          <FaltaSaldo que="Para calcular cuánto te sobra y por cuántos días necesitamos tu saldo real, no una estimación." />
+          <Contacto v={v} ex={ex ?? VACIO_EX} />
+        </section>
+        {ex && ex.clases.length > 0 && <Clases ex={ex} titulo="Tipos de colocación (para cuando sepamos cuánto sobra)" />}
+      </>
+    );
+  }
   if (!ex) {
     return (
       <section className={s.card} aria-labelledby="t-pend">
@@ -42,7 +58,7 @@ function Desglose({ ex }: { ex: Excedente }) {
     <dl className={s.desglose}>
       <div><dt>Saldo hoy</dt><dd className={s.num}>{pesos(ex.saldoActual)}</dd></div>
       <div><dt>Lo más bajo que llega tu caja</dt><dd className={`${s.num} ${ex.minimoProyectado < 0 ? s.neg : ''}`}>{pesos(ex.minimoProyectado)}</dd></div>
-      <div><dt>Reserva que no se toca</dt><dd className={s.num}>{pesos(ex.colchon)}</dd></div>
+      <div><dt>Piso de seguridad (no se toca)</dt><dd className={s.num}>{pesos(ex.colchon)}</dd></div>
       <div><dt>Excedente disponible</dt><dd className={`${s.num} ${ex.monto > 0 ? s.pos : ''}`}>{pesos(ex.monto)}</dd></div>
     </dl>
   );
@@ -88,11 +104,16 @@ function ConExcedente({ v, ex }: { v: Vista; ex: Excedente }) {
         <section className={s.card} aria-labelledby="t-cuentas">
           <h2 className={s.h2} id="t-cuentas">Cómo lo calculamos</h2>
           <Desglose ex={ex} />
-          <p className={s.sub}>La reserva cubre tus gastos fijos aunque las ventas vengan peor. El excedente es lo que queda por encima del punto más bajo de tu caja y de la reserva, durante todo el plazo.</p>
+          <p className={s.sub}>El piso cubre tus gastos fijos aunque las ventas vengan peor. El excedente es lo que queda por encima del día más flojo de tu plata y del piso, durante todo el plazo. La plata que vas a necesitar antes no se coloca a un plazo más largo.</p>
           <Faltantes v={v} />
         </section>
       </div>
       <Clases ex={ex} titulo="Tipos de colocación que entran en ese plazo" />
+      <section className={s.practica} aria-labelledby="t-practica">
+        <h2 className={s.sr} id="t-practica">Practicar con un mercado ficticio</h2>
+        <EnlaceMercado monto={ex.monto} horizonteMeses={w ? Math.max(1, Math.round(w.dias / 30)) : undefined} />
+        <p className={s.sub}>Es práctica con datos ficticios. Tu caja real no viaja al módulo: del enlace solo van el monto y el plazo que ves acá.</p>
+      </section>
       <p className={s.legal}>{ex.aviso}</p>
     </>
   );

@@ -1,0 +1,13 @@
+{
+  "id": "hosteria-cerro-nevado",
+  "nombre": "Cervecería y Cabañas Cerro Nevado",
+  "rubro": "Gastronomía y turismo",
+  "empleados": 9,
+  "descripcion": "Cervecería artesanal con cabañas en zona de montaña y 9 empleados. Vende mucho en temporada de invierno y vacaciones; de noviembre a diciembre entra la temporada baja.",
+  "saldoActual": 16500000,
+  "saldoInicial90d": 12075900,
+  "neto90d": 4424100,
+  "fechaSaldo": "2026-10-30",
+  "situacion": "estacional",
+  "pista": "Las acreditaciones ya vienen bajando de temporada alta a baja (agosto > septiembre > octubre) y los sueldos y el aguinaldo no bajan: el hueco asoma a principios de diciembre y es mucho más profundo si las ventas caen a la mitad."
+}

@@ -1,7 +1,7 @@
 'use client';
 // Gráficos en SVG puro (sin librerías): saldo diario con huecos y barras apiladas por categoría.
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
-import { ejeM, fCorta, fLarga, MESES, millones, pesos, type Evento, type MesCat, type Pronostico } from './formato';
+import { ejeM, fCorta, fLarga, MESES, millones, pesos, type Escenario, type Evento, type MesCat, type NombreEscenario, type Pronostico } from './formato';
 import s from '../app.module.css';
 
 function ticks(min: number, max: number, n = 5): number[] {
@@ -31,7 +31,7 @@ function useAncho<T extends HTMLElement>(): [React.RefObject<T | null>, number] 
 /* ====================================================================== */
 type Punto = { fecha: string; saldo: number; entradas: number; salidas: number; corte?: boolean };
 
-export function GraficoSaldo({ p, horizonte, compacto = false, conTabla = true }: { p: Pronostico; horizonte: number; compacto?: boolean; conTabla?: boolean }) {
+export function GraficoSaldo({ p, horizonte, compacto = false, conTabla = true, piso = null }: { p: Pronostico; horizonte: number; compacto?: boolean; conTabla?: boolean; piso?: number | null }) {
   const [ref, W] = useAncho<HTMLDivElement>();
   const [idx, setIdx] = useState<number | null>(null);
   const uid = useId().replace(/[^a-zA-Z0-9]/g, '');
@@ -49,7 +49,7 @@ export function GraficoSaldo({ p, horizonte, compacto = false, conTabla = true }
   const n = pts.length;
   const iw = Math.max(10, W - m.l - m.r), ih = H - m.t - m.b;
   const vals = pts.map(x => x.saldo);
-  const mn = Math.min(0, ...vals), mx = Math.max(0, ...vals);
+  const mn = Math.min(0, ...vals), mx = Math.max(0, ...vals, piso ?? 0);
   const lo = mn < 0 ? mn - (mx - mn) * 0.12 : 0, hi = mx + (mx - mn) * 0.08;
   const x = (i: number) => m.l + (i / Math.max(1, n - 1)) * iw;
   const y = (v: number) => m.t + (1 - (v - lo) / (hi - lo || 1)) * ih;
@@ -90,7 +90,8 @@ export function GraficoSaldo({ p, horizonte, compacto = false, conTabla = true }
         <div className={s.legend} aria-hidden>
           <span><i className={`${s.sw} ${s.swLinea}`} style={{ borderColor: 'var(--accent)' }} />Saldo proyectado</span>
           {hayNeg && <span><i className={`${s.sw} ${s.swLinea}`} style={{ borderColor: 'var(--neg)' }} />Saldo en rojo</span>}
-          {hayNeg && <span><i className={s.sw} style={{ background: 'var(--neg-soft)', border: '1px solid var(--neg)' }} />Hueco de caja</span>}
+          {hayNeg && <span><i className={s.sw} style={{ background: 'var(--neg-soft)', border: '1px solid var(--neg)' }} />Días en que te falta plata</span>}
+          {piso !== null && <span><i className={`${s.sw} ${s.swLinea}`} style={{ borderColor: 'var(--ink-2)', borderTopStyle: 'dashed' }} />Piso de seguridad</span>}
         </div>
       )}
       {W > 0 && (
@@ -124,6 +125,12 @@ export function GraficoSaldo({ p, horizonte, compacto = false, conTabla = true }
           <path d={linea} clipPath={`url(#${uid}a)`} fill="none" stroke="var(--accent)" strokeWidth={2} strokeLinejoin="round" />
           <path d={linea} clipPath={`url(#${uid}b)`} fill="none" stroke="var(--neg)" strokeWidth={2} strokeLinejoin="round" />
           {hayNeg && <line x1={m.l} x2={m.l + iw} y1={y0} y2={y0} stroke="var(--ink-2)" strokeWidth={1} strokeDasharray="4 4" />}
+          {piso !== null && piso > lo && piso < hi && (
+            <g>
+              <line x1={m.l} x2={m.l + iw} y1={y(piso)} y2={y(piso)} stroke="var(--ink-2)" strokeWidth={1.25} strokeDasharray="3 3" />
+              {!compacto && <text x={m.l + 4} y={y(piso) - 5} className="eje">Tu piso · {millones(piso)}</text>}
+            </g>
+          )}
           {xt.map(({ q, i }) => (
             <text key={q.fecha} x={x(i)} y={H - 6} textAnchor="middle">{+q.fecha.slice(8)} {MESES[+q.fecha.slice(5, 7) - 1]}</text>
           ))}
@@ -177,6 +184,145 @@ export function GraficoSaldo({ p, horizonte, compacto = false, conTabla = true }
           </div>
         </details>
       )}
+    </div>
+  );
+}
+
+/* ====================================================================== */
+/* Escenarios: base / pesimista / optimista, con el piso de seguridad        */
+export const SERIES_ESC: { id: NombreEscenario; nombre: string; color: string; dash?: string }[] = [
+  { id: 'base', nombre: 'Base', color: 'var(--s1)' },
+  { id: 'pesimista', nombre: 'Pesimista', color: 'var(--s2)', dash: '7 4' },
+  { id: 'optimista', nombre: 'Optimista', color: 'var(--s3)', dash: '2 4' },
+];
+
+/** Filas para la tabla accesible: día por día las primeras 3 semanas y después una por semana. */
+export function filasEscenarios(esc: Record<NombreEscenario, Escenario>, horizonte: number) {
+  const base = esc.base.serie.slice(0, horizonte);
+  const val = (id: NombreEscenario, f: string) => esc[id].serie.find(x => x.fecha === f)?.saldo ?? null;
+  return base.map((x, i) => ({ i, fecha: x.fecha }))
+    .filter(({ i }) => i < 21 || (i - 20) % 7 === 0 || i === base.length - 1)
+    .map(({ fecha, i }) => ({ fecha, semanal: i >= 21, base: val('base', fecha), pesimista: val('pesimista', fecha), optimista: val('optimista', fecha) }));
+}
+
+export function GraficoEscenarios({ esc, hoy, saldoInicial, horizonte, visibles, piso }: {
+  esc: Record<NombreEscenario, Escenario>; hoy: string; saldoInicial: number; horizonte: number;
+  visibles: Record<NombreEscenario, boolean>; piso: number | null;
+}) {
+  const [ref, W] = useAncho<HTMLDivElement>();
+  const [idx, setIdx] = useState<number | null>(null);
+  const H = W < 520 ? 250 : 320;
+  const m = { l: W < 520 ? 48 : 58, r: W < 520 ? 66 : 80, t: 16, b: 26 };
+  const series = SERIES_ESC.filter(x => visibles[x.id] || x.id === 'base');
+  const datos = useMemo(() => series.map(sr => ({
+    ...sr, pts: [{ fecha: hoy, saldo: saldoInicial }, ...esc[sr.id].serie.slice(0, horizonte)],
+  })), [series.map(x => x.id).join(), esc, hoy, saldoInicial, horizonte]); // eslint-disable-line react-hooks/exhaustive-deps
+  const n = datos[0].pts.length;
+  // Si un escenario viene más corto, repetimos su último valor (no inventamos días).
+  const en = (d: { pts: { saldo: number }[] }, i: number) => d.pts[Math.min(i, d.pts.length - 1)].saldo;
+  const iw = Math.max(10, W - m.l - m.r), ih = H - m.t - m.b;
+  const todos = datos.flatMap(d => d.pts.map(p => p.saldo)).concat(piso ?? 0);
+  const mn = Math.min(0, ...todos), mx = Math.max(0, ...todos);
+  const lo = mn < 0 ? mn - (mx - mn) * 0.1 : 0, hi = mx + (mx - mn) * 0.08;
+  const x = (i: number) => m.l + (i / Math.max(1, n - 1)) * iw;
+  const y = (v: number) => m.t + (1 - (v - lo) / (hi - lo || 1)) * ih;
+  const yt = ticks(lo, hi, W < 520 ? 3 : 5);
+  const base = datos[0].pts;
+  const xt = base.map((q, i) => ({ q, i }))
+    .filter(({ q, i }) => i > 0 && (q.fecha.slice(8) === '01' || (horizonte <= 42 && +q.fecha.slice(8) % 7 === 0)))
+    .filter(({ i }) => x(i) - x(0) > 34);
+  // Tramos en rojo del escenario base.
+  const rojos: { a: number; b: number }[] = [];
+  base.forEach((q, i) => {
+    if (q.saldo >= 0) return;
+    const ult = rojos[rojos.length - 1];
+    if (ult && ult.b === i - 1) ult.b = i; else rojos.push({ a: i, b: i });
+  });
+  // Etiquetas directas al final de cada línea, separadas para que no se pisen.
+  const etq = datos.map(d => ({ id: d.id, nombre: d.nombre, y: y(en(d, n - 1)) })).sort((a, b) => a.y - b.y);
+  for (let k = 1; k < etq.length; k++) if (etq[k].y - etq[k - 1].y < 14) etq[k].y = etq[k - 1].y + 14;
+  const mover = (clientX: number, el: SVGSVGElement) => {
+    const r = el.getBoundingClientRect();
+    const px = ((clientX - r.left) / r.width) * W;
+    setIdx(Math.max(0, Math.min(n - 1, Math.round(((px - m.l) / iw) * (n - 1)))));
+  };
+  const act = idx !== null && idx < n ? idx : null;
+  const tipLeft = act !== null ? (x(act) > W * 0.55 ? x(act) - 236 : x(act) + 14) : 0;
+  const resumen = `Cómo va a estar tu plata en ${horizonte} días, en ${datos.length} escenarios. ` +
+    datos.map(d => `${d.nombre}: lo más bajo ${millones(esc[d.id].minimo)} el ${fCorta(esc[d.id].fechaMinimo)}${esc[d.id].hueco ? `, te falta plata desde el ${fCorta(esc[d.id].hueco!.inicio)}` : ''}`).join('. ') +
+    (piso !== null ? `. Piso de seguridad ${millones(piso)}.` : '.');
+
+  return (
+    <div ref={ref} className={s.chart}>
+      {W > 0 && (
+        <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} role="img" tabIndex={0} aria-label={resumen}
+          onPointerMove={e => mover(e.clientX, e.currentTarget)} onPointerDown={e => mover(e.clientX, e.currentTarget)} onPointerLeave={() => setIdx(null)}
+          onFocus={() => setIdx(i => i ?? 0)} onBlur={() => setIdx(null)}
+          onKeyDown={e => {
+            if (e.key === 'ArrowRight') { setIdx(i => Math.min(n - 1, (i ?? -1) + 1)); e.preventDefault(); }
+            else if (e.key === 'ArrowLeft') { setIdx(i => Math.max(0, (i ?? 1) - 1)); e.preventDefault(); }
+            else if (e.key === 'Escape') setIdx(null);
+          }}>
+          {yt.map(v => (
+            <g key={v}>
+              <line x1={m.l} x2={m.l + iw} y1={y(v)} y2={y(v)} stroke={v === 0 ? 'var(--line-2)' : 'var(--grid)'} strokeWidth={1} />
+              <text x={m.l - 8} y={y(v) + 4} textAnchor="end">{ejeM(v)}</text>
+            </g>
+          ))}
+          {rojos.map((r, j) => <rect key={j} x={x(r.a)} y={m.t} width={Math.max(2, x(r.b) - x(r.a))} height={ih} fill="var(--neg-soft)" />)}
+          {mn < 0 && <line x1={m.l} x2={m.l + iw} y1={y(0)} y2={y(0)} stroke="var(--ink-2)" strokeWidth={1} />}
+          {piso !== null && piso > lo && piso < hi && (
+            <g>
+              <line x1={m.l} x2={m.l + iw} y1={y(piso)} y2={y(piso)} stroke="var(--ink-2)" strokeWidth={1.25} strokeDasharray="3 3" />
+              <text x={m.l + 4} y={y(piso) - 5} className="eje">Tu piso · {millones(piso)}</text>
+            </g>
+          )}
+          {[...datos].reverse().map(d => (
+            <path key={d.id} d={d.pts.map((q, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(q.saldo).toFixed(1)}`).join('')}
+              fill="none" stroke={d.color} strokeWidth={d.id === 'base' ? 2.5 : 2} strokeDasharray={d.dash} strokeLinejoin="round" strokeLinecap="round" />
+          ))}
+          {datos.map(d => <circle key={d.id} cx={x(n - 1)} cy={y(en(d, n - 1))} r={3.5} fill={d.color} stroke="var(--surface)" strokeWidth={2} />)}
+          {etq.map(e => <text key={e.id} x={m.l + iw + 8} y={e.y + 4} className="eje">{e.nombre}</text>)}
+          {xt.map(({ q, i }) => <text key={q.fecha} x={x(i)} y={H - 6} textAnchor="middle">{+q.fecha.slice(8)} {MESES[+q.fecha.slice(5, 7) - 1]}</text>)}
+          <text x={x(0)} y={H - 6} textAnchor="start" className="eje">hoy</text>
+          {act !== null && (
+            <g pointerEvents="none">
+              <line x1={x(act)} x2={x(act)} y1={m.t} y2={m.t + ih} stroke="var(--ink-2)" strokeWidth={1} />
+              {datos.map(d => <circle key={d.id} cx={x(act)} cy={y(en(d, act))} r={4.5} fill={d.color} stroke="var(--surface)" strokeWidth={2} />)}
+            </g>
+          )}
+        </svg>
+      )}
+      {act !== null && W > 0 && (
+        <div className={s.tooltip} style={{ left: Math.max(4, Math.min(W - 236, tipLeft)), top: 4, width: 'min(230px, calc(100% - 8px))' }} role="status">
+          <div className={s.tipHead}>{act === 0 ? 'Hoy, ' : ''}{fLarga(base[act].fecha)}</div>
+          {datos.map(d => (
+            <div className={s.tipRow} key={d.id}>
+              <span><i className={`${s.sw} ${s.swLinea}`} style={{ borderColor: d.color, borderTopStyle: d.dash ? 'dashed' : 'solid' }} />{d.nombre}</span>
+              <b className={`${s.num} ${en(d, act) < 0 ? s.neg : ''}`}>{millones(en(d, act))}</b>
+            </div>
+          ))}
+          {piso !== null && <><div className={s.tipSep} /><div className={s.tipRow}><span>Tu piso</span><span className={s.num}>{millones(piso)}</span></div></>}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export function TablaEscenarios({ esc, horizonte }: { esc: Record<NombreEscenario, Escenario>; horizonte: number }) {
+  const filas = filasEscenarios(esc, horizonte);
+  return (
+    <div className={`${s.scroller} ${s.scrollerAlto}`} tabIndex={0} role="region" aria-label="Escenarios en tabla">
+      <table className={s.tabla}>
+        <caption className={s.sr}>Saldo en cada escenario: día por día las primeras 3 semanas, después una fila por semana</caption>
+        <thead><tr><th scope="col">Fecha</th>{SERIES_ESC.map(x => <th key={x.id} scope="col" className={s.der}>{x.nombre}</th>)}</tr></thead>
+        <tbody>{filas.map(f => (
+          <tr key={f.fecha}>
+            <th scope="row" style={{ fontWeight: 400, whiteSpace: 'nowrap' }}>{f.semanal ? `Semana al ${fCorta(f.fecha)}` : fCorta(f.fecha)}</th>
+            {SERIES_ESC.map(x => { const v = f[x.id]; return <td key={x.id} className={`${s.der} ${v !== null && v < 0 ? s.neg : ''}`}>{v === null ? '–' : pesos(v)}</td>; })}
+          </tr>
+        ))}</tbody>
+      </table>
     </div>
   );
 }

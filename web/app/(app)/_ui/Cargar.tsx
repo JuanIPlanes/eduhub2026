@@ -31,11 +31,14 @@ export default function HojaCarga() {
             {carga !== 'menu'
               ? <button type="button" className={s.iconBtn} onClick={() => abrirCarga('menu')} aria-label="Volver a las opciones"><Icono n="atras" size={22} /></button>
               : <span className={s.agarre} aria-hidden />}
-            <h2 id="hoja-titulo" className={s.hojaTitulo}>{TITULOS[carga]}</h2>
+            <h2 id="hoja-titulo" className={s.hojaTitulo}>{carga === 'saldo' && ws.mp ? 'Confirmá tu saldo de Mercado Pago' : TITULOS[carga]}</h2>
             <button type="button" className={s.iconBtn} onClick={cerrarCarga} aria-label="Cerrar"><Icono n="cerrar" size={22} /></button>
           </div>
           {ws.modo === 'demo' && carga !== 'menu' && carga !== 'mp' && (
             <p className={s.notaDemo}>Estás en la demo. Al guardar un dato tuyo salimos de la demo y arrancamos solo con lo tuyo.</p>
+          )}
+          {ws.modo === 'perfil' && carga !== 'menu' && carga !== 'mp' && carga !== 'saldo' && (
+            <p className={s.notaDemo}>Estás viendo una pyme de ejemplo. Al guardar un dato tuyo salimos del ejemplo y arrancamos solo con lo tuyo.</p>
           )}
           <div className={s.hojaCuerpo}>
             {carga === 'menu' && <Menu />}
@@ -55,7 +58,7 @@ export default function HojaCarga() {
 function Menu() {
   const { abrirCarga, ws, mp } = useDatos();
   const items: { v: VistaCarga; i: NombreIcono; t: string; d: string; extra?: ReactNode }[] = [
-    { v: 'saldo', i: 'saldo', t: 'Saldo de hoy', d: 'Cuánta plata tenés hoy, sumando banco y Mercado Pago.', extra: ws.saldo ? <span className={`${s.chip} ${s.chipOk}`}>{pesos(ws.saldo.monto)}</span> : null },
+    { v: 'saldo', i: 'saldo', t: 'Saldo de hoy', d: 'Cuánta plata tenés hoy, sumando banco y Mercado Pago.', extra: ws.saldo ? <span className={`${s.chip} ${s.chipOk}`}>{pesos(ws.saldo.monto)}</span> : ws.mp ? <span className={`${s.chip} ${s.chipWarn}`}>Falta confirmar</span> : null },
     { v: 'factura', i: 'factura', t: 'Factura o boleta', d: 'Lo que tenés que pagar o te tienen que pagar, con su vencimiento. Con foto o a mano.' },
     { v: 'movimiento', i: 'mov', t: 'Un ingreso o un gasto', d: 'Algo que ya cobraste o pagaste.' },
     { v: 'archivos', i: 'archivo', t: 'Archivos CSV', d: 'Extracto del banco, Mis Comprobantes de ARCA, boletas o nómina.' },
@@ -89,7 +92,7 @@ function Campo({ id, label, ayuda, error, children }: { id: string; label: strin
 }
 const desc = (id: string, error?: string | null, ayuda?: unknown) => (error ? `${id}-err` : ayuda ? `${id}-ayuda` : undefined);
 
-function InputMonto({ id, valor, setValor, error, onBlur, conAyuda = false, foco = false }: { id: string; valor: string; setValor: (v: string) => void; error?: string | null; onBlur?: () => void; conAyuda?: boolean; foco?: boolean }) {
+export function InputMonto({ id, valor, setValor, error, onBlur, conAyuda = false, foco = false }: { id: string; valor: string; setValor: (v: string) => void; error?: string | null; onBlur?: () => void; conAyuda?: boolean; foco?: boolean }) {
   return (
     <div className={s.montoWrap}>
       <span aria-hidden>$</span>
@@ -99,7 +102,7 @@ function InputMonto({ id, valor, setValor, error, onBlur, conAyuda = false, foco
   );
 }
 
-function errMonto(t: string, positivo = true) {
+export function errMonto(t: string, positivo = true) {
   if (!t.trim()) return 'Escribí el monto, por ejemplo 1.250.000';
   const n = leerMonto(t);
   if (n === null) return 'No entendí el número. Usá solo dígitos, puntos y coma: 1.250.000,50';
@@ -112,7 +115,7 @@ function FormSaldo() {
   const { ws, ponerSaldo, cerrarCarga } = useDatos();
   const id = useId();
   const [monto, setMonto] = useState(ws.saldo ? String(ws.saldo.monto).replace('.', ',') : '');
-  const [fecha, setFecha] = useState(ws.saldo?.fecha ?? hoyLocal());
+  const [fecha, setFecha] = useState(hoyLocal()); // actualizar = el saldo de hoy
   const [tocado, setTocado] = useState(false);
   const err = tocado ? errMonto(monto, false) : null;
 
@@ -126,14 +129,22 @@ function FormSaldo() {
   }
   return (
     <form className={s.form} onSubmit={enviar} noValidate>
-      <p className={s.explica}>El <b>saldo</b> es la plata que tenés disponible hoy. Sumá lo del banco y lo de Mercado Pago. Si estás en descubierto, ponelo con signo menos.</p>
-      <Campo id={`${id}m`} label="¿Cuánto tenés hoy?" error={err} ayuda="En pesos.">
+      {ws.mp ? (
+        <div className={s.honesto}>
+          <Icono n="mp" size={20} />
+          <p><b>Abrí la app de Mercado Pago y mirá cuánto tenés disponible.</b> Mercado Pago no nos deja ver ese número, y sin él no podemos decirte si te alcanza. Si también tenés plata en el banco, sumala.</p>
+        </div>
+      ) : (
+        <p className={s.explica}>El <b>saldo</b> es la plata que tenés disponible hoy. Sumá lo del banco y lo de Mercado Pago. Si estás en descubierto, ponelo con signo menos.</p>
+      )}
+      {ws.saldo && <p className={s.sub}>La última vez cargaste {pesos(ws.saldo.monto)} al {ws.saldo.fecha.split('-').reverse().join('/')}.</p>}
+      <Campo id={`${id}m`} label={ws.mp ? '¿Cuánto tenés disponible hoy?' : '¿Cuánto tenés hoy?'} error={err} ayuda="En pesos.">
         <InputMonto id={`${id}m`} valor={monto} setValor={setMonto} error={err} onBlur={() => setTocado(true)} conAyuda foco />
       </Campo>
       <Campo id={`${id}f`} label="Al día" ayuda="Normalmente, hoy.">
         <input id={`${id}f`} type="date" className={s.input} value={fecha} max={hoyLocal()} onChange={e => setFecha(e.target.value || hoyLocal())} aria-describedby={`${id}f-ayuda`} />
       </Campo>
-      <button type="submit" className={`${s.btn} ${s.btnPri} ${s.btnBloque}`}>Guardar saldo</button>
+      <button type="submit" className={`${s.btn} ${s.btnPri} ${s.btnBloque}`}>{ws.mp ? 'Confirmar mi saldo' : 'Guardar saldo'}</button>
     </form>
   );
 }

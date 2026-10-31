@@ -1,0 +1,1279 @@
+{
+ "userId": 1000,
+ "pagos": [
+  {
+   "id": 96200001,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "ALQUILER oficina INMOB DEL PUERTO",
+   "date_created": "2026-08-03T15:37:00.000-03:00",
+   "date_approved": "2026-08-03T15:37:00.000-03:00",
+   "date_last_updated": "2026-08-03T15:37:00.000-03:00",
+   "transaction_amount": 1185309,
+   "collector_id": 3048,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200002,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "PAGO HABERES NOMINA 3 EMPL",
+   "date_created": "2026-08-05T13:46:00.000-03:00",
+   "date_approved": "2026-08-05T13:46:00.000-03:00",
+   "date_last_updated": "2026-08-05T13:46:00.000-03:00",
+   "transaction_amount": 4347251,
+   "collector_id": 3031,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200003,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TASA municipal comercio Municipalidad de Rosario",
+   "date_created": "2026-08-05T14:10:00.000-03:00",
+   "date_approved": "2026-08-05T14:10:00.000-03:00",
+   "date_last_updated": "2026-08-05T14:10:00.000-03:00",
+   "transaction_amount": 65944,
+   "collector_id": 3028,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200001,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Pieza para redes (pack) - link de pago",
+   "date_created": "2026-08-08T13:40:00.000-03:00",
+   "date_approved": "2026-08-08T13:40:00.000-03:00",
+   "date_last_updated": "2026-08-08T13:40:00.000-03:00",
+   "transaction_amount": 193800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 182152.62
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2093
+   }
+  },
+  {
+   "id": 96200004,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TELECOM internet y telefonia",
+   "date_created": "2026-08-10T12:27:00.000-03:00",
+   "date_approved": "2026-08-10T12:27:00.000-03:00",
+   "date_last_updated": "2026-08-10T12:27:00.000-03:00",
+   "transaction_amount": 73972,
+   "collector_id": 3086,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200005,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA F931 CARGAS SOCIALES",
+   "date_created": "2026-08-10T12:57:00.000-03:00",
+   "date_approved": "2026-08-10T12:57:00.000-03:00",
+   "date_last_updated": "2026-08-10T12:57:00.000-03:00",
+   "transaction_amount": 1196290,
+   "collector_id": 3005,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200037,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Licencias de software y fuentes",
+   "date_created": "2026-08-10T13:23:00.000-03:00",
+   "date_approved": "2026-08-10T13:23:00.000-03:00",
+   "date_last_updated": "2026-08-10T13:23:00.000-03:00",
+   "transaction_amount": 112058,
+   "collector_id": 3063,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200002,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Logo y papelería - link de pago",
+   "date_created": "2026-08-10T14:40:00.000-03:00",
+   "date_approved": "2026-08-10T14:40:00.000-03:00",
+   "date_last_updated": "2026-08-10T14:40:00.000-03:00",
+   "transaction_amount": 366800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 344755.32
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2092
+   }
+  },
+  {
+   "id": 96200044,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "SOFTWARE Y NUBE ESTUDIOS SA CUIT 30312504054",
+   "date_created": "2026-08-10T15:05:00.000-03:00",
+   "date_approved": "2026-08-10T15:05:00.000-03:00",
+   "date_last_updated": "2026-08-10T15:05:00.000-03:00",
+   "transaction_amount": 411985,
+   "collector_id": 3043,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200030,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LABORATORIOS ALTA VISTA SA",
+   "date_created": "2026-08-11T13:46:00.000-03:00",
+   "date_approved": "2026-08-11T13:46:00.000-03:00",
+   "date_last_updated": "2026-08-11T13:46:00.000-03:00",
+   "transaction_amount": 3144378,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 3144378
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2381
+   }
+  },
+  {
+   "id": 95200003,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Logo y papelería - link de pago",
+   "date_created": "2026-08-11T14:15:00.000-03:00",
+   "date_approved": "2026-08-11T14:15:00.000-03:00",
+   "date_last_updated": "2026-08-11T14:15:00.000-03:00",
+   "transaction_amount": 371200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 348890.88
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2198
+   }
+  },
+  {
+   "id": 95200023,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "BODEGAS LA CUMBRE SA",
+   "date_created": "2026-08-12T11:11:00.000-03:00",
+   "date_approved": "2026-08-12T11:11:00.000-03:00",
+   "date_last_updated": "2026-08-12T11:11:00.000-03:00",
+   "transaction_amount": 3698893,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 3698893
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2384
+   }
+  },
+  {
+   "id": 96200006,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "EPEC energia electrica",
+   "date_created": "2026-08-12T11:17:00.000-03:00",
+   "date_approved": "2026-08-12T11:17:00.000-03:00",
+   "date_last_updated": "2026-08-12T11:17:00.000-03:00",
+   "transaction_amount": 155266,
+   "collector_id": 3030,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200004,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Pieza para redes (pack) - cobro QR",
+   "date_created": "2026-08-12T13:27:00.000-03:00",
+   "date_approved": "2026-08-12T13:27:00.000-03:00",
+   "date_last_updated": "2026-08-12T13:27:00.000-03:00",
+   "transaction_amount": 191700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 180178.83
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2436
+   }
+  },
+  {
+   "id": 96200040,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "IMPRENTA GRAFICA DEL LITORAL SRL CUIT 30312424863",
+   "date_created": "2026-08-14T15:57:00.000-03:00",
+   "date_approved": "2026-08-14T15:57:00.000-03:00",
+   "date_last_updated": "2026-08-14T15:57:00.000-03:00",
+   "transaction_amount": 766822,
+   "collector_id": 3071,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200008,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA IVA DDJJ",
+   "date_created": "2026-08-18T14:08:00.000-03:00",
+   "date_approved": "2026-08-18T14:08:00.000-03:00",
+   "date_last_updated": "2026-08-18T14:08:00.000-03:00",
+   "transaction_amount": 1059777,
+   "collector_id": 3069,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200007,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP RENTAS IIBB",
+   "date_created": "2026-08-18T14:58:00.000-03:00",
+   "date_approved": "2026-08-18T14:58:00.000-03:00",
+   "date_last_updated": "2026-08-18T14:58:00.000-03:00",
+   "transaction_amount": 406642,
+   "collector_id": 3085,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200005,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diseño de packaging - cobro QR",
+   "date_created": "2026-08-20T09:08:00.000-03:00",
+   "date_approved": "2026-08-20T09:08:00.000-03:00",
+   "date_last_updated": "2026-08-20T09:08:00.000-03:00",
+   "transaction_amount": 602400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 566195.76
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2034
+   }
+  },
+  {
+   "id": 95200006,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Pieza para redes (pack) - cobro QR",
+   "date_created": "2026-08-21T14:22:00.000-03:00",
+   "date_approved": "2026-08-21T14:22:00.000-03:00",
+   "date_last_updated": "2026-08-21T14:22:00.000-03:00",
+   "transaction_amount": 200200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 188167.98
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2071
+   }
+  },
+  {
+   "id": 95200033,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "COOPERATIVA AGRICOLA DEL SUR LTDA",
+   "date_created": "2026-08-24T09:36:00.000-03:00",
+   "date_approved": "2026-08-24T09:36:00.000-03:00",
+   "date_last_updated": "2026-08-24T09:36:00.000-03:00",
+   "transaction_amount": 2899987,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 2899987
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2359
+   }
+  },
+  {
+   "id": 96200009,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "AGUAS servicio de agua",
+   "date_created": "2026-08-24T11:12:00.000-03:00",
+   "date_approved": "2026-08-24T11:12:00.000-03:00",
+   "date_last_updated": "2026-08-24T11:12:00.000-03:00",
+   "transaction_amount": 24260,
+   "collector_id": 3014,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200007,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Logo y papelería - link de pago",
+   "date_created": "2026-08-24T14:28:00.000-03:00",
+   "date_approved": "2026-08-24T14:28:00.000-03:00",
+   "date_last_updated": "2026-08-24T14:28:00.000-03:00",
+   "transaction_amount": 369400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 347199.06
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2282
+   }
+  },
+  {
+   "id": 95200008,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Identidad de marca completa - cobro QR",
+   "date_created": "2026-08-25T09:51:00.000-03:00",
+   "date_approved": "2026-08-25T09:51:00.000-03:00",
+   "date_last_updated": "2026-08-25T09:51:00.000-03:00",
+   "transaction_amount": 968300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 910105.17
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2101
+   }
+  },
+  {
+   "id": 96200010,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "SEGURO integral y ART",
+   "date_created": "2026-08-25T12:11:00.000-03:00",
+   "date_approved": "2026-08-25T12:11:00.000-03:00",
+   "date_last_updated": "2026-08-25T12:11:00.000-03:00",
+   "transaction_amount": 81589,
+   "collector_id": 3087,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200011,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "HONORARIOS estudio contable",
+   "date_created": "2026-08-26T10:45:00.000-03:00",
+   "date_approved": "2026-08-26T10:45:00.000-03:00",
+   "date_last_updated": "2026-08-26T10:45:00.000-03:00",
+   "transaction_amount": 211510,
+   "collector_id": 3057,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200027,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "GRUPO DESARROLLISTA PARANA SRL",
+   "date_created": "2026-08-26T14:43:00.000-03:00",
+   "date_approved": "2026-08-26T14:43:00.000-03:00",
+   "date_last_updated": "2026-08-26T14:43:00.000-03:00",
+   "transaction_amount": 4451536,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 4451536
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2068
+   }
+  },
+  {
+   "id": 95200009,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Logo y papelería - link de pago",
+   "date_created": "2026-08-27T12:57:00.000-03:00",
+   "date_approved": "2026-08-27T12:57:00.000-03:00",
+   "date_last_updated": "2026-08-27T12:57:00.000-03:00",
+   "transaction_amount": 325400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 305843.46
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2433
+   }
+  },
+  {
+   "id": 96200012,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "RETIRO SOCIO TRANSF CTA PROPIA",
+   "date_created": "2026-08-28T15:20:00.000-03:00",
+   "date_approved": "2026-08-28T15:20:00.000-03:00",
+   "date_last_updated": "2026-08-28T15:20:00.000-03:00",
+   "transaction_amount": 2232894,
+   "collector_id": 3081,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200010,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Identidad de marca completa - cobro QR",
+   "date_created": "2026-08-29T15:22:00.000-03:00",
+   "date_approved": "2026-08-29T15:22:00.000-03:00",
+   "date_last_updated": "2026-08-29T15:22:00.000-03:00",
+   "transaction_amount": 989600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 930125.04
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2448
+   }
+  },
+  {
+   "id": 95200011,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Identidad de marca completa - link de pago",
+   "date_created": "2026-09-01T16:31:00.000-03:00",
+   "date_approved": "2026-09-01T16:31:00.000-03:00",
+   "date_last_updated": "2026-09-01T16:31:00.000-03:00",
+   "transaction_amount": 1004600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 944223.54
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2129
+   }
+  },
+  {
+   "id": 95200024,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "BODEGAS LA CUMBRE SA",
+   "date_created": "2026-09-02T09:29:00.000-03:00",
+   "date_approved": "2026-09-02T09:29:00.000-03:00",
+   "date_last_updated": "2026-09-02T09:29:00.000-03:00",
+   "transaction_amount": 3917774,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 3917774
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2310
+   }
+  },
+  {
+   "id": 96200013,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "ALQUILER oficina INMOB DEL PUERTO",
+   "date_created": "2026-09-03T12:54:00.000-03:00",
+   "date_approved": "2026-09-03T12:54:00.000-03:00",
+   "date_last_updated": "2026-09-03T12:54:00.000-03:00",
+   "transaction_amount": 1311149,
+   "collector_id": 3036,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200041,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "IMPRENTA GRAFICA DEL LITORAL SRL CUIT 30312424863",
+   "date_created": "2026-09-04T12:57:00.000-03:00",
+   "date_approved": "2026-09-04T12:57:00.000-03:00",
+   "date_last_updated": "2026-09-04T12:57:00.000-03:00",
+   "transaction_amount": 830829,
+   "collector_id": 3075,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200014,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "PAGO HABERES NOMINA 3 EMPL",
+   "date_created": "2026-09-07T11:18:00.000-03:00",
+   "date_approved": "2026-09-07T11:18:00.000-03:00",
+   "date_last_updated": "2026-09-07T11:18:00.000-03:00",
+   "transaction_amount": 4471217,
+   "collector_id": 3009,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200015,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TASA municipal comercio Municipalidad de Rosario",
+   "date_created": "2026-09-07T12:59:00.000-03:00",
+   "date_approved": "2026-09-07T12:59:00.000-03:00",
+   "date_last_updated": "2026-09-07T12:59:00.000-03:00",
+   "transaction_amount": 72506,
+   "collector_id": 3041,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200016,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TELECOM internet y telefonia",
+   "date_created": "2026-09-08T12:45:00.000-03:00",
+   "date_approved": "2026-09-08T12:45:00.000-03:00",
+   "date_last_updated": "2026-09-08T12:45:00.000-03:00",
+   "transaction_amount": 81005,
+   "collector_id": 3057,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200045,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "SOFTWARE Y NUBE ESTUDIOS SA CUIT 30312504054",
+   "date_created": "2026-09-09T12:45:00.000-03:00",
+   "date_approved": "2026-09-09T12:45:00.000-03:00",
+   "date_last_updated": "2026-09-09T12:45:00.000-03:00",
+   "transaction_amount": 471060,
+   "collector_id": 3035,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200012,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Logo y papelería - cobro QR",
+   "date_created": "2026-09-10T09:51:00.000-03:00",
+   "date_approved": "2026-09-10T09:51:00.000-03:00",
+   "date_last_updated": "2026-09-10T09:51:00.000-03:00",
+   "transaction_amount": 379100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 356316.09
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2445
+   }
+  },
+  {
+   "id": 96200017,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA F931 CARGAS SOCIALES",
+   "date_created": "2026-09-10T15:58:00.000-03:00",
+   "date_approved": "2026-09-10T15:58:00.000-03:00",
+   "date_last_updated": "2026-09-10T15:58:00.000-03:00",
+   "transaction_amount": 1245653,
+   "collector_id": 3023,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200031,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LABORATORIOS ALTA VISTA SA",
+   "date_created": "2026-09-11T16:05:00.000-03:00",
+   "date_approved": "2026-09-11T16:05:00.000-03:00",
+   "date_last_updated": "2026-09-11T16:05:00.000-03:00",
+   "transaction_amount": 4275138,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 4275138
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2425
+   }
+  },
+  {
+   "id": 96200038,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Licencias de software y fuentes",
+   "date_created": "2026-09-14T13:54:00.000-03:00",
+   "date_approved": "2026-09-14T13:54:00.000-03:00",
+   "date_last_updated": "2026-09-14T13:54:00.000-03:00",
+   "transaction_amount": 177500,
+   "collector_id": 3030,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200018,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "EPEC energia electrica",
+   "date_created": "2026-09-14T13:59:00.000-03:00",
+   "date_approved": "2026-09-14T13:59:00.000-03:00",
+   "date_last_updated": "2026-09-14T13:59:00.000-03:00",
+   "transaction_amount": 148956,
+   "collector_id": 3050,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200019,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP RENTAS IIBB",
+   "date_created": "2026-09-15T12:59:00.000-03:00",
+   "date_approved": "2026-09-15T12:59:00.000-03:00",
+   "date_last_updated": "2026-09-15T12:59:00.000-03:00",
+   "transaction_amount": 452896,
+   "collector_id": 3064,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200013,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Pieza para redes (pack) - link de pago",
+   "date_created": "2026-09-17T12:12:00.000-03:00",
+   "date_approved": "2026-09-17T12:12:00.000-03:00",
+   "date_last_updated": "2026-09-17T12:12:00.000-03:00",
+   "transaction_amount": 184900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 173787.51
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2109
+   }
+  },
+  {
+   "id": 96200020,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA IVA DDJJ",
+   "date_created": "2026-09-18T13:34:00.000-03:00",
+   "date_approved": "2026-09-18T13:34:00.000-03:00",
+   "date_last_updated": "2026-09-18T13:34:00.000-03:00",
+   "transaction_amount": 997337,
+   "collector_id": 3088,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200028,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "GRUPO DESARROLLISTA PARANA SRL",
+   "date_created": "2026-09-21T10:59:00.000-03:00",
+   "date_approved": "2026-09-21T10:59:00.000-03:00",
+   "date_last_updated": "2026-09-21T10:59:00.000-03:00",
+   "transaction_amount": 3561528,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 3561528
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2165
+   }
+  },
+  {
+   "id": 95200014,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Pieza para redes (pack) - cobro QR",
+   "date_created": "2026-09-21T15:54:00.000-03:00",
+   "date_approved": "2026-09-21T15:54:00.000-03:00",
+   "date_last_updated": "2026-09-21T15:54:00.000-03:00",
+   "transaction_amount": 183000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 172001.7
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2463
+   }
+  },
+  {
+   "id": 96200021,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "AGUAS servicio de agua",
+   "date_created": "2026-09-22T12:33:00.000-03:00",
+   "date_approved": "2026-09-22T12:33:00.000-03:00",
+   "date_last_updated": "2026-09-22T12:33:00.000-03:00",
+   "transaction_amount": 25189,
+   "collector_id": 3068,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200015,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Pieza para redes (pack) - link de pago",
+   "date_created": "2026-09-22T12:59:00.000-03:00",
+   "date_approved": "2026-09-22T12:59:00.000-03:00",
+   "date_last_updated": "2026-09-22T12:59:00.000-03:00",
+   "transaction_amount": 188200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 176889.18
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2344
+   }
+  },
+  {
+   "id": 95200025,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "BODEGAS LA CUMBRE SA",
+   "date_created": "2026-09-23T10:07:00.000-03:00",
+   "date_approved": "2026-09-23T10:07:00.000-03:00",
+   "date_last_updated": "2026-09-23T10:07:00.000-03:00",
+   "transaction_amount": 3717629,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 3717629
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2268
+   }
+  },
+  {
+   "id": 96200022,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "SEGURO integral y ART",
+   "date_created": "2026-09-25T12:51:00.000-03:00",
+   "date_approved": "2026-09-25T12:51:00.000-03:00",
+   "date_last_updated": "2026-09-25T12:51:00.000-03:00",
+   "transaction_amount": 83664,
+   "collector_id": 3060,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200042,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "IMPRENTA GRAFICA DEL LITORAL SRL CUIT 30312424863",
+   "date_created": "2026-09-25T14:03:00.000-03:00",
+   "date_approved": "2026-09-25T14:03:00.000-03:00",
+   "date_last_updated": "2026-09-25T14:03:00.000-03:00",
+   "transaction_amount": 699874,
+   "collector_id": 3084,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200016,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Pieza para redes (pack) - cobro QR",
+   "date_created": "2026-09-25T15:58:00.000-03:00",
+   "date_approved": "2026-09-25T15:58:00.000-03:00",
+   "date_last_updated": "2026-09-25T15:58:00.000-03:00",
+   "transaction_amount": 215300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 202360.47
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2197
+   }
+  },
+  {
+   "id": 95200034,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "COOPERATIVA AGRICOLA DEL SUR LTDA",
+   "date_created": "2026-09-28T09:40:00.000-03:00",
+   "date_approved": "2026-09-28T09:40:00.000-03:00",
+   "date_last_updated": "2026-09-28T09:40:00.000-03:00",
+   "transaction_amount": 2588582,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 2588582
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2463
+   }
+  },
+  {
+   "id": 96200024,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "RETIRO SOCIO TRANSF CTA PROPIA",
+   "date_created": "2026-09-28T11:08:00.000-03:00",
+   "date_approved": "2026-09-28T11:08:00.000-03:00",
+   "date_last_updated": "2026-09-28T11:08:00.000-03:00",
+   "transaction_amount": 2037517,
+   "collector_id": 3022,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200023,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "HONORARIOS estudio contable",
+   "date_created": "2026-09-28T12:41:00.000-03:00",
+   "date_approved": "2026-09-28T12:41:00.000-03:00",
+   "date_last_updated": "2026-09-28T12:41:00.000-03:00",
+   "transaction_amount": 237257,
+   "collector_id": 3045,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200017,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diseño de packaging - cobro QR",
+   "date_created": "2026-09-29T17:46:00.000-03:00",
+   "date_approved": "2026-09-29T17:46:00.000-03:00",
+   "date_last_updated": "2026-09-29T17:46:00.000-03:00",
+   "transaction_amount": 664200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 624281.58
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2319
+   }
+  },
+  {
+   "id": 95200018,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Logo y papelería - cobro QR",
+   "date_created": "2026-10-02T09:38:00.000-03:00",
+   "date_approved": "2026-10-02T09:38:00.000-03:00",
+   "date_last_updated": "2026-10-02T09:38:00.000-03:00",
+   "transaction_amount": 370900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 348608.91
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2373
+   }
+  },
+  {
+   "id": 96200027,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TASA municipal comercio Municipalidad de Rosario",
+   "date_created": "2026-10-05T10:30:00.000-03:00",
+   "date_approved": "2026-10-05T10:30:00.000-03:00",
+   "date_last_updated": "2026-10-05T10:30:00.000-03:00",
+   "transaction_amount": 72394,
+   "collector_id": 3023,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200026,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "PAGO HABERES NOMINA 3 EMPL",
+   "date_created": "2026-10-05T15:42:00.000-03:00",
+   "date_approved": "2026-10-05T15:42:00.000-03:00",
+   "date_last_updated": "2026-10-05T15:42:00.000-03:00",
+   "transaction_amount": 4595827,
+   "collector_id": 3079,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200025,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "ALQUILER oficina INMOB DEL PUERTO",
+   "date_created": "2026-10-05T15:50:00.000-03:00",
+   "date_approved": "2026-10-05T15:50:00.000-03:00",
+   "date_last_updated": "2026-10-05T15:50:00.000-03:00",
+   "transaction_amount": 1374654,
+   "collector_id": 3085,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200028,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TELECOM internet y telefonia",
+   "date_created": "2026-10-08T12:48:00.000-03:00",
+   "date_approved": "2026-10-08T12:48:00.000-03:00",
+   "date_last_updated": "2026-10-08T12:48:00.000-03:00",
+   "transaction_amount": 84071,
+   "collector_id": 3057,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200046,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "SOFTWARE Y NUBE ESTUDIOS SA CUIT 30312504054",
+   "date_created": "2026-10-09T10:06:00.000-03:00",
+   "date_approved": "2026-10-09T10:06:00.000-03:00",
+   "date_last_updated": "2026-10-09T10:06:00.000-03:00",
+   "transaction_amount": 493281,
+   "collector_id": 3015,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200030,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "EPEC energia electrica",
+   "date_created": "2026-10-13T10:13:00.000-03:00",
+   "date_approved": "2026-10-13T10:13:00.000-03:00",
+   "date_last_updated": "2026-10-13T10:13:00.000-03:00",
+   "transaction_amount": 153330,
+   "collector_id": 3024,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200029,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA F931 CARGAS SOCIALES",
+   "date_created": "2026-10-13T11:52:00.000-03:00",
+   "date_approved": "2026-10-13T11:52:00.000-03:00",
+   "date_last_updated": "2026-10-13T11:52:00.000-03:00",
+   "transaction_amount": 1263477,
+   "collector_id": 3050,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200032,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LABORATORIOS ALTA VISTA SA",
+   "date_created": "2026-10-14T10:46:00.000-03:00",
+   "date_approved": "2026-10-14T10:46:00.000-03:00",
+   "date_last_updated": "2026-10-14T10:46:00.000-03:00",
+   "transaction_amount": 3319353,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 3319353
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2224
+   }
+  },
+  {
+   "id": 95200026,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "BODEGAS LA CUMBRE SA",
+   "date_created": "2026-10-14T11:15:00.000-03:00",
+   "date_approved": "2026-10-14T11:15:00.000-03:00",
+   "date_last_updated": "2026-10-14T11:15:00.000-03:00",
+   "transaction_amount": 3763280,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 3763280
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2363
+   }
+  },
+  {
+   "id": 95200019,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Pieza para redes (pack) - cobro QR",
+   "date_created": "2026-10-14T17:37:00.000-03:00",
+   "date_approved": "2026-10-14T17:37:00.000-03:00",
+   "date_last_updated": "2026-10-14T17:37:00.000-03:00",
+   "transaction_amount": 187700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 176419.23
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2128
+   }
+  },
+  {
+   "id": 96200031,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP RENTAS IIBB",
+   "date_created": "2026-10-15T11:04:00.000-03:00",
+   "date_approved": "2026-10-15T11:04:00.000-03:00",
+   "date_last_updated": "2026-10-15T11:04:00.000-03:00",
+   "transaction_amount": 443949,
+   "collector_id": 3032,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200043,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "IMPRENTA GRAFICA DEL LITORAL SRL CUIT 30312424863",
+   "date_created": "2026-10-16T11:21:00.000-03:00",
+   "date_approved": "2026-10-16T11:21:00.000-03:00",
+   "date_last_updated": "2026-10-16T11:21:00.000-03:00",
+   "transaction_amount": 839917,
+   "collector_id": 3032,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200039,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Licencias de software y fuentes",
+   "date_created": "2026-10-16T12:29:00.000-03:00",
+   "date_approved": "2026-10-16T12:29:00.000-03:00",
+   "date_last_updated": "2026-10-16T12:29:00.000-03:00",
+   "transaction_amount": 216699,
+   "collector_id": 3083,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200032,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA IVA DDJJ",
+   "date_created": "2026-10-19T12:50:00.000-03:00",
+   "date_approved": "2026-10-19T12:50:00.000-03:00",
+   "date_last_updated": "2026-10-19T12:50:00.000-03:00",
+   "transaction_amount": 992835,
+   "collector_id": 3066,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200020,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Logo y papelería - cobro QR",
+   "date_created": "2026-10-19T13:29:00.000-03:00",
+   "date_approved": "2026-10-19T13:29:00.000-03:00",
+   "date_last_updated": "2026-10-19T13:29:00.000-03:00",
+   "transaction_amount": 364300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 342405.57
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2041
+   }
+  },
+  {
+   "id": 95200021,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Logo y papelería - cobro QR",
+   "date_created": "2026-10-21T16:03:00.000-03:00",
+   "date_approved": "2026-10-21T16:03:00.000-03:00",
+   "date_last_updated": "2026-10-21T16:03:00.000-03:00",
+   "transaction_amount": 359100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 337518.09
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2208
+   }
+  },
+  {
+   "id": 95200029,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "GRUPO DESARROLLISTA PARANA SRL",
+   "date_created": "2026-10-21T17:30:00.000-03:00",
+   "date_approved": "2026-10-21T17:30:00.000-03:00",
+   "date_last_updated": "2026-10-21T17:30:00.000-03:00",
+   "transaction_amount": 4221171,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 4221171
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2206
+   }
+  },
+  {
+   "id": 96200033,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "AGUAS servicio de agua",
+   "date_created": "2026-10-22T11:23:00.000-03:00",
+   "date_approved": "2026-10-22T11:23:00.000-03:00",
+   "date_last_updated": "2026-10-22T11:23:00.000-03:00",
+   "transaction_amount": 26332,
+   "collector_id": 3043,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200022,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Logo y papelería - cobro QR",
+   "date_created": "2026-10-22T12:47:00.000-03:00",
+   "date_approved": "2026-10-22T12:47:00.000-03:00",
+   "date_last_updated": "2026-10-22T12:47:00.000-03:00",
+   "transaction_amount": 396200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 372388.38
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2340
+   }
+  },
+  {
+   "id": 96200035,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "HONORARIOS estudio contable",
+   "date_created": "2026-10-26T11:09:00.000-03:00",
+   "date_approved": "2026-10-26T11:09:00.000-03:00",
+   "date_last_updated": "2026-10-26T11:09:00.000-03:00",
+   "transaction_amount": 219360,
+   "collector_id": 3056,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200034,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "SEGURO integral y ART",
+   "date_created": "2026-10-26T11:52:00.000-03:00",
+   "date_approved": "2026-10-26T11:52:00.000-03:00",
+   "date_last_updated": "2026-10-26T11:52:00.000-03:00",
+   "transaction_amount": 85978,
+   "collector_id": 3010,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96200036,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "RETIRO SOCIO TRANSF CTA PROPIA",
+   "date_created": "2026-10-28T13:05:00.000-03:00",
+   "date_approved": "2026-10-28T13:05:00.000-03:00",
+   "date_last_updated": "2026-10-28T13:05:00.000-03:00",
+   "transaction_amount": 2137729,
+   "collector_id": 3016,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95200035,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "COOPERATIVA AGRICOLA DEL SUR LTDA",
+   "date_created": "2026-10-30T17:38:00.000-03:00",
+   "date_approved": "2026-10-30T17:38:00.000-03:00",
+   "date_last_updated": "2026-10-30T17:38:00.000-03:00",
+   "transaction_amount": 2390685,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 2390685
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2029
+   }
+  }
+ ]
+}

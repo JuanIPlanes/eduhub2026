@@ -1,11 +1,11 @@
 // Alertas y notificaciones: lo que está por vencer, leído sobre el mismo pronóstico que usa la caja.
 // Determinístico: el LLM no interviene en montos ni en niveles.
-import { fmt, sumar, type Evento, type Pronostico } from './forecast';
+import { fechaLarga, fmt, sumar, type Evento, type Pronostico } from './forecast';
 import type { Boleta } from './parse';
 
 export type Nivel = 'critica' | 'atencion' | 'info';
 export type Alerta = {
-  id: string; nivel: Nivel; tipo: 'vencida' | 'vence' | 'semana_cargada' | 'hueco';
+  id: string; nivel: Nivel; tipo: 'vencida' | 'vence' | 'semana_cargada' | 'hueco' | 'saldo_sin_confirmar';
   titulo: string; detalle: string; fecha?: string; monto?: number;
   concepto?: string; // sin fechas relativas: las notificaciones rearman el texto el día que salen
 };
@@ -25,6 +25,8 @@ const orden: Record<Nivel, number> = { critica: 0, atencion: 1, info: 2 };
 export function alertar(p: Pronostico, boletas: Boleta[] = [], opciones: { ventana?: number } = {}): Alertas {
   const ventana = opciones.ventana ?? 14;
   const alertas: Alerta[] = [];
+  const confiable = p.confiable !== false;
+  const est = confiable ? '' : ' (estimado)';
   const saldoEn = (f: string) => p.serie.find(d => d.fecha === f)?.saldo ?? p.saldoInicial;
   const salidas = p.eventos.filter((e): e is Evento => e.monto < 0 && OBLIGACIONES.has(e.categoria));
 
@@ -51,7 +53,7 @@ export function alertar(p: Pronostico, boletas: Boleta[] = [], opciones: { venta
       nivel: sinFondos ? 'critica' : dias <= 3 && !estimado ? 'atencion' : 'info',
       titulo: `${e.concepto}: $${fmt(monto)} ${cuando(dias)} (${dm(e.fecha)})`,
       detalle: sinFondos
-        ? `Ese día tu saldo proyectado queda en -$${fmt(-saldoEn(e.fecha))}: no te alcanza.`
+        ? `Ese día tu saldo proyectado${est} queda en -$${fmt(-saldoEn(e.fecha))}: no te ${confiable ? 'alcanza' : 'alcanzaría, pero tu saldo está sin confirmar'}.`
         : `Después de pagarlo proyectás $${fmt(saldoEn(e.fecha))}.${estimado ? ' Es una estimación por tu historial.' : ''}`,
     });
   }
@@ -77,8 +79,17 @@ export function alertar(p: Pronostico, boletas: Boleta[] = [], opciones: { venta
     alertas.push({
       id: `hueco-${p.hueco.inicio}`, tipo: 'hueco', fecha: p.hueco.inicio, monto: -p.hueco.minimo, concepto: 'Te quedás sin caja',
       nivel: dias <= 30 ? 'critica' : 'atencion',
-      titulo: `Te quedás sin caja el ${dm(p.hueco.inicio)} (${cuando(dias)})`,
-      detalle: `Faltan hasta $${fmt(-p.hueco.minimo)} el ${dm(p.hueco.fechaMinimo)}; son ${p.hueco.dias} día${p.hueco.dias > 1 ? 's' : ''} en rojo.`,
+      titulo: confiable ? `Te quedás sin caja el ${dm(p.hueco.inicio)} (${cuando(dias)})` : `Con tu saldo sin confirmar (estimado), te faltaría plata el ${dm(p.hueco.inicio)} (${cuando(dias)})`,
+      detalle: `${confiable ? '' : 'Estimado: '}Faltan hasta $${fmt(-p.hueco.minimo)} el ${dm(p.hueco.fechaMinimo)}; son ${p.hueco.dias} día${p.hueco.dias > 1 ? 's' : ''} en rojo.`,
+    });
+  }
+
+  // 4) Saldo sin confirmar: todo lo anterior se calcula sobre una estimación
+  if (!confiable) {
+    alertas.push({
+      id: 'saldo-sin-confirmar', nivel: 'atencion', tipo: 'saldo_sin_confirmar', concepto: 'Saldo sin confirmar',
+      titulo: 'Tu saldo está sin confirmar',
+      detalle: 'El saldo de partida es una estimación (no es el saldo real de tu cuenta), así que no podemos afirmar que te alcance ni que te falte. Cargá tu saldo de hoy para confirmarlo.',
     });
   }
 
@@ -88,4 +99,46 @@ export function alertar(p: Pronostico, boletas: Boleta[] = [], opciones: { venta
     alertas,
     resumen: { vencidas: vencidas.length, vence7: Math.round(suma(7)), vence30: Math.round(suma(30)), criticas: alertas.filter(a => a.nivel === 'critica').length },
   };
+}
+
+// Alerta anticipada (skill v2, paso 6). Se emite una sola, la más urgente, si:
+//   1. hay un hueco (saldo < 0) en los próximos 30 días del escenario base (= pronóstico principal, con los supuestos del pedido);
+//   2. hay un hueco en los próximos 60 días del escenario pesimista;
+//   3. el saldo baja del mínimo de seguridad (mismas ventanas: 30 base, 60 pesimista).
+// TODO(cheques): "un cheque emitido propio sin fondos previstos" requiere la cartera de cheques/ECHEQ, que todavía no se carga.
+export type AlertaAnticipada = {
+  tipo: 'hueco' | 'minimo'; escenario: 'base' | 'pesimista';
+  fecha: string; diasMargen: number; faltante: number; faltanteMaximo: number; concepto: string;
+  nivel: 'critica' | 'atencion'; texto: string;
+  confirmado: boolean; // false => sale de un saldo estimado
+};
+export const VENTANA_BASE = 30, VENTANA_PESIMISTA = 60;
+
+export function alertaAnticipada(base: Pronostico, pesimista: Pronostico, minimoSeguridad: number): AlertaAnticipada | null {
+  const confirmado = base.confiable !== false;
+  const candidatos: { p: Pronostico; esc: 'base' | 'pesimista'; max: number; tipo: 'hueco' | 'minimo' }[] = [
+    { p: base, esc: 'base', max: VENTANA_BASE, tipo: 'hueco' }, { p: pesimista, esc: 'pesimista', max: VENTANA_PESIMISTA, tipo: 'hueco' },
+    ...(minimoSeguridad > 0 ? [{ p: base, esc: 'base' as const, max: VENTANA_BASE, tipo: 'minimo' as const }, { p: pesimista, esc: 'pesimista' as const, max: VENTANA_PESIMISTA, tipo: 'minimo' as const }] : []),
+  ];
+  for (const c of candidatos) {
+    const umbral = c.tipo === 'hueco' ? 0 : minimoSeguridad;
+    const tramo = c.p.serie.slice(0, c.max);
+    const primero = tramo.find(d => d.saldo < umbral);
+    if (!primero) continue;
+    const fecha = primero.fecha;
+    const dias = difDias(base.hoy, fecha);
+    const faltante = Math.round(umbral - primero.saldo);
+    const faltanteMaximo = Math.round(umbral - Math.min(...tramo.filter(d => d.fecha >= fecha).map(d => d.saldo)));
+    const cerca = c.p.eventos.filter(e => e.monto < 0 && e.categoria !== 'ventas' && e.fecha <= fecha && e.fecha >= sumar(fecha, -3)).sort((a, b) => a.monto - b.monto)[0];
+    const concepto = cerca?.concepto ?? 'tus pagos de ese día';
+    const pref = c.esc === 'pesimista' ? 'Si cobrás 15 días más tarde y vendés 10% menos: ' : '';
+    const cola = `Tenés ${dias} días para resolverlo. Estas son tus opciones, de la más barata a la más cara.`;
+    let texto = c.tipo === 'hueco'
+      ? `${pref}El ${fechaLarga(fecha)} te faltarían $${fmt(faltante)} para pagar ${concepto}. ${cola}`
+      : `${pref}El ${fechaLarga(fecha)} tu saldo bajaría a $${fmt(primero.saldo)}, $${fmt(faltante)} por debajo de tu mínimo de seguridad ($${fmt(minimoSeguridad)}), al pagar ${concepto}. ${cola}`;
+    if (!confirmado) texto += ' Ojo: tu saldo está sin confirmar, esto es una estimación. Confirmalo para saber si es real.';
+    return { tipo: c.tipo, escenario: c.esc, fecha, diasMargen: dias, faltante, faltanteMaximo, concepto,
+      nivel: c.tipo === 'hueco' && c.esc === 'base' ? 'critica' : 'atencion', texto, confirmado };
+  }
+  return null;
 }

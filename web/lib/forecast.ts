@@ -21,6 +21,18 @@ export type Pronostico = {
   aprendizajes: string[];
   contrapartes: Contraparte[];
   historia: { mes: string; entradas: number; salidas: number }[];
+  // false si el saldo de partida es una estimación (no confirmada): nada de lo que se derive puede afirmarse como cierto.
+  confiable?: boolean;
+  supuestos?: SupuestosPronostico;
+};
+// Qué se asumió al proyectar (para que la UI lo muestre). Las ventas proyectadas y los gastos recurrentes CRECEN con la
+// inflación mensual (ipcMensual, último dato INDEC, compuesto por día): si querés verlo en pesos de hoy, descontá ese ritmo.
+export type SupuestosPronostico = {
+  ipcMensual: number; ventasCrecenConIpc: true;
+  ventasFactor: number;                 // 1 = histórico; 0,8 = ventas −20%
+  demoraCobros: number;                 // días extra de atraso en los cobros a clientes
+  demoraAplicaA: 'facturas a clientes'; // las acreditaciones de tarjeta/QR no se demoran
+  notas: string[];
 };
 export type Contraparte = {
   cuit: string; nombre: string; lado: 'pagar' | 'cobrar'; plazoDias: number; cadenciaDias: number | null;
@@ -28,7 +40,12 @@ export type Contraparte = {
 };
 export type Opciones = { hoy?: string; horizonte?: number; ipcMensual: number; plazoExtra?: Record<string, number>; anticipos?: { cuit: string; numero: string; fecha: string }[]; boletas?: Boleta[]; nomina?: Nomina[];
   // Ancla de saldo cargada a mano: el saldo de caja en `fecha` es `monto`; solo los movimientos POSTERIORES se aplican encima.
-  saldoInicial?: { fecha: string; monto: number } };
+  saldoInicial?: { fecha: string; monto: number };
+  // Escenarios / "¿y si cobro menos?": factor sobre ventas proyectadas (acreditaciones y facturas estimadas a clientes) y días
+  // extra de atraso en cobros a clientes (facturas pendientes y estimadas). No tocan lo ya cobrado ni los gastos.
+  ventasFactor?: number; demoraCobros?: number;
+  // false => el saldo de partida es una estimación: el pronóstico sale con confiable:false.
+  saldoConfirmado?: boolean };
 
 // Feriados nacionales (aprox.; verificar el calendario oficial). Los trasladables pueden diferir.
 const FERIADOS = new Set(['2026-11-23', '2026-12-08', '2026-12-25', '2027-01-01', '2027-02-08', '2027-02-09', '2027-03-24']);
@@ -36,6 +53,10 @@ const FERIADOS = new Set(['2026-11-23', '2026-12-08', '2026-12-25', '2027-01-01'
 const DIA = 86400000;
 const d2s = (d: Date) => d.toISOString().slice(0, 10);
 const s2d = (s: string) => new Date(s + 'T00:00:00Z');
+export const fechaLarga = (s: string) => {
+  const d = new Date(s + 'T00:00:00Z');
+  return `${['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'][d.getUTCDay()]} ${d.getUTCDate()}/${d.getUTCMonth() + 1}`;
+};
 export const sumar = (s: string, n: number) => d2s(new Date(s2d(s).getTime() + n * DIA));
 const difDias = (a: string, b: string) => Math.round((s2d(b).getTime() - s2d(a).getTime()) / DIA);
 const habil = (s: string) => { const w = s2d(s).getUTCDay(); return w !== 0 && w !== 6 && !FERIADOS.has(s); };
@@ -48,6 +69,7 @@ type Cobro = { m: Movimiento & { cat: Categoria }; usado: boolean };
 
 export function pronosticar(movs: Movimiento[], recibidos: Comprobante[], emitidos: Comprobante[], op: Opciones): Pronostico {
   const H = op.horizonte ?? 120;
+  const vf = op.ventasFactor ?? 1, demora = Math.round(op.demoraCobros ?? 0);
   const ordenados = [...movs].sort((a, b) => a.fecha.localeCompare(b.fecha));
   const ancla = op.saldoInicial;
   const ultimoMov = ordenados[ordenados.length - 1]?.fecha;
@@ -94,19 +116,19 @@ export function pronosticar(movs: Movimiento[], recibidos: Comprobante[], emitid
       const ult = lista.slice(-3);
       const montoTipico = ult.reduce((s, c) => s + c.total, 0) / ult.length;
       contrapartes.push({ cuit, nombre, lado, plazoDias: plazo, cadenciaDias: cadencia, montoTipico, pendientes: pendientes.length, facturas: lista.length });
-      const extra = op.plazoExtra?.[cuit] ?? 0;
+      const extra = (op.plazoExtra?.[cuit] ?? 0) + (lado === 'cobrar' ? demora : 0);
       const cat: Categoria = lado === 'pagar' ? 'proveedores' : 'cobro_clientes';
       const verbo = lado === 'pagar' ? 'Pago a' : 'Cobro de';
       for (const c of pendientes) {
         const ant = op.anticipos?.find(a => a.cuit === cuit && a.numero === c.numero);
         let f = ant ? ant.fecha : proxHabil(sumar(c.fecha, plazo + extra));
-        if (f <= hoy) f = proxHabil(sumar(hoy, 3)); // vencida: asumimos que se cancela en los próximos días
+        if (f <= hoy) f = proxHabil(sumar(hoy, 3 + (lado === 'cobrar' ? demora : 0))); // vencida: asumimos que se cancela en los próximos días
         if (enRango(f)) eventos.push({ fecha: f, concepto: `${verbo} ${nombre} (fact. ${c.numero}${ant ? ', anticipada' : ''})`, categoria: cat, monto: (lado === 'pagar' ? -1 : 1) * c.total, origen: ant ? 'descuento de factura' : 'factura pendiente', cuit });
       }
       if (cadencia && lista.length >= 3) {
         for (let f = sumar(lista[lista.length - 1].fecha, cadencia); f <= fin; f = sumar(f, cadencia)) {
           const pago = proxHabil(sumar(f, plazo + extra));
-          if (enRango(pago) && f > hoy) eventos.push({ fecha: pago, concepto: `${verbo} ${nombre} (factura estimada)`, categoria: cat, monto: (lado === 'pagar' ? -1 : 1) * Math.round(montoTipico * crec(f)), origen: 'factura estimada', cuit });
+          if (enRango(pago) && f > hoy) eventos.push({ fecha: pago, concepto: `${verbo} ${nombre} (factura estimada)`, categoria: cat, monto: lado === 'pagar' ? -Math.round(montoTipico * crec(f)) : Math.round(montoTipico * crec(f) * vf), origen: 'factura estimada', cuit });
         }
       }
       if (plazos.length >= 3) aprendizajes.push(`${lado === 'pagar' ? 'A' : 'De'} ${nombre} ${lado === 'pagar' ? 'le pagás' : 'cobrás'} a ${plazo} días${cadencia ? `, con una factura cada ${cadencia} días` : ''}.`);
@@ -183,7 +205,7 @@ export function pronosticar(movs: Movimiento[], recibidos: Comprobante[], emitid
   for (let f = sumar(hoy, 1); f <= fin; f = sumar(f, 1)) {
     const w = s2d(f).getUTCDay();
     if (!habil(f)) { if (w !== 0 && w !== 6) arrastre += prom[1] / 2; continue; } // un feriado corre parte de la liquidación
-    const v = (prom[w] + arrastre) * crec(f); arrastre = 0;
+    const v = (prom[w] + arrastre) * crec(f) * vf; arrastre = 0;
     if (v > 0) eventos.push({ fecha: f, concepto: 'Acreditación de ventas (tarjeta/QR)', categoria: 'ventas', monto: Math.round(v), origen: 'proyección de ventas' });
   }
   const ventasMes = prom.reduce((s, v) => s + v, 0) * 4.33;
@@ -221,8 +243,14 @@ export function pronosticar(movs: Movimiento[], recibidos: Comprobante[], emitid
   const hist = new Map<string, { entradas: number; salidas: number }>();
   for (const m of ordenados) { const k = m.fecha.slice(0, 7); const h = hist.get(k) ?? { entradas: 0, salidas: 0 }; if (m.monto > 0) h.entradas += m.monto; else h.salidas += -m.monto; hist.set(k, h); }
 
+  const supuestos: SupuestosPronostico = { ipcMensual: op.ipcMensual, ventasCrecenConIpc: true, ventasFactor: vf, demoraCobros: demora, demoraAplicaA: 'facturas a clientes', notas: [
+    `Ventas y gastos recurrentes proyectados crecen con la inflación mensual del último dato INDEC (${(op.ipcMensual * 100).toFixed(1).replace('.', ',')}% por mes).`,
+    vf !== 1 ? `Ventas ajustadas a ${Math.round(vf * 100)}% de lo histórico.` : 'Ventas según el promedio de las últimas 8 semanas.',
+    demora ? `Cobros a clientes con ${demora} días extra de atraso.` : 'Cobros a clientes según el plazo real aprendido de cada uno.',
+    'No se proyectan cheques (no hay cartera de cheques cargada).',
+  ] };
   return { hoy, saldoInicial, ipcMensual: op.ipcMensual, serie, eventos, horizontes, hueco, huecos, aprendizajes, contrapartes,
-    historia: [...hist].map(([mes, v]) => ({ mes, ...v })) };
+    historia: [...hist].map(([mes, v]) => ({ mes, ...v })), confiable: op.saldoConfirmado ?? true, supuestos };
 }
 
 export const fmt = (n: number) => Math.round(n).toLocaleString('es-AR');

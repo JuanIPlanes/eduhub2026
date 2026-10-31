@@ -1,0 +1,13 @@
+{
+  "id": "carpinteria-quebracho",
+  "nombre": "Carpintería y Muebles Quebracho",
+  "rubro": "Carpintería",
+  "empleados": 4,
+  "descripcion": "Carpintería de muebles a medida con 4 empleados. Las ventas vienen cayendo mes a mes desde el invierno mientras los costos siguen la inflación.",
+  "saldoActual": 5000000,
+  "saldoInicial90d": 864804,
+  "neto90d": 4135196,
+  "fechaSaldo": "2026-10-30",
+  "situacion": "ventas-en-baja",
+  "pista": "Las acreditaciones bajan mes a mes (agosto > septiembre > octubre) y los gastos no: la caja se achica y el hueco aparece en un par de meses."
+}

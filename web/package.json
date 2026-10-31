@@ -9,7 +9,7 @@
     "demo": "next build && next start",
     "datos": "node scripts/gen-demo.mjs",
     "vapid": "node scripts/vapid.mjs",
-    "test": "tsx --test lib/forecast.test.ts lib/excedente.test.ts lib/parse.test.ts lib/mpcookie.test.ts lib/mercadopago.test.ts lib/analisis.test.ts"
+    "test": "tsx --test lib/forecast.test.ts lib/excedente.test.ts lib/parse.test.ts lib/mpcookie.test.ts lib/mercadopago.test.ts lib/analisis.test.ts lib/v2.test.ts lib/tesorero.test.ts lib/mercado/mercado.test.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.3.0",

@@ -2,18 +2,22 @@
 // Datos: lo que cargaste (con quitar/deshacer), de dónde sale el cálculo, avisos de vencimientos, huellas y sello,
 // la demo y "Borrar mis datos".
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Avisos from '../../components/chat/Avisos';
 import { Checklist, Faltantes } from '../_ui/comun';
 import { mpDisponible, nombreFuente, useDatos } from '../_ui/datos';
 import { fNum, kb, millones, pesos } from '../_ui/formato';
 import { Icono } from '../_ui/iconos';
+import { GrillaPerfiles } from '../_ui/perfiles';
+import { iniciarTour } from '../_ui/recorrido';
 import s from '../app.module.css';
 
 export default function Datos() {
   const { ws, vista, mp, sellos, abrirCarga, quitar, quitarSaldo, desconectarMP, cargarDemo, empezarPropio, borrarTodo, calculando } = useDatos();
   const [copiado, setCopiado] = useState<string | null>(null);
   const [confirmar, setConfirmar] = useState(false);
+  const router = useRouter();
 
   async function copiar(h: string) {
     try { await navigator.clipboard.writeText(h); setCopiado(h); setTimeout(() => setCopiado(null), 1800); } catch { setCopiado(null); }
@@ -42,6 +46,12 @@ export default function Datos() {
           {ws.modo === 'demo' && (
             <div className={s.vacioChico}>
               <p><b>Estás usando la demo</b> ({ws.demo?.mp ? 'Mercado Pago simulado' : ws.demo?.escenario === 'holgada' ? 'caso con plata de sobra' : ws.demo?.compromisos ? 'con boletas y nómina' : 'pyme gastronómica'}). Nada de esto es tuyo.</p>
+              <button type="button" className={`${s.btn} ${s.btnPri}`} onClick={empezarPropio}>Empezar con los míos</button>
+            </div>
+          )}
+          {ws.modo === 'perfil' && (
+            <div className={s.vacioChico}>
+              <p><b>Estás viendo una pyme de ejemplo:</b> {vista?.pyme ?? ws.perfil?.nombre}. Nada de esto es tuyo{ws.saldo ? ', salvo el saldo que confirmaste' : ''}.</p>
               <button type="button" className={`${s.btn} ${s.btnPri}`} onClick={empezarPropio}>Empezar con los míos</button>
             </div>
           )}
@@ -161,14 +171,18 @@ export default function Datos() {
           <div><h2 className={s.h2} id="t-demo">Probar con la demo</h2>
             <p className={s.sub}>Negocios inventados para ver la app funcionando sin cargar nada. Para presentar, abrí la app con <code className={s.mono}>/?demo=1</code>.</p></div>
           <div className={s.btnRow}>
+            <button type="button" className={`${s.btn} ${s.btnPri}`} onClick={() => { cargarDemo(); router.push('/'); iniciarTour(); }}>Ver el recorrido guiado</button>
             <button type="button" className={s.btn} onClick={() => cargarDemo()}>Pyme con hueco de caja</button>
             <button type="button" className={s.btn} onClick={() => cargarDemo({ escenario: 'holgada' })}>Pyme con plata de sobra</button>
             <button type="button" className={s.btn} onClick={() => cargarDemo({ compromisos: true })}>Con boletas y nómina</button>
             <button type="button" className={s.btn} onClick={() => cargarDemo({ mp: true })}>Mercado Pago simulado</button>
           </div>
+          <p className={s.sub}>O elegí una de las seis pymes de ejemplo, más abajo.</p>
           {propio && !nada && <p className={s.sub}>Ojo: pasar a la demo reemplaza lo que cargaste. Si querés conservarlo, no lo hagas.</p>}
         </section>
       </div>
+
+      <GrillaPerfiles id="t-perfiles" actual={ws.perfil?.id} onElegir={() => router.push('/')} />
 
       <section className={`${s.card} ${s.peligro}`} aria-labelledby="t-borrar">
         <div><h2 className={s.h2} id="t-borrar">Borrar mis datos</h2>

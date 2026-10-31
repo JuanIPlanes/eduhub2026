@@ -5,8 +5,9 @@ import type { Cita } from '@/lib/openarg';
 import type { Alertas } from '@/lib/alertas';
 import type { Categoria } from '@/lib/categorias';
 import type { Excedente } from '@/lib/excedente';
+import type { Tesoreria } from '@/lib/tesorero';
 
-export type { Pronostico, Evento, Recomendacion, Cita, Alertas, Categoria, Excedente };
+export type { Pronostico, Evento, Recomendacion, Cita, Alertas, Categoria, Excedente, Tesoreria };
 
 export type Insumo = { nombre: string; sha256: string };
 export type MesCat = { mes: string; real: boolean; dias: number; diasMes: number; porCategoria: Partial<Record<Categoria, number>> };
@@ -25,12 +26,48 @@ export type RespAnalizar = {
   resumen: {
     movimientos: number; recibidos: number; emitidos: number; boletas: number; empleados: number; ignorados: string[]; insumos: Insumo[];
     mercadopago?: 'api' | 'simulacion' | 'mixto'; extras?: number; avisos?: string[];
+    saldo?: SaldoInfo;
+    /** Solo con `perfil` en el pedido: la pyme de ejemplo y la trampa a propósito (el saldo llega sin confirmar). */
+    perfil?: PerfilResumen;
   };
   pronostico: Pronostico; alertas: Alertas; recomendacion: Recomendacion;
   mensaje?: { texto: string; fuente: 'ia' | 'reglas' }; citas: Record<string, Cita>;
   excedente?: Excedente;
   dashboard?: { pyme?: string; demo?: boolean; corte?: string; mensual?: MesCat[]; etiquetas?: Record<string, string>; ventasMensuales?: number; eventos?: Evento[] };
+  // Campos del contrato v2 ("CFO de bolsillo"). Todos opcionales: un servidor viejo no los manda.
+  escenarios?: Partial<Record<NombreEscenario, Escenario>>;
+  minimoSeguridad?: number;
+  score?: Score;
+  alertaAnticipada?: unknown;
+  /** Tesorero: veredicto con semáforo, plan de acción y bloque para el Researcher. Ausente en un servidor viejo. */
+  tesoreria?: Tesoreria;
 };
+export type PerfilResumen = { id: string; nombre: string; rubro?: string; pista?: string; saldoSugerido: number };
+/** Una de las pymes simuladas de /demo/perfiles/index.json. */
+export type PerfilEjemplo = { id: string; nombre: string; rubro: string; empleados: number; descripcion: string; saldoActual: number; situacion: string; pista: string };
+
+/* ---------- contrato v2 (todo opcional) ---------- */
+export type OrigenSaldo = 'extracto' | 'manual' | 'mp-api' | 'mp-estimado' | 'demo';
+export type SaldoInfo = { valor: number; origen: OrigenSaldo | string; confirmado: boolean; nota?: string };
+/** Factor de ventas (0.3–1.5) y días de demora en los cobros (0–60). */
+export type Supuestos = { ventas?: number; demoraCobros?: number };
+export type NombreEscenario = 'base' | 'pesimista' | 'optimista';
+export type Escenario = {
+  serie: { fecha: string; saldo: number }[]; minimo: number; fechaMinimo: string;
+  hueco: { inicio: string; dias: number; minimo: number } | null;
+};
+export type Pilar = { nombre: string; peso: number; valor: number | null; detalle?: string };
+export type Faltante = string | { texto?: string; label?: string; carga?: string };
+export type Score = {
+  valor: number; rango?: [number, number]; categoria: 'A' | 'B' | 'C' | 'D' | 'E' | string; preliminar?: boolean;
+  pilares?: Pilar[]; faltan?: Faltante[];
+};
+export type OrdenPago = { concepto: string; monto: number; prioridad: number; plazoEstirable?: number | boolean | string; fecha?: string; grupo?: string; costoProbable?: string };
+/** Opción para cubrir un hueco, con los campos nuevos de costo real. */
+export type OpcionV2 = Recomendacion['opciones'][number] & { tea?: number; costoPeriodo?: number; estimado?: boolean };
+
+/** TEA como porcentaje: el servidor puede mandarla como fracción (0,45) o como porcentaje (45). */
+export const teaPct = (t: number) => (Math.abs(t) < 10 ? t * 100 : t);
 /** Comprobante con la forma de /api/foto (y de `extras` en /api/analizar). */
 export type ComprobanteIn = {
   es_comprobante?: boolean; tipo?: string | null; fecha_emision?: string | null; fecha_vencimiento?: string | null;

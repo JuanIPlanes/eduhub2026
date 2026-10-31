@@ -1,0 +1,13 @@
+{
+  "id": "vivero-los-talas",
+  "nombre": "Vivero Los Talas",
+  "rubro": "Vivero",
+  "empleados": 5,
+  "descripcion": "Vivero con 5 empleados. Vende plantas al público por QR, pero más de la mitad de lo que factura es para una desarrolladora de loteos que le paga a 55 días.",
+  "saldoActual": 8500000,
+  "saldoInicial90d": 6368638,
+  "neto90d": 2131362,
+  "fechaSaldo": "2026-10-30",
+  "situacion": "concentrada",
+  "pista": "Más del 50% de las ventas depende de un solo cliente que paga a 55 días: si se demora un mes, aparece un hueco aunque hoy la caja esté bien."
+}

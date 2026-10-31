@@ -1,0 +1,13 @@
+{
+  "id": "estudio-brujula",
+  "nombre": "Estudio Brújula Diseño",
+  "rubro": "Estudio de diseño",
+  "empleados": 3,
+  "descripcion": "Estudio de diseño gráfico e identidad de marca con 3 empleados. Pocos gastos fijos, clientes corporativos que pagan a 30 días y mucha caja acumulada.",
+  "saldoActual": 30000000,
+  "saldoInicial90d": 14194263,
+  "neto90d": 15805737,
+  "fechaSaldo": "2026-10-30",
+  "situacion": "holgada",
+  "pista": "Después de reservar un mes de gastos fijos sobra una cifra importante y por varios meses: hay excedente para colocar."
+}

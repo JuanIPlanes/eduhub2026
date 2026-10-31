@@ -1,0 +1,10 @@
+clave,valor
+aviso,"MERCADO FICTICIO. Empresas, tickers, precios, balances y eventos son inventados. No es información de mercado ni una recomendación de inversión."
+fecha_corte,2026-10-30
+fecha_inicio,2024-11-01
+moneda,ARS
+indice,"IF12 (Índice Ficticio 12, equiponderado, base 100 al inicio)"
+tasa_referencia_ficticia,0.3
+ventana_12m_cierres,253
+semilla,20261031
+version,1.0

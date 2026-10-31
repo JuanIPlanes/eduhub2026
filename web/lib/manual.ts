@@ -12,12 +12,15 @@ export const ManualSchema = z.object({
   saldo: z.object({ fecha: Fecha, monto: Monto }).optional(),
   movimientos: z.array(z.object({ fecha: Fecha, desc: z.string().trim().max(120).default(''), monto: Monto.refine(n => n !== 0, 'el monto no puede ser 0') })).max(MAX_MOVIMIENTOS_MANUALES).optional(),
   comprobantes: ExtrasSchema.optional(),
+  // Saldo mínimo de seguridad fijado por el usuario (si no, 30 días de egresos fijos).
+  minimoSeguridad: z.number().finite().min(0).max(1e12).optional(),
 });
 
 export type Manual = {
   saldo?: { fecha: string; monto: number };
   movimientos: Movimiento[];
   recibidos: Comprobante[]; emitidos: Comprobante[];
+  minimoSeguridad?: number;
 };
 export type ResultadoManual = { ok: true; manual: Manual } | { ok: false; error: string };
 
@@ -32,5 +35,5 @@ export function procesarManual(crudo: unknown): ResultadoManual {
     if (!c.ok) return { ok: false, error: c.error };
     ({ recibidos, emitidos } = c);
   }
-  return { ok: true, manual: { saldo: r.data.saldo, movimientos: (r.data.movimientos ?? []).map(m => ({ fecha: m.fecha, desc: m.desc || 'Movimiento manual', monto: m.monto })), recibidos, emitidos } };
+  return { ok: true, manual: { saldo: r.data.saldo, movimientos: (r.data.movimientos ?? []).map(m => ({ fecha: m.fecha, desc: m.desc || 'Movimiento manual', monto: m.monto })), recibidos, emitidos, minimoSeguridad: r.data.minimoSeguridad } };
 }

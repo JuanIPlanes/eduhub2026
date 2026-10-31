@@ -1,0 +1,6525 @@
+{
+ "userId": 1000,
+ "pagos": [
+  {
+   "id": 95100002,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-08-01T16:51:00.000-03:00",
+   "date_approved": "2026-08-01T16:51:00.000-03:00",
+   "date_last_updated": "2026-08-01T16:51:00.000-03:00",
+   "transaction_amount": 431500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 405566.85
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2476
+   }
+  },
+  {
+   "id": 95100001,
+   "status": "refunded",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-08-01T17:04:00.000-03:00",
+   "date_approved": "2026-08-01T17:04:00.000-03:00",
+   "date_last_updated": "2026-08-05T11:54:00.000-03:00",
+   "transaction_amount": 106400,
+   "transaction_amount_refunded": 106400,
+   "transaction_details": {
+    "net_received_amount": 100005.36
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2243
+   }
+  },
+  {
+   "id": 95100290,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "TRANSPORTE ALTOS DEL RIO SRL",
+   "date_created": "2026-08-03T09:50:00.000-03:00",
+   "date_approved": "2026-08-03T09:50:00.000-03:00",
+   "date_last_updated": "2026-08-03T09:50:00.000-03:00",
+   "transaction_amount": 1959065,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 1959065
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2339
+   }
+  },
+  {
+   "id": 96100001,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "ALQUILER galpón taller INMOB CENTRO",
+   "date_created": "2026-08-03T10:27:00.000-03:00",
+   "date_approved": "2026-08-03T10:27:00.000-03:00",
+   "date_last_updated": "2026-08-03T10:27:00.000-03:00",
+   "transaction_amount": 1462796,
+   "collector_id": 3088,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100003,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-03T11:09:00.000-03:00",
+   "date_approved": "2026-08-03T11:09:00.000-03:00",
+   "date_last_updated": "2026-08-03T11:09:00.000-03:00",
+   "transaction_amount": 199800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 187792.02
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2261
+   }
+  },
+  {
+   "id": 95100006,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-08-03T12:56:00.000-03:00",
+   "date_approved": "2026-08-03T12:56:00.000-03:00",
+   "date_last_updated": "2026-08-03T12:56:00.000-03:00",
+   "transaction_amount": 123700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 116265.63
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2100
+   }
+  },
+  {
+   "id": 95100004,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-08-03T13:14:00.000-03:00",
+   "date_approved": "2026-08-03T13:14:00.000-03:00",
+   "date_last_updated": "2026-08-03T13:14:00.000-03:00",
+   "transaction_amount": 427900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 402183.21
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2300
+   }
+  },
+  {
+   "id": 95100007,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-08-03T14:29:00.000-03:00",
+   "date_approved": "2026-08-03T14:29:00.000-03:00",
+   "date_last_updated": "2026-08-03T14:29:00.000-03:00",
+   "transaction_amount": 107500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 101039.25
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2484
+   }
+  },
+  {
+   "id": 95100005,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-08-03T16:13:00.000-03:00",
+   "date_approved": "2026-08-03T16:13:00.000-03:00",
+   "date_last_updated": "2026-08-03T16:13:00.000-03:00",
+   "transaction_amount": 67600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 63537.24
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2178
+   }
+  },
+  {
+   "id": 95100303,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LOGISTICA PAMPA NORTE SA",
+   "date_created": "2026-08-03T17:38:00.000-03:00",
+   "date_approved": "2026-08-03T17:38:00.000-03:00",
+   "date_last_updated": "2026-08-03T17:38:00.000-03:00",
+   "transaction_amount": 1906084,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 1906084
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2465
+   }
+  },
+  {
+   "id": 95100010,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-08-04T10:20:00.000-03:00",
+   "date_approved": "2026-08-04T10:20:00.000-03:00",
+   "date_last_updated": "2026-08-04T10:20:00.000-03:00",
+   "transaction_amount": 103100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 96903.69
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2145
+   }
+  },
+  {
+   "id": 95100011,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-04T10:59:00.000-03:00",
+   "date_approved": "2026-08-04T10:59:00.000-03:00",
+   "date_last_updated": "2026-08-04T10:59:00.000-03:00",
+   "transaction_amount": 176500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 165892.35
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2223
+   }
+  },
+  {
+   "id": 95100008,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-04T15:06:00.000-03:00",
+   "date_approved": "2026-08-04T15:06:00.000-03:00",
+   "date_last_updated": "2026-08-04T15:06:00.000-03:00",
+   "transaction_amount": 83400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 78387.66
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2429
+   }
+  },
+  {
+   "id": 95100009,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-08-04T15:28:00.000-03:00",
+   "date_approved": "2026-08-04T15:28:00.000-03:00",
+   "date_last_updated": "2026-08-04T15:28:00.000-03:00",
+   "transaction_amount": 108300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 101791.17
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2385
+   }
+  },
+  {
+   "id": 96100003,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TASA municipal comercio Municipalidad de Villa Maria",
+   "date_created": "2026-08-05T10:22:00.000-03:00",
+   "date_approved": "2026-08-05T10:22:00.000-03:00",
+   "date_last_updated": "2026-08-05T10:22:00.000-03:00",
+   "transaction_amount": 137546,
+   "collector_id": 3051,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100002,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "PAGO HABERES NOMINA 6 EMPL",
+   "date_created": "2026-08-05T10:23:00.000-03:00",
+   "date_approved": "2026-08-05T10:23:00.000-03:00",
+   "date_last_updated": "2026-08-05T10:23:00.000-03:00",
+   "transaction_amount": 6958876,
+   "collector_id": 3036,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100013,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-08-05T11:10:00.000-03:00",
+   "date_approved": "2026-08-05T11:10:00.000-03:00",
+   "date_last_updated": "2026-08-05T11:10:00.000-03:00",
+   "transaction_amount": 76500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 71902.35
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2030
+   }
+  },
+  {
+   "id": 95100012,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-05T15:06:00.000-03:00",
+   "date_approved": "2026-08-05T15:06:00.000-03:00",
+   "date_last_updated": "2026-08-05T15:06:00.000-03:00",
+   "transaction_amount": 194700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 182998.53
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2010
+   }
+  },
+  {
+   "id": 95100014,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-08-05T15:59:00.000-03:00",
+   "date_approved": "2026-08-05T15:59:00.000-03:00",
+   "date_last_updated": "2026-08-05T15:59:00.000-03:00",
+   "transaction_amount": 436800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 410548.32
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2349
+   }
+  },
+  {
+   "id": 95100015,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Reparación de motor - link de pago",
+   "date_created": "2026-08-05T17:13:00.000-03:00",
+   "date_approved": "2026-08-05T17:13:00.000-03:00",
+   "date_last_updated": "2026-08-05T17:13:00.000-03:00",
+   "transaction_amount": 902800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 848541.72
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2194
+   }
+  },
+  {
+   "id": 95100016,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-08-06T09:52:00.000-03:00",
+   "date_approved": "2026-08-06T09:52:00.000-03:00",
+   "date_last_updated": "2026-08-06T09:52:00.000-03:00",
+   "transaction_amount": 113100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 106302.69
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2155
+   }
+  },
+  {
+   "id": 96100043,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-08-06T13:55:00.000-03:00",
+   "date_approved": "2026-08-06T13:55:00.000-03:00",
+   "date_last_updated": "2026-08-06T13:55:00.000-03:00",
+   "transaction_amount": 967015,
+   "collector_id": 3049,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100017,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-06T15:14:00.000-03:00",
+   "date_approved": "2026-08-06T15:14:00.000-03:00",
+   "date_last_updated": "2026-08-06T15:14:00.000-03:00",
+   "transaction_amount": 177100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 166456.29
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2223
+   }
+  },
+  {
+   "id": 95100018,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-08-06T16:57:00.000-03:00",
+   "date_approved": "2026-08-06T16:57:00.000-03:00",
+   "date_last_updated": "2026-08-06T16:57:00.000-03:00",
+   "transaction_amount": 169800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 159595.02
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2093
+   }
+  },
+  {
+   "id": 95100023,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-08-07T09:29:00.000-03:00",
+   "date_approved": "2026-08-07T09:29:00.000-03:00",
+   "date_last_updated": "2026-08-07T09:29:00.000-03:00",
+   "transaction_amount": 74800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 70304.52
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2301
+   }
+  },
+  {
+   "id": 96100037,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Herramental y descartables",
+   "date_created": "2026-08-07T10:14:00.000-03:00",
+   "date_approved": "2026-08-07T10:14:00.000-03:00",
+   "date_last_updated": "2026-08-07T10:14:00.000-03:00",
+   "transaction_amount": 105093,
+   "collector_id": 3073,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100020,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-07T12:45:00.000-03:00",
+   "date_approved": "2026-08-07T12:45:00.000-03:00",
+   "date_last_updated": "2026-08-07T12:45:00.000-03:00",
+   "transaction_amount": 88900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 83557.11
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2355
+   }
+  },
+  {
+   "id": 95100021,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-07T15:16:00.000-03:00",
+   "date_approved": "2026-08-07T15:16:00.000-03:00",
+   "date_last_updated": "2026-08-07T15:16:00.000-03:00",
+   "transaction_amount": 82500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 77541.75
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2155
+   }
+  },
+  {
+   "id": 95100022,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-07T15:35:00.000-03:00",
+   "date_approved": "2026-08-07T15:35:00.000-03:00",
+   "date_last_updated": "2026-08-07T15:35:00.000-03:00",
+   "transaction_amount": 87100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 81865.29
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2262
+   }
+  },
+  {
+   "id": 95100019,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-08-07T16:06:00.000-03:00",
+   "date_approved": "2026-08-07T16:06:00.000-03:00",
+   "date_last_updated": "2026-08-07T16:06:00.000-03:00",
+   "transaction_amount": 108200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 101697.18
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2492
+   }
+  },
+  {
+   "id": 95100024,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-08T16:50:00.000-03:00",
+   "date_approved": "2026-08-08T16:50:00.000-03:00",
+   "date_last_updated": "2026-08-08T16:50:00.000-03:00",
+   "transaction_amount": 80600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 75755.94
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2499
+   }
+  },
+  {
+   "id": 95100026,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-08-08T16:56:00.000-03:00",
+   "date_approved": "2026-08-08T16:56:00.000-03:00",
+   "date_last_updated": "2026-08-08T16:56:00.000-03:00",
+   "transaction_amount": 75200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 70680.48
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2238
+   }
+  },
+  {
+   "id": 95100025,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-08T17:16:00.000-03:00",
+   "date_approved": "2026-08-08T17:16:00.000-03:00",
+   "date_last_updated": "2026-08-08T17:16:00.000-03:00",
+   "transaction_amount": 203600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 191363.64
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2035
+   }
+  },
+  {
+   "id": 96100004,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TELECOM internet y telefonia",
+   "date_created": "2026-08-10T11:44:00.000-03:00",
+   "date_approved": "2026-08-10T11:44:00.000-03:00",
+   "date_last_updated": "2026-08-10T11:44:00.000-03:00",
+   "transaction_amount": 64523,
+   "collector_id": 3004,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100028,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-08-10T13:47:00.000-03:00",
+   "date_approved": "2026-08-10T13:47:00.000-03:00",
+   "date_last_updated": "2026-08-10T13:47:00.000-03:00",
+   "transaction_amount": 102400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 96245.76
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2418
+   }
+  },
+  {
+   "id": 96100066,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REPUESTOS FRENOS DEL SUR SRL CUIT 30212662435",
+   "date_created": "2026-08-10T13:57:00.000-03:00",
+   "date_approved": "2026-08-10T13:57:00.000-03:00",
+   "date_last_updated": "2026-08-10T13:57:00.000-03:00",
+   "transaction_amount": 549080,
+   "collector_id": 3019,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100030,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-10T14:33:00.000-03:00",
+   "date_approved": "2026-08-10T14:33:00.000-03:00",
+   "date_last_updated": "2026-08-10T14:33:00.000-03:00",
+   "transaction_amount": 88500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 83181.15
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2408
+   }
+  },
+  {
+   "id": 96100005,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA F931 CARGAS SOCIALES",
+   "date_created": "2026-08-10T15:09:00.000-03:00",
+   "date_approved": "2026-08-10T15:09:00.000-03:00",
+   "date_last_updated": "2026-08-10T15:09:00.000-03:00",
+   "transaction_amount": 1898089,
+   "collector_id": 3075,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100031,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-10T17:00:00.000-03:00",
+   "date_approved": "2026-08-10T17:00:00.000-03:00",
+   "date_last_updated": "2026-08-10T17:00:00.000-03:00",
+   "transaction_amount": 84100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 79045.59
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2377
+   }
+  },
+  {
+   "id": 95100027,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-08-10T17:02:00.000-03:00",
+   "date_approved": "2026-08-10T17:02:00.000-03:00",
+   "date_last_updated": "2026-08-10T17:02:00.000-03:00",
+   "transaction_amount": 120300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 113069.97
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2354
+   }
+  },
+  {
+   "id": 95100029,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-08-10T17:03:00.000-03:00",
+   "date_approved": "2026-08-10T17:03:00.000-03:00",
+   "date_last_updated": "2026-08-10T17:03:00.000-03:00",
+   "transaction_amount": 427400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 401713.26
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2222
+   }
+  },
+  {
+   "id": 95100297,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REMISES CENTRO SRL",
+   "date_created": "2026-08-11T13:02:00.000-03:00",
+   "date_approved": "2026-08-11T13:02:00.000-03:00",
+   "date_last_updated": "2026-08-11T13:02:00.000-03:00",
+   "transaction_amount": 1481573,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 1481573
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2437
+   }
+  },
+  {
+   "id": 95100034,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-08-11T13:19:00.000-03:00",
+   "date_approved": "2026-08-11T13:19:00.000-03:00",
+   "date_last_updated": "2026-08-11T13:19:00.000-03:00",
+   "transaction_amount": 85700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 80549.43
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2413
+   }
+  },
+  {
+   "id": 96100056,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LUBRICANTES ANDINOS SA CUIT 30212504053",
+   "date_created": "2026-08-11T15:08:00.000-03:00",
+   "date_approved": "2026-08-11T15:08:00.000-03:00",
+   "date_last_updated": "2026-08-11T15:08:00.000-03:00",
+   "transaction_amount": 1048793,
+   "collector_id": 3065,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100033,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-08-11T15:27:00.000-03:00",
+   "date_approved": "2026-08-11T15:27:00.000-03:00",
+   "date_last_updated": "2026-08-11T15:27:00.000-03:00",
+   "transaction_amount": 417300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 392220.27
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2044
+   }
+  },
+  {
+   "id": 95100032,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-08-11T17:48:00.000-03:00",
+   "date_approved": "2026-08-11T17:48:00.000-03:00",
+   "date_last_updated": "2026-08-11T17:48:00.000-03:00",
+   "transaction_amount": 181300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 170403.87
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2132
+   }
+  },
+  {
+   "id": 95100037,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Reparación de motor - link de pago",
+   "date_created": "2026-08-12T13:58:00.000-03:00",
+   "date_approved": "2026-08-12T13:58:00.000-03:00",
+   "date_last_updated": "2026-08-12T13:58:00.000-03:00",
+   "transaction_amount": 919100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 863862.09
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2253
+   }
+  },
+  {
+   "id": 96100006,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "EPEC energia electrica",
+   "date_created": "2026-08-12T14:46:00.000-03:00",
+   "date_approved": "2026-08-12T14:46:00.000-03:00",
+   "date_last_updated": "2026-08-12T14:46:00.000-03:00",
+   "transaction_amount": 493140,
+   "collector_id": 3083,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100035,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-08-12T15:15:00.000-03:00",
+   "date_approved": "2026-08-12T15:15:00.000-03:00",
+   "date_last_updated": "2026-08-12T15:15:00.000-03:00",
+   "transaction_amount": 187100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 175855.29
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2303
+   }
+  },
+  {
+   "id": 95100036,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-08-12T16:39:00.000-03:00",
+   "date_approved": "2026-08-12T16:39:00.000-03:00",
+   "date_last_updated": "2026-08-12T16:39:00.000-03:00",
+   "transaction_amount": 80500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 75661.95
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2454
+   }
+  },
+  {
+   "id": 95100039,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-08-13T10:15:00.000-03:00",
+   "date_approved": "2026-08-13T10:15:00.000-03:00",
+   "date_last_updated": "2026-08-13T10:15:00.000-03:00",
+   "transaction_amount": 128000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 120307.2
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2004
+   }
+  },
+  {
+   "id": 95100038,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-08-13T11:22:00.000-03:00",
+   "date_approved": "2026-08-13T11:22:00.000-03:00",
+   "date_last_updated": "2026-08-13T11:22:00.000-03:00",
+   "transaction_amount": 396300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 372482.37
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2224
+   }
+  },
+  {
+   "id": 96100044,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-08-13T14:36:00.000-03:00",
+   "date_approved": "2026-08-13T14:36:00.000-03:00",
+   "date_last_updated": "2026-08-13T14:36:00.000-03:00",
+   "transaction_amount": 1050292,
+   "collector_id": 3038,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100040,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-08-13T17:51:00.000-03:00",
+   "date_approved": "2026-08-13T17:51:00.000-03:00",
+   "date_last_updated": "2026-08-13T17:51:00.000-03:00",
+   "transaction_amount": 443800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 417127.62
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2179
+   }
+  },
+  {
+   "id": 95100043,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-14T09:19:00.000-03:00",
+   "date_approved": "2026-08-14T09:19:00.000-03:00",
+   "date_last_updated": "2026-08-14T09:19:00.000-03:00",
+   "transaction_amount": 185700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 174539.43
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2320
+   }
+  },
+  {
+   "id": 95100041,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-08-14T13:14:00.000-03:00",
+   "date_approved": "2026-08-14T13:14:00.000-03:00",
+   "date_last_updated": "2026-08-14T13:14:00.000-03:00",
+   "transaction_amount": 392700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 369098.73
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2436
+   }
+  },
+  {
+   "id": 95100044,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-08-14T14:38:00.000-03:00",
+   "date_approved": "2026-08-14T14:38:00.000-03:00",
+   "date_last_updated": "2026-08-14T14:38:00.000-03:00",
+   "transaction_amount": 120200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 112975.98
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2344
+   }
+  },
+  {
+   "id": 95100045,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-08-14T15:48:00.000-03:00",
+   "date_approved": "2026-08-14T15:48:00.000-03:00",
+   "date_last_updated": "2026-08-14T15:48:00.000-03:00",
+   "transaction_amount": 359100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 337518.09
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2104
+   }
+  },
+  {
+   "id": 95100042,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-08-14T16:34:00.000-03:00",
+   "date_approved": "2026-08-14T16:34:00.000-03:00",
+   "date_last_updated": "2026-08-14T16:34:00.000-03:00",
+   "transaction_amount": 91000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 85530.9
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2188
+   }
+  },
+  {
+   "id": 95100047,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-08-15T14:35:00.000-03:00",
+   "date_approved": "2026-08-15T14:35:00.000-03:00",
+   "date_last_updated": "2026-08-15T14:35:00.000-03:00",
+   "transaction_amount": 115700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 108746.43
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2076
+   }
+  },
+  {
+   "id": 95100046,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-08-15T16:44:00.000-03:00",
+   "date_approved": "2026-08-15T16:44:00.000-03:00",
+   "date_last_updated": "2026-08-15T16:44:00.000-03:00",
+   "transaction_amount": 114600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 107712.54
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2379
+   }
+  },
+  {
+   "id": 95100050,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-08-18T09:10:00.000-03:00",
+   "date_approved": "2026-08-18T09:10:00.000-03:00",
+   "date_last_updated": "2026-08-18T09:10:00.000-03:00",
+   "transaction_amount": 190900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 179426.91
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2392
+   }
+  },
+  {
+   "id": 96100007,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP RENTAS IIBB",
+   "date_created": "2026-08-18T11:59:00.000-03:00",
+   "date_approved": "2026-08-18T11:59:00.000-03:00",
+   "date_last_updated": "2026-08-18T11:59:00.000-03:00",
+   "transaction_amount": 529533,
+   "collector_id": 3083,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100049,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-08-18T12:30:00.000-03:00",
+   "date_approved": "2026-08-18T12:30:00.000-03:00",
+   "date_last_updated": "2026-08-18T12:30:00.000-03:00",
+   "transaction_amount": 103300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 97091.67
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2203
+   }
+  },
+  {
+   "id": 95100051,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-08-18T13:29:00.000-03:00",
+   "date_approved": "2026-08-18T13:29:00.000-03:00",
+   "date_last_updated": "2026-08-18T13:29:00.000-03:00",
+   "transaction_amount": 66300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 62315.37
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2114
+   }
+  },
+  {
+   "id": 95100048,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-08-18T14:24:00.000-03:00",
+   "date_approved": "2026-08-18T14:24:00.000-03:00",
+   "date_last_updated": "2026-08-18T14:24:00.000-03:00",
+   "transaction_amount": 420900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 395603.91
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2467
+   }
+  },
+  {
+   "id": 96100008,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA IVA DDJJ",
+   "date_created": "2026-08-18T14:38:00.000-03:00",
+   "date_approved": "2026-08-18T14:38:00.000-03:00",
+   "date_last_updated": "2026-08-18T14:38:00.000-03:00",
+   "transaction_amount": 1150987,
+   "collector_id": 3008,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100062,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "NEUMATICOS PAMPEANOS SRL CUIT 30212583244",
+   "date_created": "2026-08-18T15:37:00.000-03:00",
+   "date_approved": "2026-08-18T15:37:00.000-03:00",
+   "date_last_updated": "2026-08-18T15:37:00.000-03:00",
+   "transaction_amount": 1004061,
+   "collector_id": 3070,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100291,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "TRANSPORTE ALTOS DEL RIO SRL",
+   "date_created": "2026-08-18T17:51:00.000-03:00",
+   "date_approved": "2026-08-18T17:51:00.000-03:00",
+   "date_last_updated": "2026-08-18T17:51:00.000-03:00",
+   "transaction_amount": 1982032,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 1982032
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2265
+   }
+  },
+  {
+   "id": 95100053,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-08-19T09:15:00.000-03:00",
+   "date_approved": "2026-08-19T09:15:00.000-03:00",
+   "date_last_updated": "2026-08-19T09:15:00.000-03:00",
+   "transaction_amount": 377500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 354812.25
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2055
+   }
+  },
+  {
+   "id": 95100054,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-19T11:52:00.000-03:00",
+   "date_approved": "2026-08-19T11:52:00.000-03:00",
+   "date_last_updated": "2026-08-19T11:52:00.000-03:00",
+   "transaction_amount": 174400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 163918.56
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2205
+   }
+  },
+  {
+   "id": 95100052,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-08-19T13:21:00.000-03:00",
+   "date_approved": "2026-08-19T13:21:00.000-03:00",
+   "date_last_updated": "2026-08-19T13:21:00.000-03:00",
+   "transaction_amount": 82300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 77353.77
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2457
+   }
+  },
+  {
+   "id": 95100055,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-08-19T13:27:00.000-03:00",
+   "date_approved": "2026-08-19T13:27:00.000-03:00",
+   "date_last_updated": "2026-08-19T13:27:00.000-03:00",
+   "transaction_amount": 425800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 400209.42
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2073
+   }
+  },
+  {
+   "id": 95100056,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-08-20T09:44:00.000-03:00",
+   "date_approved": "2026-08-20T09:44:00.000-03:00",
+   "date_last_updated": "2026-08-20T09:44:00.000-03:00",
+   "transaction_amount": 126700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 119085.33
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2459
+   }
+  },
+  {
+   "id": 95100057,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-20T10:31:00.000-03:00",
+   "date_approved": "2026-08-20T10:31:00.000-03:00",
+   "date_last_updated": "2026-08-20T10:31:00.000-03:00",
+   "transaction_amount": 202200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 190047.78
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2092
+   }
+  },
+  {
+   "id": 96100045,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-08-20T12:38:00.000-03:00",
+   "date_approved": "2026-08-20T12:38:00.000-03:00",
+   "date_last_updated": "2026-08-20T12:38:00.000-03:00",
+   "transaction_amount": 945936,
+   "collector_id": 3037,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100058,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-08-20T13:44:00.000-03:00",
+   "date_approved": "2026-08-20T13:44:00.000-03:00",
+   "date_last_updated": "2026-08-20T13:44:00.000-03:00",
+   "transaction_amount": 125400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 117863.46
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2048
+   }
+  },
+  {
+   "id": 95100059,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-20T17:32:00.000-03:00",
+   "date_approved": "2026-08-20T17:32:00.000-03:00",
+   "date_last_updated": "2026-08-20T17:32:00.000-03:00",
+   "transaction_amount": 165800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 155835.42
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2191
+   }
+  },
+  {
+   "id": 95100060,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-08-21T11:42:00.000-03:00",
+   "date_approved": "2026-08-21T11:42:00.000-03:00",
+   "date_last_updated": "2026-08-21T11:42:00.000-03:00",
+   "transaction_amount": 64900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 60999.51
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2366
+   }
+  },
+  {
+   "id": 95100064,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-08-21T13:25:00.000-03:00",
+   "date_approved": "2026-08-21T13:25:00.000-03:00",
+   "date_last_updated": "2026-08-21T13:25:00.000-03:00",
+   "transaction_amount": 115500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 108558.45
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2072
+   }
+  },
+  {
+   "id": 95100062,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-08-21T15:17:00.000-03:00",
+   "date_approved": "2026-08-21T15:17:00.000-03:00",
+   "date_last_updated": "2026-08-21T15:17:00.000-03:00",
+   "transaction_amount": 108700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 102167.13
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2424
+   }
+  },
+  {
+   "id": 95100063,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-08-21T17:03:00.000-03:00",
+   "date_approved": "2026-08-21T17:03:00.000-03:00",
+   "date_last_updated": "2026-08-21T17:03:00.000-03:00",
+   "transaction_amount": 70500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 66262.95
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2109
+   }
+  },
+  {
+   "id": 95100061,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-21T17:50:00.000-03:00",
+   "date_approved": "2026-08-21T17:50:00.000-03:00",
+   "date_last_updated": "2026-08-21T17:50:00.000-03:00",
+   "transaction_amount": 80500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 75661.95
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2374
+   }
+  },
+  {
+   "id": 95100065,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Reparación de motor - cobro QR",
+   "date_created": "2026-08-22T14:38:00.000-03:00",
+   "date_approved": "2026-08-22T14:38:00.000-03:00",
+   "date_last_updated": "2026-08-22T14:38:00.000-03:00",
+   "transaction_amount": 958800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 901176.12
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2173
+   }
+  },
+  {
+   "id": 95100066,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-08-22T17:22:00.000-03:00",
+   "date_approved": "2026-08-22T17:22:00.000-03:00",
+   "date_last_updated": "2026-08-22T17:22:00.000-03:00",
+   "transaction_amount": 73600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 69176.64
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2060
+   }
+  },
+  {
+   "id": 95100069,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-08-24T09:19:00.000-03:00",
+   "date_approved": "2026-08-24T09:19:00.000-03:00",
+   "date_last_updated": "2026-08-24T09:19:00.000-03:00",
+   "transaction_amount": 78200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 73500.18
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2228
+   }
+  },
+  {
+   "id": 96100067,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REPUESTOS FRENOS DEL SUR SRL CUIT 30212662435",
+   "date_created": "2026-08-24T10:15:00.000-03:00",
+   "date_approved": "2026-08-24T10:15:00.000-03:00",
+   "date_last_updated": "2026-08-24T10:15:00.000-03:00",
+   "transaction_amount": 610731,
+   "collector_id": 3005,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100068,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-24T11:53:00.000-03:00",
+   "date_approved": "2026-08-24T11:53:00.000-03:00",
+   "date_last_updated": "2026-08-24T11:53:00.000-03:00",
+   "transaction_amount": 83800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 78763.62
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2138
+   }
+  },
+  {
+   "id": 96100009,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "AGUAS servicio de agua",
+   "date_created": "2026-08-24T11:59:00.000-03:00",
+   "date_approved": "2026-08-24T11:59:00.000-03:00",
+   "date_last_updated": "2026-08-24T11:59:00.000-03:00",
+   "transaction_amount": 64204,
+   "collector_id": 3000,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100304,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LOGISTICA PAMPA NORTE SA",
+   "date_created": "2026-08-24T12:32:00.000-03:00",
+   "date_approved": "2026-08-24T12:32:00.000-03:00",
+   "date_last_updated": "2026-08-24T12:32:00.000-03:00",
+   "transaction_amount": 2177448,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 2177448
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2350
+   }
+  },
+  {
+   "id": 95100067,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-08-24T15:47:00.000-03:00",
+   "date_approved": "2026-08-24T15:47:00.000-03:00",
+   "date_last_updated": "2026-08-24T15:47:00.000-03:00",
+   "transaction_amount": 66300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 62315.37
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2206
+   }
+  },
+  {
+   "id": 96100057,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LUBRICANTES ANDINOS SA CUIT 30212504053",
+   "date_created": "2026-08-25T11:41:00.000-03:00",
+   "date_approved": "2026-08-25T11:41:00.000-03:00",
+   "date_last_updated": "2026-08-25T11:41:00.000-03:00",
+   "transaction_amount": 848539,
+   "collector_id": 3034,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100073,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-08-25T11:46:00.000-03:00",
+   "date_approved": "2026-08-25T11:46:00.000-03:00",
+   "date_last_updated": "2026-08-25T11:46:00.000-03:00",
+   "transaction_amount": 362500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 340713.75
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2156
+   }
+  },
+  {
+   "id": 95100070,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-25T13:10:00.000-03:00",
+   "date_approved": "2026-08-25T13:10:00.000-03:00",
+   "date_last_updated": "2026-08-25T13:10:00.000-03:00",
+   "transaction_amount": 161900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 152169.81
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2160
+   }
+  },
+  {
+   "id": 96100010,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "SEGURO integral y ART",
+   "date_created": "2026-08-25T14:07:00.000-03:00",
+   "date_approved": "2026-08-25T14:07:00.000-03:00",
+   "date_last_updated": "2026-08-25T14:07:00.000-03:00",
+   "transaction_amount": 227425,
+   "collector_id": 3077,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100072,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Reparación de motor - link de pago",
+   "date_created": "2026-08-25T15:01:00.000-03:00",
+   "date_approved": "2026-08-25T15:01:00.000-03:00",
+   "date_last_updated": "2026-08-25T15:01:00.000-03:00",
+   "transaction_amount": 847100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 796189.29
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2398
+   }
+  },
+  {
+   "id": 95100071,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-25T15:24:00.000-03:00",
+   "date_approved": "2026-08-25T15:24:00.000-03:00",
+   "date_last_updated": "2026-08-25T15:24:00.000-03:00",
+   "transaction_amount": 179800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 168994.02
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2088
+   }
+  },
+  {
+   "id": 95100074,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-08-25T15:53:00.000-03:00",
+   "date_approved": "2026-08-25T15:53:00.000-03:00",
+   "date_last_updated": "2026-08-25T15:53:00.000-03:00",
+   "transaction_amount": 62100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 58367.79
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2488
+   }
+  },
+  {
+   "id": 96100038,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Herramental y descartables",
+   "date_created": "2026-08-26T12:17:00.000-03:00",
+   "date_approved": "2026-08-26T12:17:00.000-03:00",
+   "date_last_updated": "2026-08-26T12:17:00.000-03:00",
+   "transaction_amount": 73253,
+   "collector_id": 3038,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100078,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-26T14:08:00.000-03:00",
+   "date_approved": "2026-08-26T14:08:00.000-03:00",
+   "date_last_updated": "2026-08-26T14:08:00.000-03:00",
+   "transaction_amount": 76600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 71996.34
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2469
+   }
+  },
+  {
+   "id": 96100011,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "HONORARIOS estudio contable",
+   "date_created": "2026-08-26T15:13:00.000-03:00",
+   "date_approved": "2026-08-26T15:13:00.000-03:00",
+   "date_last_updated": "2026-08-26T15:13:00.000-03:00",
+   "transaction_amount": 205686,
+   "collector_id": 3006,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100077,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-08-26T16:42:00.000-03:00",
+   "date_approved": "2026-08-26T16:42:00.000-03:00",
+   "date_last_updated": "2026-08-26T16:42:00.000-03:00",
+   "transaction_amount": 195400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 183656.46
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2329
+   }
+  },
+  {
+   "id": 95100298,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REMISES CENTRO SRL",
+   "date_created": "2026-08-26T17:05:00.000-03:00",
+   "date_approved": "2026-08-26T17:05:00.000-03:00",
+   "date_last_updated": "2026-08-26T17:05:00.000-03:00",
+   "transaction_amount": 1593699,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 1593699
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2415
+   }
+  },
+  {
+   "id": 95100075,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-08-26T17:08:00.000-03:00",
+   "date_approved": "2026-08-26T17:08:00.000-03:00",
+   "date_last_updated": "2026-08-26T17:08:00.000-03:00",
+   "transaction_amount": 200800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 188731.92
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2279
+   }
+  },
+  {
+   "id": 95100076,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-08-26T17:35:00.000-03:00",
+   "date_approved": "2026-08-26T17:35:00.000-03:00",
+   "date_last_updated": "2026-08-26T17:35:00.000-03:00",
+   "transaction_amount": 187200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 175949.28
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2163
+   }
+  },
+  {
+   "id": 96100046,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-08-27T10:37:00.000-03:00",
+   "date_approved": "2026-08-27T10:37:00.000-03:00",
+   "date_last_updated": "2026-08-27T10:37:00.000-03:00",
+   "transaction_amount": 932907,
+   "collector_id": 3053,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100081,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-08-27T11:41:00.000-03:00",
+   "date_approved": "2026-08-27T11:41:00.000-03:00",
+   "date_last_updated": "2026-08-27T11:41:00.000-03:00",
+   "transaction_amount": 110200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 103576.98
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2195
+   }
+  },
+  {
+   "id": 95100080,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-27T15:22:00.000-03:00",
+   "date_approved": "2026-08-27T15:22:00.000-03:00",
+   "date_last_updated": "2026-08-27T15:22:00.000-03:00",
+   "transaction_amount": 86000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 80831.4
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2212
+   }
+  },
+  {
+   "id": 95100079,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-08-27T16:10:00.000-03:00",
+   "date_approved": "2026-08-27T16:10:00.000-03:00",
+   "date_last_updated": "2026-08-27T16:10:00.000-03:00",
+   "transaction_amount": 173600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 163166.64
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2453
+   }
+  },
+  {
+   "id": 95100082,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-08-27T17:09:00.000-03:00",
+   "date_approved": "2026-08-27T17:09:00.000-03:00",
+   "date_last_updated": "2026-08-27T17:09:00.000-03:00",
+   "transaction_amount": 67900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 63819.21
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2374
+   }
+  },
+  {
+   "id": 96100012,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "RETIRO SOCIO TRANSF CTA PROPIA",
+   "date_created": "2026-08-28T10:08:00.000-03:00",
+   "date_approved": "2026-08-28T10:08:00.000-03:00",
+   "date_last_updated": "2026-08-28T10:08:00.000-03:00",
+   "transaction_amount": 1799345,
+   "collector_id": 3050,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100087,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-08-28T11:20:00.000-03:00",
+   "date_approved": "2026-08-28T11:20:00.000-03:00",
+   "date_last_updated": "2026-08-28T11:20:00.000-03:00",
+   "transaction_amount": 129000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 121247.1
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2465
+   }
+  },
+  {
+   "id": 95100085,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-08-28T11:57:00.000-03:00",
+   "date_approved": "2026-08-28T11:57:00.000-03:00",
+   "date_last_updated": "2026-08-28T11:57:00.000-03:00",
+   "transaction_amount": 425200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 399645.48
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2493
+   }
+  },
+  {
+   "id": 95100084,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-08-28T12:42:00.000-03:00",
+   "date_approved": "2026-08-28T12:42:00.000-03:00",
+   "date_last_updated": "2026-08-28T12:42:00.000-03:00",
+   "transaction_amount": 74200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 69740.58
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2420
+   }
+  },
+  {
+   "id": 95100292,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "TRANSPORTE ALTOS DEL RIO SRL",
+   "date_created": "2026-08-28T15:56:00.000-03:00",
+   "date_approved": "2026-08-28T15:56:00.000-03:00",
+   "date_last_updated": "2026-08-28T15:56:00.000-03:00",
+   "transaction_amount": 2479916,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 2479916
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2313
+   }
+  },
+  {
+   "id": 95100086,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-08-28T16:54:00.000-03:00",
+   "date_approved": "2026-08-28T16:54:00.000-03:00",
+   "date_last_updated": "2026-08-28T16:54:00.000-03:00",
+   "transaction_amount": 72200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 67860.78
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2019
+   }
+  },
+  {
+   "id": 95100083,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-08-28T17:50:00.000-03:00",
+   "date_approved": "2026-08-28T17:50:00.000-03:00",
+   "date_last_updated": "2026-08-28T17:50:00.000-03:00",
+   "transaction_amount": 165200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 155271.48
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2354
+   }
+  },
+  {
+   "id": 95100088,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-08-29T11:33:00.000-03:00",
+   "date_approved": "2026-08-29T11:33:00.000-03:00",
+   "date_last_updated": "2026-08-29T11:33:00.000-03:00",
+   "transaction_amount": 90400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 84966.96
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2385
+   }
+  },
+  {
+   "id": 95100089,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-08-29T15:31:00.000-03:00",
+   "date_approved": "2026-08-29T15:31:00.000-03:00",
+   "date_last_updated": "2026-08-29T15:31:00.000-03:00",
+   "transaction_amount": 67100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 63067.29
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2381
+   }
+  },
+  {
+   "id": 95100090,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-08-31T10:50:00.000-03:00",
+   "date_approved": "2026-08-31T10:50:00.000-03:00",
+   "date_last_updated": "2026-08-31T10:50:00.000-03:00",
+   "transaction_amount": 70000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 65793
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2118
+   }
+  },
+  {
+   "id": 95100091,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-08-31T11:06:00.000-03:00",
+   "date_approved": "2026-08-31T11:06:00.000-03:00",
+   "date_last_updated": "2026-08-31T11:06:00.000-03:00",
+   "transaction_amount": 85600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 80455.44
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2371
+   }
+  },
+  {
+   "id": 95100092,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-08-31T16:35:00.000-03:00",
+   "date_approved": "2026-08-31T16:35:00.000-03:00",
+   "date_last_updated": "2026-08-31T16:35:00.000-03:00",
+   "transaction_amount": 115000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 108088.5
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2434
+   }
+  },
+  {
+   "id": 95100093,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-01T11:09:00.000-03:00",
+   "date_approved": "2026-09-01T11:09:00.000-03:00",
+   "date_last_updated": "2026-09-01T11:09:00.000-03:00",
+   "transaction_amount": 208200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 195687.18
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2131
+   }
+  },
+  {
+   "id": 95100094,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-09-01T12:36:00.000-03:00",
+   "date_approved": "2026-09-01T12:36:00.000-03:00",
+   "date_last_updated": "2026-09-01T12:36:00.000-03:00",
+   "transaction_amount": 85600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 80455.44
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2352
+   }
+  },
+  {
+   "id": 95100095,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-09-01T16:15:00.000-03:00",
+   "date_approved": "2026-09-01T16:15:00.000-03:00",
+   "date_last_updated": "2026-09-01T16:15:00.000-03:00",
+   "transaction_amount": 197200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 185348.28
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2288
+   }
+  },
+  {
+   "id": 95100098,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-09-02T10:47:00.000-03:00",
+   "date_approved": "2026-09-02T10:47:00.000-03:00",
+   "date_last_updated": "2026-09-02T10:47:00.000-03:00",
+   "transaction_amount": 61600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 57897.84
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2185
+   }
+  },
+  {
+   "id": 95100097,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-02T10:50:00.000-03:00",
+   "date_approved": "2026-09-02T10:50:00.000-03:00",
+   "date_last_updated": "2026-09-02T10:50:00.000-03:00",
+   "transaction_amount": 182600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 171625.74
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2083
+   }
+  },
+  {
+   "id": 95100096,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-02T17:50:00.000-03:00",
+   "date_approved": "2026-09-02T17:50:00.000-03:00",
+   "date_last_updated": "2026-09-02T17:50:00.000-03:00",
+   "transaction_amount": 184700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 173599.53
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2049
+   }
+  },
+  {
+   "id": 96100047,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-09-03T11:25:00.000-03:00",
+   "date_approved": "2026-09-03T11:25:00.000-03:00",
+   "date_last_updated": "2026-09-03T11:25:00.000-03:00",
+   "transaction_amount": 985956,
+   "collector_id": 3003,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100013,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "ALQUILER galpón taller INMOB CENTRO",
+   "date_created": "2026-09-03T12:10:00.000-03:00",
+   "date_approved": "2026-09-03T12:10:00.000-03:00",
+   "date_last_updated": "2026-09-03T12:10:00.000-03:00",
+   "transaction_amount": 1445154,
+   "collector_id": 3011,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100101,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-03T12:34:00.000-03:00",
+   "date_approved": "2026-09-03T12:34:00.000-03:00",
+   "date_last_updated": "2026-09-03T12:34:00.000-03:00",
+   "transaction_amount": 124800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 117299.52
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2264
+   }
+  },
+  {
+   "id": 95100099,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-09-03T13:59:00.000-03:00",
+   "date_approved": "2026-09-03T13:59:00.000-03:00",
+   "date_last_updated": "2026-09-03T13:59:00.000-03:00",
+   "transaction_amount": 88400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 83087.16
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2328
+   }
+  },
+  {
+   "id": 95100100,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-03T15:39:00.000-03:00",
+   "date_approved": "2026-09-03T15:39:00.000-03:00",
+   "date_last_updated": "2026-09-03T15:39:00.000-03:00",
+   "transaction_amount": 119600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 112412.04
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2280
+   }
+  },
+  {
+   "id": 95100102,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-09-04T10:45:00.000-03:00",
+   "date_approved": "2026-09-04T10:45:00.000-03:00",
+   "date_last_updated": "2026-09-04T10:45:00.000-03:00",
+   "transaction_amount": 90900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 85436.91
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2207
+   }
+  },
+  {
+   "id": 95100105,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-09-04T11:31:00.000-03:00",
+   "date_approved": "2026-09-04T11:31:00.000-03:00",
+   "date_last_updated": "2026-09-04T11:31:00.000-03:00",
+   "transaction_amount": 459300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 431696.07
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2004
+   }
+  },
+  {
+   "id": 95100103,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-04T11:55:00.000-03:00",
+   "date_approved": "2026-09-04T11:55:00.000-03:00",
+   "date_last_updated": "2026-09-04T11:55:00.000-03:00",
+   "transaction_amount": 104900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 98595.51
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2163
+   }
+  },
+  {
+   "id": 95100104,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-09-04T17:54:00.000-03:00",
+   "date_approved": "2026-09-04T17:54:00.000-03:00",
+   "date_last_updated": "2026-09-04T17:54:00.000-03:00",
+   "transaction_amount": 80200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 75379.98
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2093
+   }
+  },
+  {
+   "id": 95100107,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-09-05T13:27:00.000-03:00",
+   "date_approved": "2026-09-05T13:27:00.000-03:00",
+   "date_last_updated": "2026-09-05T13:27:00.000-03:00",
+   "transaction_amount": 61600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 57897.84
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2357
+   }
+  },
+  {
+   "id": 95100106,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-09-05T17:24:00.000-03:00",
+   "date_approved": "2026-09-05T17:24:00.000-03:00",
+   "date_last_updated": "2026-09-05T17:24:00.000-03:00",
+   "transaction_amount": 180600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 169745.94
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2072
+   }
+  },
+  {
+   "id": 95100108,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-07T09:10:00.000-03:00",
+   "date_approved": "2026-09-07T09:10:00.000-03:00",
+   "date_last_updated": "2026-09-07T09:10:00.000-03:00",
+   "transaction_amount": 106900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 100475.31
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2463
+   }
+  },
+  {
+   "id": 95100112,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-07T10:19:00.000-03:00",
+   "date_approved": "2026-09-07T10:19:00.000-03:00",
+   "date_last_updated": "2026-09-07T10:19:00.000-03:00",
+   "transaction_amount": 118700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 111566.13
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2480
+   }
+  },
+  {
+   "id": 96100014,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "PAGO HABERES NOMINA 6 EMPL",
+   "date_created": "2026-09-07T10:47:00.000-03:00",
+   "date_approved": "2026-09-07T10:47:00.000-03:00",
+   "date_last_updated": "2026-09-07T10:47:00.000-03:00",
+   "transaction_amount": 7122885,
+   "collector_id": 3051,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100015,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TASA municipal comercio Municipalidad de Villa Maria",
+   "date_created": "2026-09-07T10:57:00.000-03:00",
+   "date_approved": "2026-09-07T10:57:00.000-03:00",
+   "date_last_updated": "2026-09-07T10:57:00.000-03:00",
+   "transaction_amount": 138920,
+   "collector_id": 3053,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100068,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REPUESTOS FRENOS DEL SUR SRL CUIT 30212662435",
+   "date_created": "2026-09-07T12:19:00.000-03:00",
+   "date_approved": "2026-09-07T12:19:00.000-03:00",
+   "date_last_updated": "2026-09-07T12:19:00.000-03:00",
+   "transaction_amount": 604759,
+   "collector_id": 3066,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100111,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-09-07T13:40:00.000-03:00",
+   "date_approved": "2026-09-07T13:40:00.000-03:00",
+   "date_last_updated": "2026-09-07T13:40:00.000-03:00",
+   "transaction_amount": 70700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 66450.93
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2475
+   }
+  },
+  {
+   "id": 95100110,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-09-07T14:54:00.000-03:00",
+   "date_approved": "2026-09-07T14:54:00.000-03:00",
+   "date_last_updated": "2026-09-07T14:54:00.000-03:00",
+   "transaction_amount": 77800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 73124.22
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2409
+   }
+  },
+  {
+   "id": 95100109,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-07T15:33:00.000-03:00",
+   "date_approved": "2026-09-07T15:33:00.000-03:00",
+   "date_last_updated": "2026-09-07T15:33:00.000-03:00",
+   "transaction_amount": 74100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 69646.59
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2014
+   }
+  },
+  {
+   "id": 95100113,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-08T09:28:00.000-03:00",
+   "date_approved": "2026-09-08T09:28:00.000-03:00",
+   "date_last_updated": "2026-09-08T09:28:00.000-03:00",
+   "transaction_amount": 125300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 117769.47
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2028
+   }
+  },
+  {
+   "id": 96100016,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TELECOM internet y telefonia",
+   "date_created": "2026-09-08T10:03:00.000-03:00",
+   "date_approved": "2026-09-08T10:03:00.000-03:00",
+   "date_last_updated": "2026-09-08T10:03:00.000-03:00",
+   "transaction_amount": 65804,
+   "collector_id": 3057,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100114,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-09-08T10:39:00.000-03:00",
+   "date_approved": "2026-09-08T10:39:00.000-03:00",
+   "date_last_updated": "2026-09-08T10:39:00.000-03:00",
+   "transaction_amount": 84300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 79233.57
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2035
+   }
+  },
+  {
+   "id": 95100115,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-08T11:42:00.000-03:00",
+   "date_approved": "2026-09-08T11:42:00.000-03:00",
+   "date_last_updated": "2026-09-08T11:42:00.000-03:00",
+   "transaction_amount": 181300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 170403.87
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2209
+   }
+  },
+  {
+   "id": 96100058,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LUBRICANTES ANDINOS SA CUIT 30212504053",
+   "date_created": "2026-09-08T13:31:00.000-03:00",
+   "date_approved": "2026-09-08T13:31:00.000-03:00",
+   "date_last_updated": "2026-09-08T13:31:00.000-03:00",
+   "transaction_amount": 1014172,
+   "collector_id": 3071,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100063,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "NEUMATICOS PAMPEANOS SRL CUIT 30212583244",
+   "date_created": "2026-09-08T15:58:00.000-03:00",
+   "date_approved": "2026-09-08T15:58:00.000-03:00",
+   "date_last_updated": "2026-09-08T15:58:00.000-03:00",
+   "transaction_amount": 1054456,
+   "collector_id": 3026,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100120,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-09T10:11:00.000-03:00",
+   "date_approved": "2026-09-09T10:11:00.000-03:00",
+   "date_last_updated": "2026-09-09T10:11:00.000-03:00",
+   "transaction_amount": 107300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 100851.27
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2336
+   }
+  },
+  {
+   "id": 95100299,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REMISES CENTRO SRL",
+   "date_created": "2026-09-09T13:00:00.000-03:00",
+   "date_approved": "2026-09-09T13:00:00.000-03:00",
+   "date_last_updated": "2026-09-09T13:00:00.000-03:00",
+   "transaction_amount": 1826524,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 1826524
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2024
+   }
+  },
+  {
+   "id": 95100118,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-09-09T13:06:00.000-03:00",
+   "date_approved": "2026-09-09T13:06:00.000-03:00",
+   "date_last_updated": "2026-09-09T13:06:00.000-03:00",
+   "transaction_amount": 88500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 83181.15
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2226
+   }
+  },
+  {
+   "id": 95100119,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-09-09T14:04:00.000-03:00",
+   "date_approved": "2026-09-09T14:04:00.000-03:00",
+   "date_last_updated": "2026-09-09T14:04:00.000-03:00",
+   "transaction_amount": 73600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 69176.64
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2241
+   }
+  },
+  {
+   "id": 95100116,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-09T14:24:00.000-03:00",
+   "date_approved": "2026-09-09T14:24:00.000-03:00",
+   "date_last_updated": "2026-09-09T14:24:00.000-03:00",
+   "transaction_amount": 121000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 113727.9
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2098
+   }
+  },
+  {
+   "id": 95100117,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-09T16:47:00.000-03:00",
+   "date_approved": "2026-09-09T16:47:00.000-03:00",
+   "date_last_updated": "2026-09-09T16:47:00.000-03:00",
+   "transaction_amount": 90800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 85342.92
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2031
+   }
+  },
+  {
+   "id": 95100125,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-10T09:15:00.000-03:00",
+   "date_approved": "2026-09-10T09:15:00.000-03:00",
+   "date_last_updated": "2026-09-10T09:15:00.000-03:00",
+   "transaction_amount": 111400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 104704.86
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2180
+   }
+  },
+  {
+   "id": 96100048,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-09-10T10:27:00.000-03:00",
+   "date_approved": "2026-09-10T10:27:00.000-03:00",
+   "date_last_updated": "2026-09-10T10:27:00.000-03:00",
+   "transaction_amount": 1003422,
+   "collector_id": 3052,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100123,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-09-10T12:20:00.000-03:00",
+   "date_approved": "2026-09-10T12:20:00.000-03:00",
+   "date_last_updated": "2026-09-10T12:20:00.000-03:00",
+   "transaction_amount": 186400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 175197.36
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2221
+   }
+  },
+  {
+   "id": 96100017,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA F931 CARGAS SOCIALES",
+   "date_created": "2026-09-10T13:54:00.000-03:00",
+   "date_approved": "2026-09-10T13:54:00.000-03:00",
+   "date_last_updated": "2026-09-10T13:54:00.000-03:00",
+   "transaction_amount": 1941183,
+   "collector_id": 3008,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100122,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-10T14:17:00.000-03:00",
+   "date_approved": "2026-09-10T14:17:00.000-03:00",
+   "date_last_updated": "2026-09-10T14:17:00.000-03:00",
+   "transaction_amount": 81400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 76507.86
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2017
+   }
+  },
+  {
+   "id": 95100124,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-09-10T17:22:00.000-03:00",
+   "date_approved": "2026-09-10T17:22:00.000-03:00",
+   "date_last_updated": "2026-09-10T17:22:00.000-03:00",
+   "transaction_amount": 70700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 66450.93
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2324
+   }
+  },
+  {
+   "id": 95100121,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-09-10T17:49:00.000-03:00",
+   "date_approved": "2026-09-10T17:49:00.000-03:00",
+   "date_last_updated": "2026-09-10T17:49:00.000-03:00",
+   "transaction_amount": 379300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 356504.07
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2193
+   }
+  },
+  {
+   "id": 95100128,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-09-11T10:23:00.000-03:00",
+   "date_approved": "2026-09-11T10:23:00.000-03:00",
+   "date_last_updated": "2026-09-11T10:23:00.000-03:00",
+   "transaction_amount": 421600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 396261.84
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2267
+   }
+  },
+  {
+   "id": 95100130,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-11T12:17:00.000-03:00",
+   "date_approved": "2026-09-11T12:17:00.000-03:00",
+   "date_last_updated": "2026-09-11T12:17:00.000-03:00",
+   "transaction_amount": 129900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 122093.01
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2163
+   }
+  },
+  {
+   "id": 95100129,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-09-11T12:36:00.000-03:00",
+   "date_approved": "2026-09-11T12:36:00.000-03:00",
+   "date_last_updated": "2026-09-11T12:36:00.000-03:00",
+   "transaction_amount": 435800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 409608.42
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2246
+   }
+  },
+  {
+   "id": 95100126,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-11T15:11:00.000-03:00",
+   "date_approved": "2026-09-11T15:11:00.000-03:00",
+   "date_last_updated": "2026-09-11T15:11:00.000-03:00",
+   "transaction_amount": 109800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 103201.02
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2185
+   }
+  },
+  {
+   "id": 95100127,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-11T16:29:00.000-03:00",
+   "date_approved": "2026-09-11T16:29:00.000-03:00",
+   "date_last_updated": "2026-09-11T16:29:00.000-03:00",
+   "transaction_amount": 128500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 120777.15
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2422
+   }
+  },
+  {
+   "id": 95100132,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-12T14:32:00.000-03:00",
+   "date_approved": "2026-09-12T14:32:00.000-03:00",
+   "date_last_updated": "2026-09-12T14:32:00.000-03:00",
+   "transaction_amount": 124700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 117205.53
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2081
+   }
+  },
+  {
+   "id": 95100131,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-12T15:19:00.000-03:00",
+   "date_approved": "2026-09-12T15:19:00.000-03:00",
+   "date_last_updated": "2026-09-12T15:19:00.000-03:00",
+   "transaction_amount": 92000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 86470.8
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2412
+   }
+  },
+  {
+   "id": 95100293,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "TRANSPORTE ALTOS DEL RIO SRL",
+   "date_created": "2026-09-14T09:12:00.000-03:00",
+   "date_approved": "2026-09-14T09:12:00.000-03:00",
+   "date_last_updated": "2026-09-14T09:12:00.000-03:00",
+   "transaction_amount": 2096742,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 2096742
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2012
+   }
+  },
+  {
+   "id": 95100134,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-14T10:16:00.000-03:00",
+   "date_approved": "2026-09-14T10:16:00.000-03:00",
+   "date_last_updated": "2026-09-14T10:16:00.000-03:00",
+   "transaction_amount": 172800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 162414.72
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2209
+   }
+  },
+  {
+   "id": 95100305,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LOGISTICA PAMPA NORTE SA",
+   "date_created": "2026-09-14T11:08:00.000-03:00",
+   "date_approved": "2026-09-14T11:08:00.000-03:00",
+   "date_last_updated": "2026-09-14T11:08:00.000-03:00",
+   "transaction_amount": 2408837,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 2408837
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2213
+   }
+  },
+  {
+   "id": 95100133,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-14T13:14:00.000-03:00",
+   "date_approved": "2026-09-14T13:14:00.000-03:00",
+   "date_last_updated": "2026-09-14T13:14:00.000-03:00",
+   "transaction_amount": 124700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 117205.53
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2092
+   }
+  },
+  {
+   "id": 96100018,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "EPEC energia electrica",
+   "date_created": "2026-09-14T13:58:00.000-03:00",
+   "date_approved": "2026-09-14T13:58:00.000-03:00",
+   "date_last_updated": "2026-09-14T13:58:00.000-03:00",
+   "transaction_amount": 479749,
+   "collector_id": 3054,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100135,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-09-14T13:59:00.000-03:00",
+   "date_approved": "2026-09-14T13:59:00.000-03:00",
+   "date_last_updated": "2026-09-14T13:59:00.000-03:00",
+   "transaction_amount": 74300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 69834.57
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2409
+   }
+  },
+  {
+   "id": 96100042,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "Compra de elevador hidraulico y scanner",
+   "date_created": "2026-09-15T10:07:00.000-03:00",
+   "date_approved": "2026-09-15T10:07:00.000-03:00",
+   "date_last_updated": "2026-09-15T10:07:00.000-03:00",
+   "transaction_amount": 7500000,
+   "collector_id": 3084,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100138,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-15T10:09:00.000-03:00",
+   "date_approved": "2026-09-15T10:09:00.000-03:00",
+   "date_last_updated": "2026-09-15T10:09:00.000-03:00",
+   "transaction_amount": 204400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 192115.56
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2457
+   }
+  },
+  {
+   "id": 96100019,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP RENTAS IIBB",
+   "date_created": "2026-09-15T10:54:00.000-03:00",
+   "date_approved": "2026-09-15T10:54:00.000-03:00",
+   "date_last_updated": "2026-09-15T10:54:00.000-03:00",
+   "transaction_amount": 517794,
+   "collector_id": 3043,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100136,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-09-15T11:42:00.000-03:00",
+   "date_approved": "2026-09-15T11:42:00.000-03:00",
+   "date_last_updated": "2026-09-15T11:42:00.000-03:00",
+   "transaction_amount": 204600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 192303.54
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2132
+   }
+  },
+  {
+   "id": 95100139,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-15T12:47:00.000-03:00",
+   "date_approved": "2026-09-15T12:47:00.000-03:00",
+   "date_last_updated": "2026-09-15T12:47:00.000-03:00",
+   "transaction_amount": 77900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 73218.21
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2313
+   }
+  },
+  {
+   "id": 96100039,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Herramental y descartables",
+   "date_created": "2026-09-15T15:30:00.000-03:00",
+   "date_approved": "2026-09-15T15:30:00.000-03:00",
+   "date_last_updated": "2026-09-15T15:30:00.000-03:00",
+   "transaction_amount": 142197,
+   "collector_id": 3056,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100137,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-15T15:35:00.000-03:00",
+   "date_approved": "2026-09-15T15:35:00.000-03:00",
+   "date_last_updated": "2026-09-15T15:35:00.000-03:00",
+   "transaction_amount": 196900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 185066.31
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2460
+   }
+  },
+  {
+   "id": 95100140,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-16T11:50:00.000-03:00",
+   "date_approved": "2026-09-16T11:50:00.000-03:00",
+   "date_last_updated": "2026-09-16T11:50:00.000-03:00",
+   "transaction_amount": 118000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 110908.2
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2339
+   }
+  },
+  {
+   "id": 95100141,
+   "status": "refunded",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-09-16T12:47:00.000-03:00",
+   "date_approved": "2026-09-16T12:47:00.000-03:00",
+   "date_last_updated": "2026-09-18T11:55:00.000-03:00",
+   "transaction_amount": 73200,
+   "transaction_amount_refunded": 73200,
+   "transaction_details": {
+    "net_received_amount": 68800.68
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2254
+   }
+  },
+  {
+   "id": 95100142,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-16T15:10:00.000-03:00",
+   "date_approved": "2026-09-16T15:10:00.000-03:00",
+   "date_last_updated": "2026-09-16T15:10:00.000-03:00",
+   "transaction_amount": 107000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 100569.3
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2285
+   }
+  },
+  {
+   "id": 95100144,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-17T09:06:00.000-03:00",
+   "date_approved": "2026-09-17T09:06:00.000-03:00",
+   "date_last_updated": "2026-09-17T09:06:00.000-03:00",
+   "transaction_amount": 109200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 102637.08
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2466
+   }
+  },
+  {
+   "id": 96100049,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-09-17T11:40:00.000-03:00",
+   "date_approved": "2026-09-17T11:40:00.000-03:00",
+   "date_last_updated": "2026-09-17T11:40:00.000-03:00",
+   "transaction_amount": 972714,
+   "collector_id": 3050,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100145,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-17T11:59:00.000-03:00",
+   "date_approved": "2026-09-17T11:59:00.000-03:00",
+   "date_last_updated": "2026-09-17T11:59:00.000-03:00",
+   "transaction_amount": 194700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 182998.53
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2160
+   }
+  },
+  {
+   "id": 95100146,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-09-17T12:48:00.000-03:00",
+   "date_approved": "2026-09-17T12:48:00.000-03:00",
+   "date_last_updated": "2026-09-17T12:48:00.000-03:00",
+   "transaction_amount": 180900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 170027.91
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2290
+   }
+  },
+  {
+   "id": 95100143,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-17T13:41:00.000-03:00",
+   "date_approved": "2026-09-17T13:41:00.000-03:00",
+   "date_last_updated": "2026-09-17T13:41:00.000-03:00",
+   "transaction_amount": 167400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 157339.26
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2220
+   }
+  },
+  {
+   "id": 95100150,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-09-18T10:57:00.000-03:00",
+   "date_approved": "2026-09-18T10:57:00.000-03:00",
+   "date_last_updated": "2026-09-18T10:57:00.000-03:00",
+   "transaction_amount": 61400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 57709.86
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2282
+   }
+  },
+  {
+   "id": 95100149,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-09-18T11:06:00.000-03:00",
+   "date_approved": "2026-09-18T11:06:00.000-03:00",
+   "date_last_updated": "2026-09-18T11:06:00.000-03:00",
+   "transaction_amount": 186000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 174821.4
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2147
+   }
+  },
+  {
+   "id": 95100147,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-09-18T11:34:00.000-03:00",
+   "date_approved": "2026-09-18T11:34:00.000-03:00",
+   "date_last_updated": "2026-09-18T11:34:00.000-03:00",
+   "transaction_amount": 70500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 66262.95
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2120
+   }
+  },
+  {
+   "id": 95100148,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-18T12:55:00.000-03:00",
+   "date_approved": "2026-09-18T12:55:00.000-03:00",
+   "date_last_updated": "2026-09-18T12:55:00.000-03:00",
+   "transaction_amount": 124200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 116735.58
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2088
+   }
+  },
+  {
+   "id": 96100020,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA IVA DDJJ",
+   "date_created": "2026-09-18T14:21:00.000-03:00",
+   "date_approved": "2026-09-18T14:21:00.000-03:00",
+   "date_last_updated": "2026-09-18T14:21:00.000-03:00",
+   "transaction_amount": 1203620,
+   "collector_id": 3029,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100151,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-19T17:16:00.000-03:00",
+   "date_approved": "2026-09-19T17:16:00.000-03:00",
+   "date_last_updated": "2026-09-19T17:16:00.000-03:00",
+   "transaction_amount": 119800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 112600.02
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2074
+   }
+  },
+  {
+   "id": 95100152,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-09-19T17:48:00.000-03:00",
+   "date_approved": "2026-09-19T17:48:00.000-03:00",
+   "date_last_updated": "2026-09-19T17:48:00.000-03:00",
+   "transaction_amount": 84600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 79515.54
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2126
+   }
+  },
+  {
+   "id": 95100153,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-21T09:20:00.000-03:00",
+   "date_approved": "2026-09-21T09:20:00.000-03:00",
+   "date_last_updated": "2026-09-21T09:20:00.000-03:00",
+   "transaction_amount": 87800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 82523.22
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2315
+   }
+  },
+  {
+   "id": 95100154,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-21T10:39:00.000-03:00",
+   "date_approved": "2026-09-21T10:39:00.000-03:00",
+   "date_last_updated": "2026-09-21T10:39:00.000-03:00",
+   "transaction_amount": 130900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 123032.91
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2354
+   }
+  },
+  {
+   "id": 95100156,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-21T13:33:00.000-03:00",
+   "date_approved": "2026-09-21T13:33:00.000-03:00",
+   "date_last_updated": "2026-09-21T13:33:00.000-03:00",
+   "transaction_amount": 77600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 72936.24
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2049
+   }
+  },
+  {
+   "id": 96100069,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REPUESTOS FRENOS DEL SUR SRL CUIT 30212662435",
+   "date_created": "2026-09-21T14:50:00.000-03:00",
+   "date_approved": "2026-09-21T14:50:00.000-03:00",
+   "date_last_updated": "2026-09-21T14:50:00.000-03:00",
+   "transaction_amount": 710207,
+   "collector_id": 3018,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100155,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-21T17:55:00.000-03:00",
+   "date_approved": "2026-09-21T17:55:00.000-03:00",
+   "date_last_updated": "2026-09-21T17:55:00.000-03:00",
+   "transaction_amount": 128000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 120307.2
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2001
+   }
+  },
+  {
+   "id": 95100157,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-22T10:29:00.000-03:00",
+   "date_approved": "2026-09-22T10:29:00.000-03:00",
+   "date_last_updated": "2026-09-22T10:29:00.000-03:00",
+   "transaction_amount": 86000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 80831.4
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2083
+   }
+  },
+  {
+   "id": 95100159,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Reparación de motor - link de pago",
+   "date_created": "2026-09-22T13:00:00.000-03:00",
+   "date_approved": "2026-09-22T13:00:00.000-03:00",
+   "date_last_updated": "2026-09-22T13:00:00.000-03:00",
+   "transaction_amount": 894600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 840834.54
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2060
+   }
+  },
+  {
+   "id": 95100158,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-22T13:26:00.000-03:00",
+   "date_approved": "2026-09-22T13:26:00.000-03:00",
+   "date_last_updated": "2026-09-22T13:26:00.000-03:00",
+   "transaction_amount": 174000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 163542.6
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2369
+   }
+  },
+  {
+   "id": 96100021,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "AGUAS servicio de agua",
+   "date_created": "2026-09-22T14:04:00.000-03:00",
+   "date_approved": "2026-09-22T14:04:00.000-03:00",
+   "date_last_updated": "2026-09-22T14:04:00.000-03:00",
+   "transaction_amount": 70714,
+   "collector_id": 3027,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100059,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LUBRICANTES ANDINOS SA CUIT 30212504053",
+   "date_created": "2026-09-22T14:20:00.000-03:00",
+   "date_approved": "2026-09-22T14:20:00.000-03:00",
+   "date_last_updated": "2026-09-22T14:20:00.000-03:00",
+   "transaction_amount": 1092968,
+   "collector_id": 3063,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100160,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-09-23T09:32:00.000-03:00",
+   "date_approved": "2026-09-23T09:32:00.000-03:00",
+   "date_last_updated": "2026-09-23T09:32:00.000-03:00",
+   "transaction_amount": 395400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 371636.46
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2438
+   }
+  },
+  {
+   "id": 95100162,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-09-23T09:53:00.000-03:00",
+   "date_approved": "2026-09-23T09:53:00.000-03:00",
+   "date_last_updated": "2026-09-23T09:53:00.000-03:00",
+   "transaction_amount": 61000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 57333.9
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2342
+   }
+  },
+  {
+   "id": 95100163,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-09-23T10:43:00.000-03:00",
+   "date_approved": "2026-09-23T10:43:00.000-03:00",
+   "date_last_updated": "2026-09-23T10:43:00.000-03:00",
+   "transaction_amount": 87300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 82053.27
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2117
+   }
+  },
+  {
+   "id": 95100161,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-23T15:13:00.000-03:00",
+   "date_approved": "2026-09-23T15:13:00.000-03:00",
+   "date_last_updated": "2026-09-23T15:13:00.000-03:00",
+   "transaction_amount": 85400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 80267.46
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2286
+   }
+  },
+  {
+   "id": 95100166,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-24T10:06:00.000-03:00",
+   "date_approved": "2026-09-24T10:06:00.000-03:00",
+   "date_last_updated": "2026-09-24T10:06:00.000-03:00",
+   "transaction_amount": 187700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 176419.23
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2250
+   }
+  },
+  {
+   "id": 95100165,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-24T11:27:00.000-03:00",
+   "date_approved": "2026-09-24T11:27:00.000-03:00",
+   "date_last_updated": "2026-09-24T11:27:00.000-03:00",
+   "transaction_amount": 183300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 172283.67
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2421
+   }
+  },
+  {
+   "id": 95100164,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-24T11:30:00.000-03:00",
+   "date_approved": "2026-09-24T11:30:00.000-03:00",
+   "date_last_updated": "2026-09-24T11:30:00.000-03:00",
+   "transaction_amount": 176800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 166174.32
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2349
+   }
+  },
+  {
+   "id": 96100050,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-09-24T11:46:00.000-03:00",
+   "date_approved": "2026-09-24T11:46:00.000-03:00",
+   "date_last_updated": "2026-09-24T11:46:00.000-03:00",
+   "transaction_amount": 1091383,
+   "collector_id": 3005,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100168,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-09-24T12:22:00.000-03:00",
+   "date_approved": "2026-09-24T12:22:00.000-03:00",
+   "date_last_updated": "2026-09-24T12:22:00.000-03:00",
+   "transaction_amount": 75500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 70962.45
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2047
+   }
+  },
+  {
+   "id": 95100167,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-24T14:11:00.000-03:00",
+   "date_approved": "2026-09-24T14:11:00.000-03:00",
+   "date_last_updated": "2026-09-24T14:11:00.000-03:00",
+   "transaction_amount": 130000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 122187
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2454
+   }
+  },
+  {
+   "id": 95100300,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REMISES CENTRO SRL",
+   "date_created": "2026-09-24T15:32:00.000-03:00",
+   "date_approved": "2026-09-24T15:32:00.000-03:00",
+   "date_last_updated": "2026-09-24T15:32:00.000-03:00",
+   "transaction_amount": 1794538,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 1794538
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2497
+   }
+  },
+  {
+   "id": 95100172,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-09-25T09:40:00.000-03:00",
+   "date_approved": "2026-09-25T09:40:00.000-03:00",
+   "date_last_updated": "2026-09-25T09:40:00.000-03:00",
+   "transaction_amount": 88200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 82899.18
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2421
+   }
+  },
+  {
+   "id": 95100171,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-25T09:51:00.000-03:00",
+   "date_approved": "2026-09-25T09:51:00.000-03:00",
+   "date_last_updated": "2026-09-25T09:51:00.000-03:00",
+   "transaction_amount": 79500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 74722.05
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2126
+   }
+  },
+  {
+   "id": 96100022,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "SEGURO integral y ART",
+   "date_created": "2026-09-25T10:12:00.000-03:00",
+   "date_approved": "2026-09-25T10:12:00.000-03:00",
+   "date_last_updated": "2026-09-25T10:12:00.000-03:00",
+   "transaction_amount": 238090,
+   "collector_id": 3089,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100174,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-25T12:46:00.000-03:00",
+   "date_approved": "2026-09-25T12:46:00.000-03:00",
+   "date_last_updated": "2026-09-25T12:46:00.000-03:00",
+   "transaction_amount": 108100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 101603.19
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2192
+   }
+  },
+  {
+   "id": 95100173,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-09-25T14:49:00.000-03:00",
+   "date_approved": "2026-09-25T14:49:00.000-03:00",
+   "date_last_updated": "2026-09-25T14:49:00.000-03:00",
+   "transaction_amount": 68500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 64383.15
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2102
+   }
+  },
+  {
+   "id": 95100169,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-09-25T15:58:00.000-03:00",
+   "date_approved": "2026-09-25T15:58:00.000-03:00",
+   "date_last_updated": "2026-09-25T15:58:00.000-03:00",
+   "transaction_amount": 75200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 70680.48
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2487
+   }
+  },
+  {
+   "id": 95100170,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-09-25T17:40:00.000-03:00",
+   "date_approved": "2026-09-25T17:40:00.000-03:00",
+   "date_last_updated": "2026-09-25T17:40:00.000-03:00",
+   "transaction_amount": 84600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 79515.54
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2148
+   }
+  },
+  {
+   "id": 95100176,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-09-26T12:52:00.000-03:00",
+   "date_approved": "2026-09-26T12:52:00.000-03:00",
+   "date_last_updated": "2026-09-26T12:52:00.000-03:00",
+   "transaction_amount": 60700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 57051.93
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2058
+   }
+  },
+  {
+   "id": 95100175,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-09-26T13:03:00.000-03:00",
+   "date_approved": "2026-09-26T13:03:00.000-03:00",
+   "date_last_updated": "2026-09-26T13:03:00.000-03:00",
+   "transaction_amount": 111600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 104892.84
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2176
+   }
+  },
+  {
+   "id": 96100023,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "HONORARIOS estudio contable",
+   "date_created": "2026-09-28T10:12:00.000-03:00",
+   "date_approved": "2026-09-28T10:12:00.000-03:00",
+   "date_last_updated": "2026-09-28T10:12:00.000-03:00",
+   "transaction_amount": 209028,
+   "collector_id": 3037,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100024,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "RETIRO SOCIO TRANSF CTA PROPIA",
+   "date_created": "2026-09-28T12:35:00.000-03:00",
+   "date_approved": "2026-09-28T12:35:00.000-03:00",
+   "date_last_updated": "2026-09-28T12:35:00.000-03:00",
+   "transaction_amount": 1756109,
+   "collector_id": 3067,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100177,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-09-28T13:19:00.000-03:00",
+   "date_approved": "2026-09-28T13:19:00.000-03:00",
+   "date_last_updated": "2026-09-28T13:19:00.000-03:00",
+   "transaction_amount": 192700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 181118.73
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2478
+   }
+  },
+  {
+   "id": 95100178,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-28T14:19:00.000-03:00",
+   "date_approved": "2026-09-28T14:19:00.000-03:00",
+   "date_last_updated": "2026-09-28T14:19:00.000-03:00",
+   "transaction_amount": 190500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 179050.95
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2224
+   }
+  },
+  {
+   "id": 95100179,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-09-28T14:31:00.000-03:00",
+   "date_approved": "2026-09-28T14:31:00.000-03:00",
+   "date_last_updated": "2026-09-28T14:31:00.000-03:00",
+   "transaction_amount": 415100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 390152.49
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2189
+   }
+  },
+  {
+   "id": 95100294,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "TRANSPORTE ALTOS DEL RIO SRL",
+   "date_created": "2026-09-28T14:39:00.000-03:00",
+   "date_approved": "2026-09-28T14:39:00.000-03:00",
+   "date_last_updated": "2026-09-28T14:39:00.000-03:00",
+   "transaction_amount": 2518692,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 2518692
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2115
+   }
+  },
+  {
+   "id": 95100180,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-09-28T16:46:00.000-03:00",
+   "date_approved": "2026-09-28T16:46:00.000-03:00",
+   "date_last_updated": "2026-09-28T16:46:00.000-03:00",
+   "transaction_amount": 388500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 365151.15
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2155
+   }
+  },
+  {
+   "id": 96100064,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "NEUMATICOS PAMPEANOS SRL CUIT 30212583244",
+   "date_created": "2026-09-29T10:50:00.000-03:00",
+   "date_approved": "2026-09-29T10:50:00.000-03:00",
+   "date_last_updated": "2026-09-29T10:50:00.000-03:00",
+   "transaction_amount": 1069563,
+   "collector_id": 3044,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100306,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LOGISTICA PAMPA NORTE SA",
+   "date_created": "2026-09-29T13:42:00.000-03:00",
+   "date_approved": "2026-09-29T13:42:00.000-03:00",
+   "date_last_updated": "2026-09-29T13:42:00.000-03:00",
+   "transaction_amount": 2170877,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 2170877
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2197
+   }
+  },
+  {
+   "id": 95100182,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-09-29T14:33:00.000-03:00",
+   "date_approved": "2026-09-29T14:33:00.000-03:00",
+   "date_last_updated": "2026-09-29T14:33:00.000-03:00",
+   "transaction_amount": 121100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 113821.89
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2142
+   }
+  },
+  {
+   "id": 95100183,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-29T16:32:00.000-03:00",
+   "date_approved": "2026-09-29T16:32:00.000-03:00",
+   "date_last_updated": "2026-09-29T16:32:00.000-03:00",
+   "transaction_amount": 174800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 164294.52
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2348
+   }
+  },
+  {
+   "id": 95100181,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-09-29T17:35:00.000-03:00",
+   "date_approved": "2026-09-29T17:35:00.000-03:00",
+   "date_last_updated": "2026-09-29T17:35:00.000-03:00",
+   "transaction_amount": 192200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 180648.78
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2223
+   }
+  },
+  {
+   "id": 95100186,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-09-30T09:44:00.000-03:00",
+   "date_approved": "2026-09-30T09:44:00.000-03:00",
+   "date_last_updated": "2026-09-30T09:44:00.000-03:00",
+   "transaction_amount": 447700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 420793.23
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2342
+   }
+  },
+  {
+   "id": 95100184,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-30T15:44:00.000-03:00",
+   "date_approved": "2026-09-30T15:44:00.000-03:00",
+   "date_last_updated": "2026-09-30T15:44:00.000-03:00",
+   "transaction_amount": 76900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 72278.31
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2051
+   }
+  },
+  {
+   "id": 95100185,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-09-30T16:31:00.000-03:00",
+   "date_approved": "2026-09-30T16:31:00.000-03:00",
+   "date_last_updated": "2026-09-30T16:31:00.000-03:00",
+   "transaction_amount": 92500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 86940.75
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2030
+   }
+  },
+  {
+   "id": 95100190,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-10-01T13:40:00.000-03:00",
+   "date_approved": "2026-10-01T13:40:00.000-03:00",
+   "date_last_updated": "2026-10-01T13:40:00.000-03:00",
+   "transaction_amount": 132700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 124724.73
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2348
+   }
+  },
+  {
+   "id": 96100051,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-10-01T13:57:00.000-03:00",
+   "date_approved": "2026-10-01T13:57:00.000-03:00",
+   "date_last_updated": "2026-10-01T13:57:00.000-03:00",
+   "transaction_amount": 1191283,
+   "collector_id": 3089,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100188,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-01T14:38:00.000-03:00",
+   "date_approved": "2026-10-01T14:38:00.000-03:00",
+   "date_last_updated": "2026-10-01T14:38:00.000-03:00",
+   "transaction_amount": 67200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 63161.28
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2115
+   }
+  },
+  {
+   "id": 95100189,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-01T16:11:00.000-03:00",
+   "date_approved": "2026-10-01T16:11:00.000-03:00",
+   "date_last_updated": "2026-10-01T16:11:00.000-03:00",
+   "transaction_amount": 85300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 80173.47
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2342
+   }
+  },
+  {
+   "id": 95100187,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-10-01T17:15:00.000-03:00",
+   "date_approved": "2026-10-01T17:15:00.000-03:00",
+   "date_last_updated": "2026-10-01T17:15:00.000-03:00",
+   "transaction_amount": 413200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 388366.68
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2153
+   }
+  },
+  {
+   "id": 95100191,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-01T17:19:00.000-03:00",
+   "date_approved": "2026-10-01T17:19:00.000-03:00",
+   "date_last_updated": "2026-10-01T17:19:00.000-03:00",
+   "transaction_amount": 69400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 65229.06
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2115
+   }
+  },
+  {
+   "id": 95100196,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-10-02T10:03:00.000-03:00",
+   "date_approved": "2026-10-02T10:03:00.000-03:00",
+   "date_last_updated": "2026-10-02T10:03:00.000-03:00",
+   "transaction_amount": 112400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 105644.76
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2416
+   }
+  },
+  {
+   "id": 96100040,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Herramental y descartables",
+   "date_created": "2026-10-02T11:08:00.000-03:00",
+   "date_approved": "2026-10-02T11:08:00.000-03:00",
+   "date_last_updated": "2026-10-02T11:08:00.000-03:00",
+   "transaction_amount": 150641,
+   "collector_id": 3052,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100193,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-10-02T11:45:00.000-03:00",
+   "date_approved": "2026-10-02T11:45:00.000-03:00",
+   "date_last_updated": "2026-10-02T11:45:00.000-03:00",
+   "transaction_amount": 126400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 118803.36
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2097
+   }
+  },
+  {
+   "id": 95100192,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-10-02T11:55:00.000-03:00",
+   "date_approved": "2026-10-02T11:55:00.000-03:00",
+   "date_last_updated": "2026-10-02T11:55:00.000-03:00",
+   "transaction_amount": 73000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 68612.7
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2304
+   }
+  },
+  {
+   "id": 95100195,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-10-02T13:59:00.000-03:00",
+   "date_approved": "2026-10-02T13:59:00.000-03:00",
+   "date_last_updated": "2026-10-02T13:59:00.000-03:00",
+   "transaction_amount": 132900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 124912.71
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2081
+   }
+  },
+  {
+   "id": 95100194,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-10-02T17:18:00.000-03:00",
+   "date_approved": "2026-10-02T17:18:00.000-03:00",
+   "date_last_updated": "2026-10-02T17:18:00.000-03:00",
+   "transaction_amount": 65200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 61281.48
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2411
+   }
+  },
+  {
+   "id": 95100197,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-03T10:01:00.000-03:00",
+   "date_approved": "2026-10-03T10:01:00.000-03:00",
+   "date_last_updated": "2026-10-03T10:01:00.000-03:00",
+   "transaction_amount": 205100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 192773.49
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2231
+   }
+  },
+  {
+   "id": 95100198,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-10-03T12:42:00.000-03:00",
+   "date_approved": "2026-10-03T12:42:00.000-03:00",
+   "date_last_updated": "2026-10-03T12:42:00.000-03:00",
+   "transaction_amount": 69700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 65511.03
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2421
+   }
+  },
+  {
+   "id": 96100070,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REPUESTOS FRENOS DEL SUR SRL CUIT 30212662435",
+   "date_created": "2026-10-05T10:17:00.000-03:00",
+   "date_approved": "2026-10-05T10:17:00.000-03:00",
+   "date_last_updated": "2026-10-05T10:17:00.000-03:00",
+   "transaction_amount": 692428,
+   "collector_id": 3007,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100202,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-10-05T12:10:00.000-03:00",
+   "date_approved": "2026-10-05T12:10:00.000-03:00",
+   "date_last_updated": "2026-10-05T12:10:00.000-03:00",
+   "transaction_amount": 387400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 364117.26
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2369
+   }
+  },
+  {
+   "id": 95100200,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-05T12:11:00.000-03:00",
+   "date_approved": "2026-10-05T12:11:00.000-03:00",
+   "date_last_updated": "2026-10-05T12:11:00.000-03:00",
+   "transaction_amount": 187500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 176231.25
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2465
+   }
+  },
+  {
+   "id": 96100025,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "ALQUILER galpón taller INMOB CENTRO",
+   "date_created": "2026-10-05T12:41:00.000-03:00",
+   "date_approved": "2026-10-05T12:41:00.000-03:00",
+   "date_last_updated": "2026-10-05T12:41:00.000-03:00",
+   "transaction_amount": 1467068,
+   "collector_id": 3003,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100026,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "PAGO HABERES NOMINA 6 EMPL",
+   "date_created": "2026-10-05T13:01:00.000-03:00",
+   "date_approved": "2026-10-05T13:01:00.000-03:00",
+   "date_last_updated": "2026-10-05T13:01:00.000-03:00",
+   "transaction_amount": 7178747,
+   "collector_id": 3052,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100027,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TASA municipal comercio Municipalidad de Villa Maria",
+   "date_created": "2026-10-05T13:56:00.000-03:00",
+   "date_approved": "2026-10-05T13:56:00.000-03:00",
+   "date_last_updated": "2026-10-05T13:56:00.000-03:00",
+   "transaction_amount": 131964,
+   "collector_id": 3006,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100201,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-10-05T15:23:00.000-03:00",
+   "date_approved": "2026-10-05T15:23:00.000-03:00",
+   "date_last_updated": "2026-10-05T15:23:00.000-03:00",
+   "transaction_amount": 127300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 119649.27
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2037
+   }
+  },
+  {
+   "id": 95100203,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-05T17:01:00.000-03:00",
+   "date_approved": "2026-10-05T17:01:00.000-03:00",
+   "date_last_updated": "2026-10-05T17:01:00.000-03:00",
+   "transaction_amount": 189400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 178017.06
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2036
+   }
+  },
+  {
+   "id": 95100199,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-10-05T17:34:00.000-03:00",
+   "date_approved": "2026-10-05T17:34:00.000-03:00",
+   "date_last_updated": "2026-10-05T17:34:00.000-03:00",
+   "transaction_amount": 78000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 73312.2
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2166
+   }
+  },
+  {
+   "id": 95100206,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-10-06T10:09:00.000-03:00",
+   "date_approved": "2026-10-06T10:09:00.000-03:00",
+   "date_last_updated": "2026-10-06T10:09:00.000-03:00",
+   "transaction_amount": 385400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 362237.46
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2285
+   }
+  },
+  {
+   "id": 95100301,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REMISES CENTRO SRL",
+   "date_created": "2026-10-06T12:06:00.000-03:00",
+   "date_approved": "2026-10-06T12:06:00.000-03:00",
+   "date_last_updated": "2026-10-06T12:06:00.000-03:00",
+   "transaction_amount": 1903068,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 1903068
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2217
+   }
+  },
+  {
+   "id": 96100060,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LUBRICANTES ANDINOS SA CUIT 30212504053",
+   "date_created": "2026-10-06T13:26:00.000-03:00",
+   "date_approved": "2026-10-06T13:26:00.000-03:00",
+   "date_last_updated": "2026-10-06T13:26:00.000-03:00",
+   "transaction_amount": 922620,
+   "collector_id": 3019,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100207,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-06T14:07:00.000-03:00",
+   "date_approved": "2026-10-06T14:07:00.000-03:00",
+   "date_last_updated": "2026-10-06T14:07:00.000-03:00",
+   "transaction_amount": 85000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 79891.5
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2272
+   }
+  },
+  {
+   "id": 95100205,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-06T14:21:00.000-03:00",
+   "date_approved": "2026-10-06T14:21:00.000-03:00",
+   "date_last_updated": "2026-10-06T14:21:00.000-03:00",
+   "transaction_amount": 91200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 85718.88
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2018
+   }
+  },
+  {
+   "id": 95100204,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-10-06T14:25:00.000-03:00",
+   "date_approved": "2026-10-06T14:25:00.000-03:00",
+   "date_last_updated": "2026-10-06T14:25:00.000-03:00",
+   "transaction_amount": 78700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 73970.13
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2041
+   }
+  },
+  {
+   "id": 95100210,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-10-07T11:46:00.000-03:00",
+   "date_approved": "2026-10-07T11:46:00.000-03:00",
+   "date_last_updated": "2026-10-07T11:46:00.000-03:00",
+   "transaction_amount": 378300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 355564.17
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2185
+   }
+  },
+  {
+   "id": 95100209,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-07T14:38:00.000-03:00",
+   "date_approved": "2026-10-07T14:38:00.000-03:00",
+   "date_last_updated": "2026-10-07T14:38:00.000-03:00",
+   "transaction_amount": 168200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 158091.18
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2368
+   }
+  },
+  {
+   "id": 95100208,
+   "status": "refunded",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-07T16:04:00.000-03:00",
+   "date_approved": "2026-10-07T16:04:00.000-03:00",
+   "date_last_updated": "2026-10-11T11:32:00.000-03:00",
+   "transaction_amount": 74500,
+   "transaction_amount_refunded": 37250,
+   "transaction_details": {
+    "net_received_amount": 70022.55
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2165
+   }
+  },
+  {
+   "id": 95100211,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-07T17:16:00.000-03:00",
+   "date_approved": "2026-10-07T17:16:00.000-03:00",
+   "date_last_updated": "2026-10-07T17:16:00.000-03:00",
+   "transaction_amount": 175600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 165046.44
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2184
+   }
+  },
+  {
+   "id": 95100212,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-08T09:37:00.000-03:00",
+   "date_approved": "2026-10-08T09:37:00.000-03:00",
+   "date_last_updated": "2026-10-08T09:37:00.000-03:00",
+   "transaction_amount": 70400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 66168.96
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2303
+   }
+  },
+  {
+   "id": 95100214,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-08T09:38:00.000-03:00",
+   "date_approved": "2026-10-08T09:38:00.000-03:00",
+   "date_last_updated": "2026-10-08T09:38:00.000-03:00",
+   "transaction_amount": 189500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 178111.05
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2309
+   }
+  },
+  {
+   "id": 95100216,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-10-08T09:55:00.000-03:00",
+   "date_approved": "2026-10-08T09:55:00.000-03:00",
+   "date_last_updated": "2026-10-08T09:55:00.000-03:00",
+   "transaction_amount": 127700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 120025.23
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2100
+   }
+  },
+  {
+   "id": 95100215,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-10-08T12:18:00.000-03:00",
+   "date_approved": "2026-10-08T12:18:00.000-03:00",
+   "date_last_updated": "2026-10-08T12:18:00.000-03:00",
+   "transaction_amount": 131700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 123784.83
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2029
+   }
+  },
+  {
+   "id": 96100028,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "TELECOM internet y telefonia",
+   "date_created": "2026-10-08T14:35:00.000-03:00",
+   "date_approved": "2026-10-08T14:35:00.000-03:00",
+   "date_last_updated": "2026-10-08T14:35:00.000-03:00",
+   "transaction_amount": 65368,
+   "collector_id": 3048,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100052,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-10-08T14:46:00.000-03:00",
+   "date_approved": "2026-10-08T14:46:00.000-03:00",
+   "date_last_updated": "2026-10-08T14:46:00.000-03:00",
+   "transaction_amount": 1011067,
+   "collector_id": 3009,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100213,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-10-08T16:56:00.000-03:00",
+   "date_approved": "2026-10-08T16:56:00.000-03:00",
+   "date_last_updated": "2026-10-08T16:56:00.000-03:00",
+   "transaction_amount": 122900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 115513.71
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2475
+   }
+  },
+  {
+   "id": 95100219,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-10-09T10:05:00.000-03:00",
+   "date_approved": "2026-10-09T10:05:00.000-03:00",
+   "date_last_updated": "2026-10-09T10:05:00.000-03:00",
+   "transaction_amount": 177700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 167020.23
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2427
+   }
+  },
+  {
+   "id": 95100218,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-09T14:12:00.000-03:00",
+   "date_approved": "2026-10-09T14:12:00.000-03:00",
+   "date_last_updated": "2026-10-09T14:12:00.000-03:00",
+   "transaction_amount": 94900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 89196.51
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2101
+   }
+  },
+  {
+   "id": 95100221,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-10-09T15:41:00.000-03:00",
+   "date_approved": "2026-10-09T15:41:00.000-03:00",
+   "date_last_updated": "2026-10-09T15:41:00.000-03:00",
+   "transaction_amount": 423400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 397953.66
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2424
+   }
+  },
+  {
+   "id": 95100222,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-10-09T16:46:00.000-03:00",
+   "date_approved": "2026-10-09T16:46:00.000-03:00",
+   "date_last_updated": "2026-10-09T16:46:00.000-03:00",
+   "transaction_amount": 93300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 87692.67
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2106
+   }
+  },
+  {
+   "id": 95100220,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-10-09T17:01:00.000-03:00",
+   "date_approved": "2026-10-09T17:01:00.000-03:00",
+   "date_last_updated": "2026-10-09T17:01:00.000-03:00",
+   "transaction_amount": 443300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 416657.67
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2389
+   }
+  },
+  {
+   "id": 95100217,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-10-09T17:28:00.000-03:00",
+   "date_approved": "2026-10-09T17:28:00.000-03:00",
+   "date_last_updated": "2026-10-09T17:28:00.000-03:00",
+   "transaction_amount": 75300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 70774.47
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2225
+   }
+  },
+  {
+   "id": 95100223,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-10T12:40:00.000-03:00",
+   "date_approved": "2026-10-10T12:40:00.000-03:00",
+   "date_last_updated": "2026-10-10T12:40:00.000-03:00",
+   "transaction_amount": 175600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 165046.44
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2263
+   }
+  },
+  {
+   "id": 95100225,
+   "status": "refunded",
+   "operation_type": "regular_payment",
+   "description": "Reparación de motor - link de pago",
+   "date_created": "2026-10-10T13:54:00.000-03:00",
+   "date_approved": "2026-10-10T13:54:00.000-03:00",
+   "date_last_updated": "2026-10-14T11:06:00.000-03:00",
+   "transaction_amount": 907300,
+   "transaction_amount_refunded": 907300,
+   "transaction_details": {
+    "net_received_amount": 852771.27
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2064
+   }
+  },
+  {
+   "id": 95100224,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-10-10T17:47:00.000-03:00",
+   "date_approved": "2026-10-10T17:47:00.000-03:00",
+   "date_last_updated": "2026-10-10T17:47:00.000-03:00",
+   "transaction_amount": 123500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 116077.65
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2368
+   }
+  },
+  {
+   "id": 96100030,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "EPEC energia electrica",
+   "date_created": "2026-10-13T10:26:00.000-03:00",
+   "date_approved": "2026-10-13T10:26:00.000-03:00",
+   "date_last_updated": "2026-10-13T10:26:00.000-03:00",
+   "transaction_amount": 489967,
+   "collector_id": 3027,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100226,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Reparación de motor - cobro QR",
+   "date_created": "2026-10-13T12:32:00.000-03:00",
+   "date_approved": "2026-10-13T12:32:00.000-03:00",
+   "date_last_updated": "2026-10-13T12:32:00.000-03:00",
+   "transaction_amount": 927200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 871475.28
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2321
+   }
+  },
+  {
+   "id": 95100227,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-10-13T12:47:00.000-03:00",
+   "date_approved": "2026-10-13T12:47:00.000-03:00",
+   "date_last_updated": "2026-10-13T12:47:00.000-03:00",
+   "transaction_amount": 199300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 187322.07
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2180
+   }
+  },
+  {
+   "id": 96100029,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA F931 CARGAS SOCIALES",
+   "date_created": "2026-10-13T13:32:00.000-03:00",
+   "date_approved": "2026-10-13T13:32:00.000-03:00",
+   "date_last_updated": "2026-10-13T13:32:00.000-03:00",
+   "transaction_amount": 1991418,
+   "collector_id": 3063,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100228,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-13T15:08:00.000-03:00",
+   "date_approved": "2026-10-13T15:08:00.000-03:00",
+   "date_last_updated": "2026-10-13T15:08:00.000-03:00",
+   "transaction_amount": 78400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 73688.16
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2294
+   }
+  },
+  {
+   "id": 95100295,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "TRANSPORTE ALTOS DEL RIO SRL",
+   "date_created": "2026-10-13T16:55:00.000-03:00",
+   "date_approved": "2026-10-13T16:55:00.000-03:00",
+   "date_last_updated": "2026-10-13T16:55:00.000-03:00",
+   "transaction_amount": 1974965,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 1974965
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2263
+   }
+  },
+  {
+   "id": 95100229,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-10-14T09:02:00.000-03:00",
+   "date_approved": "2026-10-14T09:02:00.000-03:00",
+   "date_last_updated": "2026-10-14T09:02:00.000-03:00",
+   "transaction_amount": 393800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 370132.62
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2243
+   }
+  },
+  {
+   "id": 95100230,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-10-14T11:45:00.000-03:00",
+   "date_approved": "2026-10-14T11:45:00.000-03:00",
+   "date_last_updated": "2026-10-14T11:45:00.000-03:00",
+   "transaction_amount": 389500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 366091.05
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2289
+   }
+  },
+  {
+   "id": 95100231,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-14T13:55:00.000-03:00",
+   "date_approved": "2026-10-14T13:55:00.000-03:00",
+   "date_last_updated": "2026-10-14T13:55:00.000-03:00",
+   "transaction_amount": 65800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 61845.42
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2359
+   }
+  },
+  {
+   "id": 95100235,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-10-15T09:13:00.000-03:00",
+   "date_approved": "2026-10-15T09:13:00.000-03:00",
+   "date_last_updated": "2026-10-15T09:13:00.000-03:00",
+   "transaction_amount": 421200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 395885.88
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2293
+   }
+  },
+  {
+   "id": 95100236,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-10-15T11:30:00.000-03:00",
+   "date_approved": "2026-10-15T11:30:00.000-03:00",
+   "date_last_updated": "2026-10-15T11:30:00.000-03:00",
+   "transaction_amount": 121700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 114385.83
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2227
+   }
+  },
+  {
+   "id": 95100234,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-15T12:31:00.000-03:00",
+   "date_approved": "2026-10-15T12:31:00.000-03:00",
+   "date_last_updated": "2026-10-15T12:31:00.000-03:00",
+   "transaction_amount": 62500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 58743.75
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2105
+   }
+  },
+  {
+   "id": 95100232,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-10-15T13:06:00.000-03:00",
+   "date_approved": "2026-10-15T13:06:00.000-03:00",
+   "date_last_updated": "2026-10-15T13:06:00.000-03:00",
+   "transaction_amount": 115900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 108934.41
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2355
+   }
+  },
+  {
+   "id": 95100233,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-10-15T13:38:00.000-03:00",
+   "date_approved": "2026-10-15T13:38:00.000-03:00",
+   "date_last_updated": "2026-10-15T13:38:00.000-03:00",
+   "transaction_amount": 110500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 103858.95
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2082
+   }
+  },
+  {
+   "id": 96100053,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-10-15T14:04:00.000-03:00",
+   "date_approved": "2026-10-15T14:04:00.000-03:00",
+   "date_last_updated": "2026-10-15T14:04:00.000-03:00",
+   "transaction_amount": 1040765,
+   "collector_id": 3064,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100031,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP RENTAS IIBB",
+   "date_created": "2026-10-15T14:43:00.000-03:00",
+   "date_approved": "2026-10-15T14:43:00.000-03:00",
+   "date_last_updated": "2026-10-15T14:43:00.000-03:00",
+   "transaction_amount": 580906,
+   "collector_id": 3038,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100239,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-16T11:26:00.000-03:00",
+   "date_approved": "2026-10-16T11:26:00.000-03:00",
+   "date_last_updated": "2026-10-16T11:26:00.000-03:00",
+   "transaction_amount": 94700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 89008.53
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2400
+   }
+  },
+  {
+   "id": 95100240,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-10-16T12:19:00.000-03:00",
+   "date_approved": "2026-10-16T12:19:00.000-03:00",
+   "date_last_updated": "2026-10-16T12:19:00.000-03:00",
+   "transaction_amount": 128900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 121153.11
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2329
+   }
+  },
+  {
+   "id": 95100237,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-16T12:33:00.000-03:00",
+   "date_approved": "2026-10-16T12:33:00.000-03:00",
+   "date_last_updated": "2026-10-16T12:33:00.000-03:00",
+   "transaction_amount": 83300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 78293.67
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2344
+   }
+  },
+  {
+   "id": 95100238,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-16T15:09:00.000-03:00",
+   "date_approved": "2026-10-16T15:09:00.000-03:00",
+   "date_last_updated": "2026-10-16T15:09:00.000-03:00",
+   "transaction_amount": 68700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 64571.13
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2350
+   }
+  },
+  {
+   "id": 95100241,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-16T17:36:00.000-03:00",
+   "date_approved": "2026-10-16T17:36:00.000-03:00",
+   "date_last_updated": "2026-10-16T17:36:00.000-03:00",
+   "transaction_amount": 178700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 167960.13
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2033
+   }
+  },
+  {
+   "id": 95100243,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-17T09:32:00.000-03:00",
+   "date_approved": "2026-10-17T09:32:00.000-03:00",
+   "date_last_updated": "2026-10-17T09:32:00.000-03:00",
+   "transaction_amount": 89800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 84403.02
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2159
+   }
+  },
+  {
+   "id": 95100242,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-17T11:51:00.000-03:00",
+   "date_approved": "2026-10-17T11:51:00.000-03:00",
+   "date_last_updated": "2026-10-17T11:51:00.000-03:00",
+   "transaction_amount": 192000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 180460.8
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2171
+   }
+  },
+  {
+   "id": 95100246,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-19T09:49:00.000-03:00",
+   "date_approved": "2026-10-19T09:49:00.000-03:00",
+   "date_last_updated": "2026-10-19T09:49:00.000-03:00",
+   "transaction_amount": 184000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 172941.6
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2129
+   }
+  },
+  {
+   "id": 95100245,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-10-19T10:22:00.000-03:00",
+   "date_approved": "2026-10-19T10:22:00.000-03:00",
+   "date_last_updated": "2026-10-19T10:22:00.000-03:00",
+   "transaction_amount": 446900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 420041.31
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2102
+   }
+  },
+  {
+   "id": 95100302,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REMISES CENTRO SRL",
+   "date_created": "2026-10-19T11:41:00.000-03:00",
+   "date_approved": "2026-10-19T11:41:00.000-03:00",
+   "date_last_updated": "2026-10-19T11:41:00.000-03:00",
+   "transaction_amount": 1747582,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 1747582
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2189
+   }
+  },
+  {
+   "id": 95100244,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-10-19T11:48:00.000-03:00",
+   "date_approved": "2026-10-19T11:48:00.000-03:00",
+   "date_last_updated": "2026-10-19T11:48:00.000-03:00",
+   "transaction_amount": 72200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 67860.78
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2144
+   }
+  },
+  {
+   "id": 96100071,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "REPUESTOS FRENOS DEL SUR SRL CUIT 30212662435",
+   "date_created": "2026-10-19T12:34:00.000-03:00",
+   "date_approved": "2026-10-19T12:34:00.000-03:00",
+   "date_last_updated": "2026-10-19T12:34:00.000-03:00",
+   "transaction_amount": 594430,
+   "collector_id": 3012,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100032,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "VEP ARCA IVA DDJJ",
+   "date_created": "2026-10-19T12:58:00.000-03:00",
+   "date_approved": "2026-10-19T12:58:00.000-03:00",
+   "date_last_updated": "2026-10-19T12:58:00.000-03:00",
+   "transaction_amount": 1278702,
+   "collector_id": 3004,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100248,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-10-19T15:44:00.000-03:00",
+   "date_approved": "2026-10-19T15:44:00.000-03:00",
+   "date_last_updated": "2026-10-19T15:44:00.000-03:00",
+   "transaction_amount": 122400,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 115043.76
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2280
+   }
+  },
+  {
+   "id": 95100247,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-10-19T16:44:00.000-03:00",
+   "date_approved": "2026-10-19T16:44:00.000-03:00",
+   "date_last_updated": "2026-10-19T16:44:00.000-03:00",
+   "transaction_amount": 117000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 109968.3
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2127
+   }
+  },
+  {
+   "id": 96100065,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "NEUMATICOS PAMPEANOS SRL CUIT 30212583244",
+   "date_created": "2026-10-20T11:24:00.000-03:00",
+   "date_approved": "2026-10-20T11:24:00.000-03:00",
+   "date_last_updated": "2026-10-20T11:24:00.000-03:00",
+   "transaction_amount": 1234848,
+   "collector_id": 3009,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100061,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LUBRICANTES ANDINOS SA CUIT 30212504053",
+   "date_created": "2026-10-20T13:50:00.000-03:00",
+   "date_approved": "2026-10-20T13:50:00.000-03:00",
+   "date_last_updated": "2026-10-20T13:50:00.000-03:00",
+   "transaction_amount": 875650,
+   "collector_id": 3051,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100250,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-10-20T14:04:00.000-03:00",
+   "date_approved": "2026-10-20T14:04:00.000-03:00",
+   "date_last_updated": "2026-10-20T14:04:00.000-03:00",
+   "transaction_amount": 77800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 73124.22
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2018
+   }
+  },
+  {
+   "id": 95100252,
+   "status": "refunded",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-20T14:26:00.000-03:00",
+   "date_approved": "2026-10-20T14:26:00.000-03:00",
+   "date_last_updated": "2026-10-23T11:58:00.000-03:00",
+   "transaction_amount": 198400,
+   "transaction_amount_refunded": 198400,
+   "transaction_details": {
+    "net_received_amount": 186476.16
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2268
+   }
+  },
+  {
+   "id": 95100251,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-20T17:22:00.000-03:00",
+   "date_approved": "2026-10-20T17:22:00.000-03:00",
+   "date_last_updated": "2026-10-20T17:22:00.000-03:00",
+   "transaction_amount": 187700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 176419.23
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2208
+   }
+  },
+  {
+   "id": 95100249,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-20T17:39:00.000-03:00",
+   "date_approved": "2026-10-20T17:39:00.000-03:00",
+   "date_last_updated": "2026-10-20T17:39:00.000-03:00",
+   "transaction_amount": 77700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 73030.23
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2330
+   }
+  },
+  {
+   "id": 95100256,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-21T09:40:00.000-03:00",
+   "date_approved": "2026-10-21T09:40:00.000-03:00",
+   "date_last_updated": "2026-10-21T09:40:00.000-03:00",
+   "transaction_amount": 91300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 85812.87
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2198
+   }
+  },
+  {
+   "id": 95100253,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - link de pago",
+   "date_created": "2026-10-21T09:47:00.000-03:00",
+   "date_approved": "2026-10-21T09:47:00.000-03:00",
+   "date_last_updated": "2026-10-21T09:47:00.000-03:00",
+   "transaction_amount": 374600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 352086.54
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2263
+   }
+  },
+  {
+   "id": 95100254,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-21T10:23:00.000-03:00",
+   "date_approved": "2026-10-21T10:23:00.000-03:00",
+   "date_last_updated": "2026-10-21T10:23:00.000-03:00",
+   "transaction_amount": 210800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 198130.92
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2454
+   }
+  },
+  {
+   "id": 95100255,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-10-21T11:36:00.000-03:00",
+   "date_approved": "2026-10-21T11:36:00.000-03:00",
+   "date_last_updated": "2026-10-21T11:36:00.000-03:00",
+   "transaction_amount": 111100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 104422.89
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2134
+   }
+  },
+  {
+   "id": 95100257,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-10-21T14:13:00.000-03:00",
+   "date_approved": "2026-10-21T14:13:00.000-03:00",
+   "date_last_updated": "2026-10-21T14:13:00.000-03:00",
+   "transaction_amount": 90900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 85436.91
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2128
+   }
+  },
+  {
+   "id": 95100307,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "LOGISTICA PAMPA NORTE SA",
+   "date_created": "2026-10-21T14:35:00.000-03:00",
+   "date_approved": "2026-10-21T14:35:00.000-03:00",
+   "date_last_updated": "2026-10-21T14:35:00.000-03:00",
+   "transaction_amount": 1877527,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 1877527
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2189
+   }
+  },
+  {
+   "id": 95100260,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-10-22T11:29:00.000-03:00",
+   "date_approved": "2026-10-22T11:29:00.000-03:00",
+   "date_last_updated": "2026-10-22T11:29:00.000-03:00",
+   "transaction_amount": 77300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 72654.27
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2485
+   }
+  },
+  {
+   "id": 96100033,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "AGUAS servicio de agua",
+   "date_created": "2026-10-22T13:41:00.000-03:00",
+   "date_approved": "2026-10-22T13:41:00.000-03:00",
+   "date_last_updated": "2026-10-22T13:41:00.000-03:00",
+   "transaction_amount": 74157,
+   "collector_id": 3019,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 96100054,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-10-22T14:10:00.000-03:00",
+   "date_approved": "2026-10-22T14:10:00.000-03:00",
+   "date_last_updated": "2026-10-22T14:10:00.000-03:00",
+   "transaction_amount": 994166,
+   "collector_id": 3072,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100258,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-22T15:03:00.000-03:00",
+   "date_approved": "2026-10-22T15:03:00.000-03:00",
+   "date_last_updated": "2026-10-22T15:03:00.000-03:00",
+   "transaction_amount": 62100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 58367.79
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2490
+   }
+  },
+  {
+   "id": 95100261,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-10-22T16:50:00.000-03:00",
+   "date_approved": "2026-10-22T16:50:00.000-03:00",
+   "date_last_updated": "2026-10-22T16:50:00.000-03:00",
+   "transaction_amount": 124200,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 116735.58
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2320
+   }
+  },
+  {
+   "id": 95100296,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "TRANSPORTE ALTOS DEL RIO SRL",
+   "date_created": "2026-10-22T17:24:00.000-03:00",
+   "date_approved": "2026-10-22T17:24:00.000-03:00",
+   "date_last_updated": "2026-10-22T17:24:00.000-03:00",
+   "transaction_amount": 2351932,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 2351932
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2492
+   }
+  },
+  {
+   "id": 95100259,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-10-22T17:30:00.000-03:00",
+   "date_approved": "2026-10-22T17:30:00.000-03:00",
+   "date_last_updated": "2026-10-22T17:30:00.000-03:00",
+   "transaction_amount": 78000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 73312.2
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2336
+   }
+  },
+  {
+   "id": 95100262,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-10-23T10:24:00.000-03:00",
+   "date_approved": "2026-10-23T10:24:00.000-03:00",
+   "date_last_updated": "2026-10-23T10:24:00.000-03:00",
+   "transaction_amount": 76500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 71902.35
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2498
+   }
+  },
+  {
+   "id": 95100265,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-23T11:28:00.000-03:00",
+   "date_approved": "2026-10-23T11:28:00.000-03:00",
+   "date_last_updated": "2026-10-23T11:28:00.000-03:00",
+   "transaction_amount": 86600,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 81395.34
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2407
+   }
+  },
+  {
+   "id": 95100263,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-10-23T13:42:00.000-03:00",
+   "date_approved": "2026-10-23T13:42:00.000-03:00",
+   "date_last_updated": "2026-10-23T13:42:00.000-03:00",
+   "transaction_amount": 105900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 99535.41
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2079
+   }
+  },
+  {
+   "id": 95100264,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-10-23T13:42:00.000-03:00",
+   "date_approved": "2026-10-23T13:42:00.000-03:00",
+   "date_last_updated": "2026-10-23T13:42:00.000-03:00",
+   "transaction_amount": 445700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 418913.43
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2455
+   }
+  },
+  {
+   "id": 96100041,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Herramental y descartables",
+   "date_created": "2026-10-23T15:09:00.000-03:00",
+   "date_approved": "2026-10-23T15:09:00.000-03:00",
+   "date_last_updated": "2026-10-23T15:09:00.000-03:00",
+   "transaction_amount": 117157,
+   "collector_id": 3059,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100266,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-23T15:56:00.000-03:00",
+   "date_approved": "2026-10-23T15:56:00.000-03:00",
+   "date_last_updated": "2026-10-23T15:56:00.000-03:00",
+   "transaction_amount": 69100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 64947.09
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2193
+   }
+  },
+  {
+   "id": 95100268,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - cobro QR",
+   "date_created": "2026-10-24T12:32:00.000-03:00",
+   "date_approved": "2026-10-24T12:32:00.000-03:00",
+   "date_last_updated": "2026-10-24T12:32:00.000-03:00",
+   "transaction_amount": 123700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 116265.63
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2218
+   }
+  },
+  {
+   "id": 95100269,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-24T14:31:00.000-03:00",
+   "date_approved": "2026-10-24T14:31:00.000-03:00",
+   "date_last_updated": "2026-10-24T14:31:00.000-03:00",
+   "transaction_amount": 94300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 88632.57
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2289
+   }
+  },
+  {
+   "id": 95100267,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-24T16:36:00.000-03:00",
+   "date_approved": "2026-10-24T16:36:00.000-03:00",
+   "date_last_updated": "2026-10-24T16:36:00.000-03:00",
+   "transaction_amount": 64300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 60435.57
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2441
+   }
+  },
+  {
+   "id": 96100034,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "SEGURO integral y ART",
+   "date_created": "2026-10-26T10:32:00.000-03:00",
+   "date_approved": "2026-10-26T10:32:00.000-03:00",
+   "date_last_updated": "2026-10-26T10:32:00.000-03:00",
+   "transaction_amount": 230947,
+   "collector_id": 3050,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100270,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-26T11:06:00.000-03:00",
+   "date_approved": "2026-10-26T11:06:00.000-03:00",
+   "date_last_updated": "2026-10-26T11:06:00.000-03:00",
+   "transaction_amount": 92700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 87128.73
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2007
+   }
+  },
+  {
+   "id": 95100271,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-10-26T11:30:00.000-03:00",
+   "date_approved": "2026-10-26T11:30:00.000-03:00",
+   "date_last_updated": "2026-10-26T11:30:00.000-03:00",
+   "transaction_amount": 193700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 182058.63
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2160
+   }
+  },
+  {
+   "id": 95100273,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-10-26T12:42:00.000-03:00",
+   "date_approved": "2026-10-26T12:42:00.000-03:00",
+   "date_last_updated": "2026-10-26T12:42:00.000-03:00",
+   "transaction_amount": 76700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 72090.33
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2498
+   }
+  },
+  {
+   "id": 96100035,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "HONORARIOS estudio contable",
+   "date_created": "2026-10-26T14:13:00.000-03:00",
+   "date_approved": "2026-10-26T14:13:00.000-03:00",
+   "date_last_updated": "2026-10-26T14:13:00.000-03:00",
+   "transaction_amount": 213668,
+   "collector_id": 3012,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100272,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-26T15:49:00.000-03:00",
+   "date_approved": "2026-10-26T15:49:00.000-03:00",
+   "date_last_updated": "2026-10-26T15:49:00.000-03:00",
+   "transaction_amount": 207800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 195311.22
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2263
+   }
+  },
+  {
+   "id": 95100275,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-10-27T12:14:00.000-03:00",
+   "date_approved": "2026-10-27T12:14:00.000-03:00",
+   "date_last_updated": "2026-10-27T12:14:00.000-03:00",
+   "transaction_amount": 95000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 89290.5
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2253
+   }
+  },
+  {
+   "id": 95100274,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-10-27T14:58:00.000-03:00",
+   "date_approved": "2026-10-27T14:58:00.000-03:00",
+   "date_last_updated": "2026-10-27T14:58:00.000-03:00",
+   "transaction_amount": 205700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 193337.43
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2286
+   }
+  },
+  {
+   "id": 95100276,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-27T16:07:00.000-03:00",
+   "date_approved": "2026-10-27T16:07:00.000-03:00",
+   "date_last_updated": "2026-10-27T16:07:00.000-03:00",
+   "transaction_amount": 63300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 59495.67
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2178
+   }
+  },
+  {
+   "id": 95100277,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-10-27T17:45:00.000-03:00",
+   "date_approved": "2026-10-27T17:45:00.000-03:00",
+   "date_last_updated": "2026-10-27T17:45:00.000-03:00",
+   "transaction_amount": 127900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 120213.21
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2346
+   }
+  },
+  {
+   "id": 95100281,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - link de pago",
+   "date_created": "2026-10-28T09:59:00.000-03:00",
+   "date_approved": "2026-10-28T09:59:00.000-03:00",
+   "date_last_updated": "2026-10-28T09:59:00.000-03:00",
+   "transaction_amount": 63300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 59495.67
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2104
+   }
+  },
+  {
+   "id": 95100279,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-10-28T11:30:00.000-03:00",
+   "date_approved": "2026-10-28T11:30:00.000-03:00",
+   "date_last_updated": "2026-10-28T11:30:00.000-03:00",
+   "transaction_amount": 89100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 83745.09
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2350
+   }
+  },
+  {
+   "id": 96100036,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "RETIRO SOCIO TRANSF CTA PROPIA",
+   "date_created": "2026-10-28T11:41:00.000-03:00",
+   "date_approved": "2026-10-28T11:41:00.000-03:00",
+   "date_last_updated": "2026-10-28T11:41:00.000-03:00",
+   "transaction_amount": 1834016,
+   "collector_id": 3067,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100278,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-10-28T15:51:00.000-03:00",
+   "date_approved": "2026-10-28T15:51:00.000-03:00",
+   "date_last_updated": "2026-10-28T15:51:00.000-03:00",
+   "transaction_amount": 80000,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 75192
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2003
+   }
+  },
+  {
+   "id": 95100280,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - cobro QR",
+   "date_created": "2026-10-28T15:53:00.000-03:00",
+   "date_approved": "2026-10-28T15:53:00.000-03:00",
+   "date_last_updated": "2026-10-28T15:53:00.000-03:00",
+   "transaction_amount": 176700,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 166080.33
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2091
+   }
+  },
+  {
+   "id": 95100284,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Cubiertas x2 - cobro QR",
+   "date_created": "2026-10-29T10:59:00.000-03:00",
+   "date_approved": "2026-10-29T10:59:00.000-03:00",
+   "date_last_updated": "2026-10-29T10:59:00.000-03:00",
+   "transaction_amount": 437800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 411488.22
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2437
+   }
+  },
+  {
+   "id": 96100055,
+   "status": "approved",
+   "operation_type": "money_transfer",
+   "description": "AUTOPARTES DEL VALLE SRL CUIT 30212424862",
+   "date_created": "2026-10-29T12:24:00.000-03:00",
+   "date_approved": "2026-10-29T12:24:00.000-03:00",
+   "date_last_updated": "2026-10-29T12:24:00.000-03:00",
+   "transaction_amount": 1058595,
+   "collector_id": 3066,
+   "payer": {
+    "id": 1000
+   }
+  },
+  {
+   "id": 95100283,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Service y cambio de aceite - link de pago",
+   "date_created": "2026-10-29T15:34:00.000-03:00",
+   "date_approved": "2026-10-29T15:34:00.000-03:00",
+   "date_last_updated": "2026-10-29T15:34:00.000-03:00",
+   "transaction_amount": 108500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 101979.15
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2349
+   }
+  },
+  {
+   "id": 95100282,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-29T16:24:00.000-03:00",
+   "date_approved": "2026-10-29T16:24:00.000-03:00",
+   "date_last_updated": "2026-10-29T16:24:00.000-03:00",
+   "transaction_amount": 68300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 64195.17
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2440
+   }
+  },
+  {
+   "id": 95100288,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - cobro QR",
+   "date_created": "2026-10-30T09:15:00.000-03:00",
+   "date_approved": "2026-10-30T09:15:00.000-03:00",
+   "date_last_updated": "2026-10-30T09:15:00.000-03:00",
+   "transaction_amount": 87800,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 82523.22
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2401
+   }
+  },
+  {
+   "id": 95100286,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Alineación y balanceo - cobro QR",
+   "date_created": "2026-10-30T11:16:00.000-03:00",
+   "date_approved": "2026-10-30T11:16:00.000-03:00",
+   "date_last_updated": "2026-10-30T11:16:00.000-03:00",
+   "transaction_amount": 63300,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 59495.67
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2400
+   }
+  },
+  {
+   "id": 95100287,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Reparación de motor - cobro QR",
+   "date_created": "2026-10-30T15:48:00.000-03:00",
+   "date_approved": "2026-10-30T15:48:00.000-03:00",
+   "date_last_updated": "2026-10-30T15:48:00.000-03:00",
+   "transaction_amount": 877500,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 824762.25
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2395
+   }
+  },
+  {
+   "id": 95100289,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Diagnóstico y electricidad - link de pago",
+   "date_created": "2026-10-30T15:53:00.000-03:00",
+   "date_approved": "2026-10-30T15:53:00.000-03:00",
+   "date_last_updated": "2026-10-30T15:53:00.000-03:00",
+   "transaction_amount": 92900,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 87316.71
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2123
+   }
+  },
+  {
+   "id": 95100285,
+   "status": "approved",
+   "operation_type": "regular_payment",
+   "description": "Frenos y pastillas - link de pago",
+   "date_created": "2026-10-30T16:00:00.000-03:00",
+   "date_approved": "2026-10-30T16:00:00.000-03:00",
+   "date_last_updated": "2026-10-30T16:00:00.000-03:00",
+   "transaction_amount": 189100,
+   "transaction_amount_refunded": 0,
+   "transaction_details": {
+    "net_received_amount": 177735.09
+   },
+   "collector_id": 1000,
+   "payer": {
+    "id": 2472
+   }
+  }
+ ]
+}

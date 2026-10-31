@@ -1,0 +1,13 @@
+{
+  "id": "ferreteria-tres-cruces",
+  "nombre": "Ferretería Tres Cruces",
+  "rubro": "Ferretería",
+  "empleados": 4,
+  "descripcion": "Ferretería de barrio con 4 empleados. Vende por mostrador (QR y tarjeta) y a dos constructoras en cuenta corriente, pero compra mucha mercadería con plazos cortos.",
+  "saldoActual": 6500000,
+  "saldoInicial90d": 3859088,
+  "neto90d": 2640912,
+  "fechaSaldo": "2026-10-30",
+  "situacion": "hueco-cercano",
+  "pista": "La caja se queda sin plata en menos de 30 días: sueldos, F.931 e IVA caen antes de que entren los cobros de las constructoras."
+}

@@ -1,21 +1,23 @@
 'use client';
 // Proyección: saldo diario a 15/30/60/90/120 días, huecos, qué hacer (con costo), categorías, movimientos y contrapartes.
+import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { ConDatos, SelloListo, TablaOrdenable, sellar, type Col } from '../_ui/comun';
 import { BarrasApiladas, ENT, SAL, TablaBarras, armarBarras, GraficoSaldo } from '../_ui/graficos';
 import { ETQ_CAT, ETQ_ORIGEN, fCorta, fNum, millones, pesos, plural, sumarDias, type Evento, type Sello } from '../_ui/formato';
 import { useDatos, type Vista } from '../_ui/datos';
+import { AlertaAnticipada, AvisoSimulacion, bajoPiso, ConfirmarSaldo, CostoReal, Educativo, Escenarios, opcionesOrdenadas, OrdenPagos, Piso, QueSi, SiNoHaces } from '../_ui/v2';
 import type { Contraparte } from '@/lib/forecast';
 import s from '../app.module.css';
 
-const HORIZONTES = [15, 30, 60, 90, 120];
+const HORIZONTES = [{ d: 21, t: '3 sem' }, { d: 42, t: '6 sem' }, { d: 91, t: '13 sem' }, { d: 120, t: '4 meses' }];
 
 export default function Proyeccion() {
   return (
     <div className={s.pagina}>
       <div className={s.cabPagina}>
-        <h1>Proyección de caja</h1>
-        <p>Saldo del banco día a día, con facturas pendientes, plazos aprendidos por proveedor y cliente, gastos fijos y ventas estimadas, ajustado por inflación.</p>
+        <h1>Cómo va a estar tu plata</h1>
+        <p>Día por día las próximas 3 semanas y semana a semana hasta 13, con lo que vence, lo que te deben y lo que solés vender.</p>
       </div>
       <ConDatos>{v => <Contenido v={v} />}</ConDatos>
     </div>
@@ -24,54 +26,73 @@ export default function Proyeccion() {
 
 function Contenido({ v }: { v: Vista }) {
   const p = v.pronostico;
-  const [horizonte, setHorizonte] = useState(120);
-  const h120 = p.horizontes.at(-1);
+  const [horizonte, setHorizonte] = useState(91);
+  const [vista, setVista] = useState<'esc' | 'dia'>('esc');
+  const min = p.serie.length ? p.serie.reduce((a, b) => (b.saldo < a.saldo ? b : a)) : null;
   const primero = p.huecos[0] ?? null;
+  const piso = v.minimoSeguridad?.monto ?? null;
   return (
     <>
-      <section className={s.kpis} aria-label="Indicadores clave">
-        <div className={s.kpi}><span>Saldo hoy</span><b className={`${s.num} ${p.saldoInicial < 0 ? s.neg : ''}`}>{millones(p.saldoInicial)}</b><small>al {fNum(p.hoy)}</small></div>
-        <div className={s.kpi}><span>Primer día en rojo</span><b className={primero ? s.neg : s.pos}>{primero ? fCorta(primero.inicio) : 'Ninguno'}</b><small>{primero ? `${plural(primero.dias, 'día')} · mín. ${millones(primero.minimo)}` : 'en los próximos 120 días'}</small></div>
-        {h120 && <div className={s.kpi}><span>Mínimo a {h120.dias} días</span><b className={`${s.num} ${h120.minimo < 0 ? s.neg : ''}`}>{millones(h120.minimo)}</b><small>el {fCorta(h120.fechaMinimo)}</small></div>}
-        <div className={s.kpi}>
-          {v.ventasMensuales != null
-            ? <><span>Ventas mensuales</span><b className={s.num}>{millones(v.ventasMensuales)}</b><small>promedio de las últimas 8 semanas</small></>
-            : <><span>Saldo a {h120?.dias ?? 120} días</span><b className={s.num}>{millones(h120?.saldoFinal ?? 0)}</b><small>al final del horizonte</small></>}
+      <AvisoSimulacion />
+      {!v.confiable && (
+        <section className={s.card} aria-label="Confirmar saldo">
+          <ConfirmarSaldo v={v} />
+        </section>
+      )}
+      <AlertaAnticipada v={v} conLink={false} />
+
+      <section className={s.kpis} aria-label="Lo principal">
+        <div className={s.kpi}><span>{v.confiable ? 'Tu saldo hoy' : 'Saldo estimado'}</span><b className={`${s.num} ${!v.confiable ? s.estimado : p.saldoInicial < 0 ? s.neg : ''}`}>{millones(p.saldoInicial)}</b><small>{v.confiable ? `al ${fNum(p.hoy)}` : 'sin confirmar'}</small></div>
+        <div className={s.kpi}><span>Primer día que te falta plata</span>
+          {v.confiable ? <><b className={primero ? s.neg : s.pos}>{primero ? fCorta(primero.inicio) : 'Ninguno'}</b><small>{primero ? `${plural(primero.dias, 'día')} · hasta ${millones(primero.minimo)}` : `en las próximas ${Math.floor(p.serie.length / 7)} semanas`}</small></>
+            : <><b>?</b><small>confirmá tu saldo para saberlo</small></>}
         </div>
+        {min && <div className={s.kpi}><span>Lo más bajo que llega</span><b className={`${s.num} ${min.saldo < 0 ? s.neg : ''}`}>{millones(min.saldo)}</b><small>el {fCorta(min.fecha)}{!v.confiable ? ' (estimado)' : ''}</small></div>}
+        <div className={s.kpi}><span>Tu piso de seguridad</span><b className={s.num}>{piso !== null ? millones(piso) : 'Sin definir'}</b><small>{v.minimoSeguridad?.propio ? 'lo elegiste vos' : 'unos 30 días de gastos fijos'}</small></div>
       </section>
 
-      <section className={s.card} aria-labelledby="t-saldo">
-        <div className={s.cardHead}>
-          <div>
-            <h2 className={s.h2} id="t-saldo">Saldo diario proyectado</h2>
-            <p className={s.sub}>Lo que cae bajo cero es descubierto que hoy no tenés acordado.</p>
-          </div>
-          <div className={s.seg} role="radiogroup" aria-label="Horizonte">
-            {HORIZONTES.map(n => <button key={n} type="button" role="radio" aria-checked={horizonte === n} onClick={() => setHorizonte(n)}>{n} d</button>)}
-          </div>
+      <section className={s.card} id="escenarios" aria-labelledby={vista === 'esc' ? 't-esc' : 't-saldo'}>
+        <div className={s.seg} role="group" aria-label="Cómo verlo" style={{ justifySelf: 'start' }}>
+          <button type="button" aria-pressed={vista === 'esc'} onClick={() => setVista('esc')}>Tres escenarios</button>
+          <button type="button" aria-pressed={vista === 'dia'} onClick={() => setVista('dia')}>Día por día, con movimientos</button>
         </div>
-        <GraficoSaldo p={p} horizonte={horizonte} />
+        {vista === 'esc' ? <Escenarios v={v} /> : (
+          <>
+            <div className={s.cardHead}>
+              <div>
+                <h2 className={s.h2} id="t-saldo">Tu plata día por día</h2>
+                <p className={s.sub}>Lo que cae bajo cero es plata que te falta: un descubierto que hoy no tenés acordado.</p>
+              </div>
+              <div className={s.seg} role="radiogroup" aria-label="Cuánto mirar hacia adelante">
+                {HORIZONTES.map(h => <button key={h.d} type="button" role="radio" aria-checked={horizonte === h.d} onClick={() => setHorizonte(h.d)}>{h.t}</button>)}
+              </div>
+            </div>
+            <GraficoSaldo p={p} horizonte={horizonte} piso={piso} />
+          </>
+        )}
+        {v.confiable && <QueSi v={v} />}
+        <Piso v={v} />
       </section>
 
       <div className={`${s.cols} ${s.c12}`}>
         <section className={s.card} aria-labelledby="t-huecos">
-          <h2 className={s.h2} id="t-huecos">Huecos de caja</h2>
-          {p.huecos.length ? (
+          <h2 className={s.h2} id="t-huecos">Días en que te falta plata</h2>
+          {!v.confiable ? <p className={s.sub}>Confirmá tu saldo para saber si hay días en que te falta plata.</p> : p.huecos.length ? (
             <ul className={s.lista}>
               {p.huecos.map((hu, i) => (
                 <li key={hu.inicio} className={s.item} style={{ gridTemplateColumns: 'minmax(0,1fr) auto' }}>
                   <span className={s.itemTexto}>
-                    <strong>Hueco {i + 1}: desde el {fCorta(hu.inicio)}</strong>
+                    <strong>{p.huecos.length > 1 ? `Hueco ${i + 1}: d` : 'D'}esde el {fCorta(hu.inicio)}</strong>
                     <small>{plural(hu.dias, 'día')} en rojo{hu.fin ? `, hasta el ${fCorta(sumarDias(hu.fin, -1))}` : ', sigue después del horizonte'} · peor día {fCorta(hu.fechaMinimo)}</small>
                   </span>
                   <span className={`${s.monto} ${s.num} ${s.neg}`}>{millones(hu.minimo)}</span>
                 </li>
               ))}
             </ul>
-          ) : <p className={s.sub}>La caja no baja de cero en los próximos 120 días.</p>}
+          ) : <p className={s.sub}>Lo bueno: tu plata no baja de cero en las próximas {Math.floor(p.serie.length / 7)} semanas.</p>}
           {p.aprendizajes.length > 0 && (
             <details className={s.details}>
-              <summary>Qué aprendí de tu negocio</summary>
+              <summary>Lo que vimos de tu negocio</summary>
               <ul style={{ margin: 0, paddingLeft: 18, display: 'grid', gap: 6, fontSize: 13.5, color: 'var(--ink-2)' }}>
                 {p.aprendizajes.map((a, i) => <li key={i}>{a}</li>)}
               </ul>
@@ -91,20 +112,10 @@ function Contenido({ v }: { v: Vista }) {
       </div>
 
       <section className={s.card} aria-labelledby="t-macro">
-        <div><h2 className={s.h2} id="t-macro">Contexto macro</h2><p className={s.sub}>Datos públicos del BCRA y el INDEC vía OpenARG, del último período disponible.</p></div>
-        <div className={s.kpis}>
-          {(['ipc', 'adelantos', 'documentos', 'plazoFijo', 'pfReal', 'irregularidad'] as const).map(k => {
-            const c = v.citas[k];
-            return c ? (
-              <div className={s.kpi} key={k} style={{ background: 'var(--surface-2)', borderColor: 'transparent' }}>
-                <span>{c.dato}</span>
-                <b className={s.num} style={{ fontSize: 19, whiteSpace: 'normal' }}>{c.valor}</b>
-                <small>{c.periodo} · <a href={c.url} target="_blank" rel="noopener noreferrer">{c.fuente}</a></small>
-              </div>
-            ) : null;
-          })}
-        </div>
+        <div><h2 className={s.h2} id="t-macro">Tasas e inflación de referencia</h2><p className={s.sub}>Usamos datos públicos del BCRA y el INDEC para calcular costos y rendimientos. La lectura completa, con la fuente de cada dato y qué significa para tu plata, está en Inicio.</p></div>
+        <div className={s.btnRow}><Link href="/#t-mercado" className={s.btn}>Ver la lectura del mercado argentino</Link></div>
       </section>
+      <Educativo v={v} terminos={['Hueco', 'Piso de seguridad', 'Escenario', 'TEA']} />
     </>
   );
 }
@@ -122,6 +133,8 @@ function Cubrir({ v }: { v: Vista }) {
   const [err, setErr] = useState<string | null>(null);
   useEffect(() => { setElegida(r.elegida); setOk(false); setSello(null); setErr(null); }, [r]);
   const op = r.opciones.find(o => o.id === elegida) ?? null;
+  const opciones = opcionesOrdenadas(v);
+  const necesita = !!v.pronostico.hueco || !!bajoPiso(v);
 
   async function pedir() {
     if (!op || !ok) return;
@@ -137,30 +150,38 @@ function Cubrir({ v }: { v: Vista }) {
     <>
       <div>
         <h2 className={s.h2} id="t-cubrir">Qué hacer</h2>
-        <p className={s.sub}>{r.alerta.replace(/^⚠️\s*/, '')}</p>
+        {v.confiable && <p className={s.sub}>{r.alerta.replace(/^⚠️\s*/, '')}</p>}
       </div>
-      {r.opciones.length > 0 ? (
-        <fieldset style={{ border: 0, margin: 0, padding: 0, minWidth: 0 }}>
-          <legend className={s.sr}>Opciones para cubrir el hueco</legend>
-          <div className={s.opciones}>
-            {r.opciones.map(o => (
-              <label key={o.id} className={s.opcion}>
-                <input type="radio" name="opcion" checked={elegida === o.id} onChange={() => setElegida(o.id)} />
-                <span className={s.badges}>
-                  {o.id === r.elegida && <span className={`${s.chip} ${s.chipAcc}`}>Más conveniente</span>}
-                  <span className={`${s.chip} ${o.cubre ? s.chipOk : s.chipWarn}`}>{o.cubre ? '✓ Cubre el hueco' : 'Lo cubre en parte'}</span>
-                </span>
-                <strong>{o.titulo}</strong>
-                <span className={s.costo}><b className={s.num}>{o.costo === 0 ? 'Sin costo' : pesos(o.costo)}</b><small>costo financiero estimado</small></span>
-                <p>{o.detalle}</p>
-                {o.citas.map(c => <a key={c.dato} href={c.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: 12.5 }}>{c.dato}: {c.valor} ({c.periodo})</a>)}
-              </label>
-            ))}
-          </div>
-        </fieldset>
-      ) : <p>No necesitás financiamiento en los próximos 120 días. {v.excedente?.hay ? 'Mirá la sección Excedente.' : ''}</p>}
+      {!v.confiable ? (
+        <p className={s.sub}>Cuando confirmes tu saldo te decimos si vas a necesitar plata y cuánto te costaría cada opción.</p>
+      ) : (
+        <>
+          <OrdenPagos v={v} />
+          {opciones.length > 0 ? (
+            <fieldset style={{ border: 0, margin: 0, padding: 0, minWidth: 0 }}>
+              <legend className={s.h3} style={{ padding: 0, marginBottom: 8 }}>Tus opciones, de la más barata a la más cara</legend>
+              <div className={s.opciones}>
+                {opciones.map(o => (
+                  <label key={o.id} className={s.opcion}>
+                    <input type="radio" name="opcion" checked={elegida === o.id} onChange={() => setElegida(o.id)} />
+                    <span className={s.badges}>
+                      {o.id === r.elegida && <span className={`${s.chip} ${s.chipAcc}`}>La más barata que cubre todo</span>}
+                      <span className={`${s.chip} ${o.cubre ? s.chipOk : s.chipWarn}`}>{o.cubre ? '✓ Cubre el hueco' : 'Lo cubre en parte'}</span>
+                    </span>
+                    <strong>{o.titulo}</strong>
+                    <CostoReal o={o} />
+                    <p>{o.detalle}</p>
+                    {o.citas.map(c => <a key={c.dato} href={c.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: 12.5 }}>{c.dato}: {c.valor} ({c.periodo})</a>)}
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+          ) : <p>{necesita ? 'Todavía no tenemos opciones de financiamiento para este caso: empezá por reordenar los pagos.' : <>Lo bueno: no necesitás pedir plata en las próximas {Math.floor(v.pronostico.serie.length / 7)} semanas. {v.excedente?.hay ? 'Mirá qué hacer con la que te sobra.' : ''}</>}</p>}
+          <SiNoHaces v={v} />
+        </>
+      )}
 
-      {r.opciones.length > 0 && (sello ? <SelloListo sello={sello} /> : (
+      {v.confiable && opciones.length > 0 && (sello ? <SelloListo sello={sello} /> : (
         <>
           <label className={s.consent}>
             <input type="checkbox" checked={ok} onChange={e => setOk(e.target.checked)} />

@@ -1,0 +1,13 @@
+{
+  "id": "taller-el-piston",
+  "nombre": "Taller Mecánico El Pistón",
+  "rubro": "Taller mecánico",
+  "empleados": 6,
+  "descripcion": "Taller mecánico y gomería con 6 empleados. Cobra reparaciones por QR/tarjeta y mantiene flotas de empresas con factura a 30 días.",
+  "saldoActual": 8500000,
+  "saldoInicial90d": 7156548,
+  "neto90d": 1343452,
+  "fechaSaldo": "2026-10-30",
+  "situacion": "justo",
+  "pista": "Hoy no hay hueco, pero el aguinaldo del 18/12 y los impuestos de diciembre dejan la caja al borde: conviene reservar desde ya."
+}

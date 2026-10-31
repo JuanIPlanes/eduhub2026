@@ -1,0 +1,13 @@
+ticker,nombre,sector,descripcion,moneda,acciones_circulacion_mm,es_ficticio
+AURA-F,Aurora Agro S.A.,Agro,Produce y exporta granos y oleaginosas. Su resultado depende del clima y del precio internacional.,ARS,420.0,1
+BORE-F,Boreal Energía S.A.,Energía,Generación y distribución de energía eléctrica con contratos de largo plazo.,ARS,610.0,1
+CALD-F,Caldén Bancorp S.A.,Banca,Banco regional con foco en pymes y préstamos personales.,ARS,950.0,1
+DNUB-F,Delta Nube Tecnología S.A.,Tecnología,Software de gestión en la nube para empresas. Crece rápido pero todavía no es rentable.,ARS,180.0,1
+ESFD-F,Estancia Foods S.A.,Alimentos,Elabora y distribuye alimentos envasados para supermercados.,ARS,300.0,1
+FARO-F,Faro Telecom S.A.,Telecomunicaciones,Internet fija y telefonía móvil en el interior del país.,ARS,720.0,1
+GLAC-F,Glaciar Litio S.A.,Minería,Proyecto de extracción de litio en etapa de expansión. Muy sensible al precio internacional.,ARS,260.0,1
+HORI-F,Horizonte Construcciones S.A.,Construcción,Obras civiles y desarrollos inmobiliarios. Depende del crédito y de la obra pública.,ARS,380.0,1
+ISLA-F,Isla Salud S.A.,Salud,Clínicas y laboratorios de análisis con convenios con prepagas.,ARS,210.0,1
+JACA-F,Jacarandá Retail S.A.,Retail,Cadena de tiendas de indumentaria y hogar con venta online.,ARS,530.0,1
+KUNT-F,Kuntur Logística S.A.,Logística,Transporte de carga y almacenes para empresas exportadoras.,ARS,340.0,1
+LUME-F,Lumen Consumo S.A.,Consumo masivo,Productos de limpieza y cuidado personal de venta en almacenes y supermercados.,ARS,460.0,1

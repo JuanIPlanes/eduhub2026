@@ -6,14 +6,15 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState, type ReactNode } from 'react';
 import Avisos from '../../components/chat/Avisos';
 import HojaCarga from './Cargar';
+import Recorrido from './recorrido';
 import { nombreFuente, useDatos } from './datos';
 import { Icono, type NombreIcono } from './iconos';
 import s from '../app.module.css';
 
 export const SECCIONES: readonly { href: string; label: string; titulo: string; icono: NombreIcono }[] = [
   { href: '/', label: 'Inicio', titulo: 'Inicio', icono: 'hoy' },
-  { href: '/proyeccion', label: 'Proyección', titulo: 'Proyección de caja', icono: 'proy' },
-  { href: '/excedente', label: 'Excedente', titulo: 'Excedente', icono: 'exc' },
+  { href: '/proyeccion', label: 'Semanas', titulo: 'Cómo va a estar tu plata', icono: 'proy' },
+  { href: '/excedente', label: 'Lo que sobra', titulo: 'Lo que te sobra', icono: 'exc' },
   { href: '/datos', label: 'Datos', titulo: 'Tus datos', icono: 'datos' },
 ];
 
@@ -125,14 +126,14 @@ export default function Shell({ children }: { children: ReactNode }) {
         <aside className={s.sidebar} aria-label="Navegación principal">
           <div className={s.marca}>
             <span className={s.logo} aria-hidden>CB</span>
-            <div><strong>CFO de Bolsillo</strong><small>Tu caja a 120 días</small></div>
+            <div><strong>CFO de Bolsillo</strong><small>Tu plata, las próximas semanas</small></div>
           </div>
-          <button type="button" className={`${s.btn} ${s.btnPri} ${s.btnBloque} ${s.btnCargar}`} onClick={() => abrirCarga()}>
+          <button type="button" data-tour="cargar" className={`${s.btn} ${s.btnPri} ${s.btnBloque} ${s.btnCargar}`} onClick={() => abrirCarga()}>
             <Icono n="mas" size={20} />Cargar datos
           </button>
           <nav className={s.nav} aria-label="Secciones">
             {SECCIONES.map(x => (
-              <Link key={x.href} href={x.href} className={s.navItem} aria-current={x.href === ruta ? 'page' : undefined}>
+              <Link key={x.href} href={x.href} data-tour={`nav-${x.href}`} className={s.navItem} aria-current={x.href === ruta ? 'page' : undefined}>
                 <Icono n={x.icono} size={20} />{x.label}
               </Link>
             ))}
@@ -166,19 +167,20 @@ export default function Shell({ children }: { children: ReactNode }) {
         </div>
       </div>
 
-      <button type="button" className={s.fab} onClick={() => abrirCarga()} aria-label="Cargar datos">
+      <button type="button" data-tour="cargar" className={s.fab} onClick={() => abrirCarga()} aria-label="Cargar datos">
         <Icono n="mas" size={22} /><span>Cargar</span>
       </button>
 
       <nav className={s.tabbar} aria-label="Secciones">
         {SECCIONES.map(x => (
-          <Link key={x.href} href={x.href} className={s.tab} aria-current={x.href === ruta ? 'page' : undefined}>
+          <Link key={x.href} href={x.href} data-tour={`nav-${x.href}`} className={s.tab} aria-current={x.href === ruta ? 'page' : undefined}>
             <Icono n={x.icono} size={22} /><span>{x.label}</span>
           </Link>
         ))}
       </nav>
       <Toast />
       <HojaCarga />
+      <Recorrido />
     </div>
   );
 }

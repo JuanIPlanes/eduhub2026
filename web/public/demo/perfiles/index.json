@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ferreteria-tres-cruces",
+    "nombre": "Ferretería Tres Cruces",
+    "rubro": "Ferretería",
+    "empleados": 4,
+    "descripcion": "Ferretería de barrio con 4 empleados. Vende por mostrador (QR y tarjeta) y a dos constructoras en cuenta corriente, pero compra mucha mercadería con plazos cortos.",
+    "saldoActual": 6500000,
+    "situacion": "hueco-cercano",
+    "pista": "La caja se queda sin plata en menos de 30 días: sueldos, F.931 e IVA caen antes de que entren los cobros de las constructoras."
+  },
+  {
+    "id": "taller-el-piston",
+    "nombre": "Taller Mecánico El Pistón",
+    "rubro": "Taller mecánico",
+    "empleados": 6,
+    "descripcion": "Taller mecánico y gomería con 6 empleados. Cobra reparaciones por QR/tarjeta y mantiene flotas de empresas con factura a 30 días.",
+    "saldoActual": 8500000,
+    "situacion": "justo",
+    "pista": "Hoy no hay hueco, pero el aguinaldo del 18/12 y los impuestos de diciembre dejan la caja al borde: conviene reservar desde ya."
+  },
+  {
+    "id": "estudio-brujula",
+    "nombre": "Estudio Brújula Diseño",
+    "rubro": "Estudio de diseño",
+    "empleados": 3,
+    "descripcion": "Estudio de diseño gráfico e identidad de marca con 3 empleados. Pocos gastos fijos, clientes corporativos que pagan a 30 días y mucha caja acumulada.",
+    "saldoActual": 30000000,
+    "situacion": "holgada",
+    "pista": "Después de reservar un mes de gastos fijos sobra una cifra importante y por varios meses: hay excedente para colocar."
+  },
+  {
+    "id": "carpinteria-quebracho",
+    "nombre": "Carpintería y Muebles Quebracho",
+    "rubro": "Carpintería",
+    "empleados": 4,
+    "descripcion": "Carpintería de muebles a medida con 4 empleados. Las ventas vienen cayendo mes a mes desde el invierno mientras los costos siguen la inflación.",
+    "saldoActual": 5000000,
+    "situacion": "ventas-en-baja",
+    "pista": "Las acreditaciones bajan mes a mes (agosto > septiembre > octubre) y los gastos no: la caja se achica y el hueco aparece en un par de meses."
+  },
+  {
+    "id": "hosteria-cerro-nevado",
+    "nombre": "Cervecería y Cabañas Cerro Nevado",
+    "rubro": "Gastronomía y turismo",
+    "empleados": 9,
+    "descripcion": "Cervecería artesanal con cabañas en zona de montaña y 9 empleados. Vende mucho en temporada de invierno y vacaciones; de noviembre a diciembre entra la temporada baja.",
+    "saldoActual": 16500000,
+    "situacion": "estacional",
+    "pista": "Las acreditaciones ya vienen bajando de temporada alta a baja (agosto > septiembre > octubre) y los sueldos y el aguinaldo no bajan: el hueco asoma a principios de diciembre y es mucho más profundo si las ventas caen a la mitad."
+  },
+  {
+    "id": "vivero-los-talas",
+    "nombre": "Vivero Los Talas",
+    "rubro": "Vivero",
+    "empleados": 5,
+    "descripcion": "Vivero con 5 empleados. Vende plantas al público por QR, pero más de la mitad de lo que factura es para una desarrolladora de loteos que le paga a 55 días.",
+    "saldoActual": 8500000,
+    "situacion": "concentrada",
+    "pista": "Más del 50% de las ventas depende de un solo cliente que paga a 55 días: si se demora un mes, aparece un hueco aunque hoy la caja esté bien."
+  }
+]
